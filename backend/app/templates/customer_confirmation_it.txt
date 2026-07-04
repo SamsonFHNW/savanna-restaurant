@@ -1,0 +1,16 @@
+Ciao {name},
+
+grazie per la tua richiesta di prenotazione da Savanna!
+
+Riepilogo:
+  • Data    : {date}
+  • Ora     : {time}
+  • Persone : {guests}
+
+Non è ancora una conferma: ti richiameremo entro 24 ore per confermare il tuo tavolo.
+
+Per qualsiasi domanda, chiamaci allo 032 422 73 10.
+
+A presto,
+Il team Savanna
+Rue Albert Schnyder 4, 2800 Delémont

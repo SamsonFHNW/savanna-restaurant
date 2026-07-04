@@ -1,0 +1,157 @@
+{
+  "_meta": {
+    "review": "TODO: machine-drafted German translation — have a native speaker review before launch. Swiss spelling (ss, no ß). Dish names kept in the original; only descriptions translated."
+  },
+
+  "nav": { "menu": "Menü", "about": "Über uns", "reserve": "Reservieren", "contact": "Kontakt" },
+
+  "hero": {
+    "tagline": "Eritreische und äthiopische Küche · Delémont",
+    "cta": "Tisch reservieren"
+  },
+
+  "intro": {
+    "text": "Ein Familientisch im Herzen von Delémont, wo die Rezepte Eritreas und Äthiopiens geteilt werden wie zu Hause — das Injera in der Mitte, alle Hände darum.",
+    "more": "Mehr erfahren →"
+  },
+
+  "dishes": {
+    "eyebrow": "Unsere Spezialitäten",
+    "title": "Signature-Gerichte",
+    "doro": "Hähnchen-Eintopf in Berbere geschmort, hartgekochtes Ei, auf Injera.",
+    "kitfo": "Fein gehacktes Rindertatar mit Mitmita und Niter Kibbeh, lauwarm serviert.",
+    "tibs": "Rindfleisch mit Zwiebeln, Paprika und frischem Rosmarin gebraten.",
+    "all": "Zur ganzen Karte →"
+  },
+
+  "hours": {
+    "eyebrow": "Öffnungszeiten",
+    "title": "Besuchen Sie uns",
+    "closed": "Geschlossen"
+  },
+
+  "day": {
+    "mon": "Montag", "tue": "Dienstag", "wed": "Mittwoch", "thu": "Donnerstag",
+    "fri": "Freitag", "sat": "Samstag", "sun": "Sonntag"
+  },
+
+  "menu": {
+    "title": "Die Karte",
+    "sub": "Alles wird geteilt. Das Injera dient als Teller und Besteck — brechen, greifen, geniessen.",
+    "cat": {
+      "starters": "Vorspeisen",
+      "meat": "Fleischgerichte",
+      "veg": "Vegetarische Gerichte",
+      "drinks": "Getränke",
+      "coffee": "Traditioneller Kaffee"
+    }
+  },
+
+  "tag": { "veg": "Vegetarisch", "vegan": "Vegan", "spicy": "Scharf", "share": "Zum Teilen" },
+
+  "dish": {
+    "sambusa": "Knusprige Teigtaschen mit gewürzten Linsen.",
+    "timatim": "Salat aus Tomaten, Zwiebeln und grüner Chili, Zitronendressing.",
+    "full": "Geschmorte Favabohnen, Tomate, Zwiebel und Olivenöl, warmes Brot.",
+    "doro": "Hähnchen-Eintopf in Berbere geschmort, hartgekochtes Ei, auf Injera.",
+    "kitfo": "Fein gehacktes Rindertatar mit Mitmita und Niter Kibbeh, lauwarm serviert.",
+    "tibs": "Rindfleisch mit Zwiebeln, Paprika und frischem Rosmarin gebraten.",
+    "zilzil": "Feine marinierte Rindfleischstreifen, à la minute gebraten.",
+    "shiro": "Kichererbsenpüree mit Berbere, mit Knoblauch geschmort.",
+    "misir": "Rote Linsen in scharfer Berbere-Sauce geschmort.",
+    "beyaynetu": "Auswahl an Gemüse- und Hülsenfruchtpürees auf grossem Injera.",
+    "plateau": "Auswahl unserer Spezialitäten für zwei, auf grossem Injera.",
+    "tej": "Hausgemachter äthiopischer Honigwein, süss und aromatisch.",
+    "beer": "Asmara / Walia, Flasche 33 cl.",
+    "hibiscus": "Eisgekühlter Aufguss aus Hibiskusblüten (Karkadé).",
+    "ceremony": "Bohnen vor Ihnen geröstet, Weihrauch, drei Aufgüsse. Für den Tisch.",
+    "bunna": "Kräftiger äthiopischer Kaffee, in einer kleinen Tasse serviert.",
+    "chai": "Schwarzer Tee mit Gewürzen, Kardamom und Ingwer."
+  },
+
+  "about": {
+    "title": "Unsere Geschichte",
+    "p1": "Savanna entstand aus dem Wunsch, in Delémont die Aromen zu teilen, die unsere Kindheit in Eritrea und Äthiopien geprägt haben. Hier trägt jedes Gericht eine Erinnerung: die einer Küche, die von Mutter zu Tochter, von Fest zu Fest weitergegeben wird.",
+    "quote": "«Bei uns isst niemand von seinem eigenen Teller. Wir brechen das Injera gemeinsam.»",
+    "p2": "Unsere Gewürze kommen direkt aus der Heimat. Das Injera wird jeden Morgen frisch mit Sauerteig zubereitet, und jedes Wat köchelt stundenlang, bis es seine Balance findet. Nichts wird überstürzt — das macht den Unterschied.",
+    "p3": "Das Haus wird als Familie geführt. Vielleicht werden Sie von einem von uns begrüsst, von einem anderen bedient, und gehen — so hoffen wir — mit dem Wunsch, wiederzukommen.",
+    "team_eyebrow": "Das Haus",
+    "team_title": "Unser Team",
+    "team_text": "Ein kleines Familienteam in Küche und Service, das seit dem ersten Tag denselben Tisch teilt."
+  },
+
+  "reserve": {
+    "title": "Tisch reservieren",
+    "sub": "Senden Sie Ihre Anfrage — wir bestätigen telefonisch innerhalb von 24 Stunden.",
+    "how_eyebrow": "In drei Schritten",
+    "how_title": "So funktioniert's",
+    "step1_t": "Sie senden Ihre Anfrage",
+    "step1_p": "Über dieses Formular, in weniger als einer Minute.",
+    "step2_t": "Wir bestätigen",
+    "step2_p": "Telefonisch innerhalb von 24 Stunden.",
+    "step3_t": "Bis bald bei Savanna",
+    "step3_p": "Ihr Tisch erwartet Sie in Delémont.",
+    "callout": "Oder rufen Sie uns direkt an unter 032 422 73 10."
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "sub": "Eine Frage? Schreiben Sie uns oder besuchen Sie uns in Delémont.",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "hours": "Öffnungszeiten",
+    "hours_week": "Mo, Mi, Do: 11:00–23:00",
+    "hours_weekend": "Fr, Sa: 10:30–01:30",
+    "hours_sun": "So: 10:00–23:00",
+    "closed": "Dienstags geschlossen",
+    "address_label": "Unsere Adresse",
+    "phone_label": "Telefonnummer",
+    "maps": "Auf Google Maps ansehen →"
+  },
+
+  "gallery": { "title": "Galerie" },
+
+  "form": {
+    "name": "Vollständiger Name",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "date": "Datum",
+    "time": "Uhrzeit",
+    "time_ph": "Zuerst das Datum wählen…",
+    "guests": "Anzahl Personen",
+    "guests_hint": "Für Gruppen über 8 Personen rufen Sie uns bitte unter 032 422 73 10 an.",
+    "message": "Nachricht oder besondere Wünsche",
+    "message_c": "Nachricht",
+    "optional": " (optional)",
+    "message_ph": "Allergien, Anlass, Hochstuhl…",
+    "submit": "Anfrage senden",
+    "send": "Nachricht senden"
+  },
+
+  "footer": {
+    "tagline": "Eritreisches und äthiopisches Restaurant & Bar · Delémont",
+    "contact": "Kontakt",
+    "hours": "Öffnungszeiten",
+    "hours_summary": "Mo–So, dienstags geschlossen",
+    "reserve": "Tisch reservieren →",
+    "rights": "Alle Rechte vorbehalten.",
+    "developed": "Entwickelt von:"
+  },
+
+  "lang": { "fr": "Français", "en": "English", "de": "Deutsch", "it": "Italiano" },
+
+  "js": {
+    "form_required": "Bitte füllen Sie alle Pflichtfelder aus.",
+    "res_tuesday": "Dienstags haben wir geschlossen.",
+    "sending": "Wird gesendet…",
+    "res_success": "Danke! Wir bestätigen Ihre Reservierung telefonisch innerhalb von 24 Stunden.",
+    "generic_error": "Ein Fehler ist aufgetreten. Bitte erneut versuchen.",
+    "network_error": "Server nicht erreichbar. Bitte später erneut versuchen.",
+    "contact_required": "Bitte füllen Sie alle Felder aus.",
+    "contact_success": "Danke! Ihre Nachricht wurde gesendet.",
+    "slot_pick_date": "Zuerst das Datum wählen…",
+    "slot_closed": "Dienstags geschlossen",
+    "slot_none": "Keine Zeiten",
+    "slot_choose": "Wählen…"
+  }
+}

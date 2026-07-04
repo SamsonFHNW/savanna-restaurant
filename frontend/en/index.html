@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savanna — Restaurant Érythréen et Éthiopien & Bar · Delémont</title>
+  <meta name="description" content="Savanna — Restaurant érythréen et éthiopien à Delémont. Injera, tibs, kitfo, options végétariennes et végan. Réservez votre table.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css?v=0ecf503f">
+  <link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/">
+  <link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/">
+  <link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/">
+  <link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/">
+  <link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/">
+</head>
+<body class="page-home">
+
+  <!-- ─── Navigation ─── -->
+  <header class="site-header site-header--over-hero" id="site-header" data-home>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="nav__logo" aria-label="Savanna — Accueil">Savanna</a>
+
+      <button class="nav__hamburger" id="nav-toggle" aria-expanded="false" aria-controls="nav-cluster" aria-label="Ouvrir le menu">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+
+      <div class="nav__cluster" id="nav-cluster">
+        <ul class="nav__menu" role="list">
+          <li><a href="menu.html" class="nav__link" data-i18n="nav.menu">Menu</a></li>
+          <li><a href="about.html" class="nav__link" data-i18n="nav.about">About</a></li>
+          <li><a href="reserve.html" class="nav__link" data-i18n="nav.reserve">Reserve</a></li>
+          <li><a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="lang" id="lang">
+          <button class="lang__toggle" id="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="lang__code">EN</span>
+            <svg class="lang__caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <ul class="lang__menu" id="lang-menu" role="menu">
+          <li role="none"><a role="menuitem" class="lang__option" hreflang="fr" data-lang="fr" href="/fr/">Français</a></li>
+          <li role="none"><a role="menuitem" class="lang__option lang__option--current" hreflang="en" data-lang="en" href="/en/" aria-current="true">English</a></li>
+          <li role="none"><a role="menuitem" class="lang__option" hreflang="de" data-lang="de" href="/de/">Deutsch</a></li>
+          <li role="none"><a role="menuitem" class="lang__option" hreflang="it" data-lang="it" href="/it/">Italiano</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ─── Hero ─── -->
+    <section class="hero" aria-label="Savanna">
+      <!-- TODO: Replace with real hero photo — injera platter or interior. Tagged "ethiopian food" / "injera" on Unsplash -->
+      <img class="hero__bg"
+        src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=1920&q=80"
+        alt="Plateau d'injera garni de plats érythréens et éthiopiens"
+        fetchpriority="high">
+      <div class="hero__scrim"></div>
+      <div class="hero__inner">
+        <div class="hero__top">
+          <h1 class="hero__name">Savanna</h1>
+          <p class="hero__tagline" data-i18n="hero.tagline">Eritrean and Ethiopian cuisine · Delémont</p>
+        </div>
+        <div class="hero__bottom">
+          <a href="reserve.html" class="btn btn--primary" data-i18n="hero.cta">Book a table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Intro strip ─── -->
+    <section class="section">
+      <div class="container">
+        <p class="intro__text" data-i18n="intro.text">A family table in the heart of Delémont, where the recipes of Eritrea and Ethiopia are shared the way they are at home — injera in the middle, hands all around.</p>
+        <a href="about.html" class="link-arrow intro__more" data-i18n="intro.more">Read more →</a>
+      </div>
+    </section>
+
+    <!-- ─── Signature dishes ─── -->
+    <section class="section section--alt">
+      <div class="container">
+        <span class="eyebrow" data-i18n="dishes.eyebrow">Our specialities</span>
+        <h2 class="section-title" data-i18n="dishes.title">Signature dishes</h2>
+
+        <div class="dishes__grid">
+          <article class="dish-card">
+            <div class="dish-card__img">
+              <!-- TODO: real dish photo -->
+              <img src="https://images.unsplash.com/photo-1567364816519-cbc9c4ceb4cc?w=600&q=75"
+                alt="Doro Wat — ragoût de poulet épicé sur injera" loading="lazy" width="600" height="750">
+            </div>
+            <h3 class="dish-card__name">Doro Wat</h3>
+            <p class="dish-card__desc" data-i18n="dishes.doro">Chicken stew simmered in berbere, hard-boiled egg, on injera.</p>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-card__img">
+              <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=75"
+                alt="Kitfo — tartare de bœuf épicé" loading="lazy" width="600" height="750">
+            </div>
+            <h3 class="dish-card__name">Kitfo</h3>
+            <p class="dish-card__desc" data-i18n="dishes.kitfo">Minced beef with mitmita and niter kibbeh, served warm.</p>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-card__img">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=75"
+                alt="Tibs — bœuf sauté aux oignons et poivrons" loading="lazy" width="600" height="750">
+            </div>
+            <h3 class="dish-card__name">Tibs</h3>
+            <p class="dish-card__desc" data-i18n="dishes.tibs">Beef sautéed with onions, peppers and fresh rosemary.</p>
+          </article>
+        </div>
+
+        <a href="menu.html" class="link-arrow intro__more" data-i18n="dishes.all">See the full menu →</a>
+      </div>
+    </section>
+
+    <!-- ─── Hours + Location ─── -->
+    <section class="section" id="horaires">
+      <div class="container">
+        <div class="hours-loc__grid">
+          <div>
+            <span class="eyebrow" data-i18n="hours.eyebrow">Hours</span>
+            <h2 class="section-title" data-i18n="hours.title">Visit us</h2>
+            <dl class="hours-list" style="margin-top: 32px;">
+              <div style="display: contents;"><dt data-i18n="day.mon">Monday</dt><dd>11:00–23:00</dd></div>
+              <div class="is-closed" style="display: contents;"><dt data-i18n="day.tue">Tuesday</dt><dd data-i18n="hours.closed">Closed</dd></div>
+              <div style="display: contents;"><dt data-i18n="day.wed">Wednesday</dt><dd>11:00–23:00</dd></div>
+              <div style="display: contents;"><dt data-i18n="day.thu">Thursday</dt><dd>11:00–23:00</dd></div>
+              <div class="is-highlight" style="display: contents;"><dt data-i18n="day.fri">Friday</dt><dd>10:30–01:30</dd></div>
+              <div class="is-highlight" style="display: contents;"><dt data-i18n="day.sat">Saturday</dt><dd>10:30–01:30</dd></div>
+              <div style="display: contents;"><dt data-i18n="day.sun">Sunday</dt><dd>10:00–23:00</dd></div>
+            </dl>
+            <address style="margin-top: 32px; color: var(--muted);">
+              Rue Albert Schnyder 4<br>2800 Delémont<br>
+              <a href="tel:+41324227310" class="link" style="color: var(--ink);">032 422 73 10</a>
+            </address>
+          </div>
+
+          <div>
+            <!-- Google Maps embed (address search, no API key needed) -->
+            <iframe class="map-embed"
+              src="https://www.google.com/maps?q=Rue+Albert+Schnyder+4,+2800+Del%C3%A9mont&output=embed"
+              title="Carte — Savanna, Rue Albert Schnyder 4, 2800 Delémont"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer" id="contact-footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span class="footer__name">Savanna</span>
+        <span>&copy; 2026 Savanna. <span data-i18n="footer.rights">All rights reserved.</span></span>
+        <span class="footer__credit"><span data-i18n="footer.developed">Developed by:</span> <a class="footer__credit-link" href="https://www.linkedin.com/in/samson-hadgu-052a42254/" target="_blank" rel="noopener noreferrer"><svg class="footer__credit-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>Samson Hadgu</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/config.js?v=0ecf503f"></script>
+  <script src="/main.js?v=0ecf503f"></script>
+</body>
+</html>

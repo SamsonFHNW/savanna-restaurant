@@ -1,0 +1,153 @@
+{
+  "nav": { "menu": "Menu", "about": "About", "reserve": "Reserve", "contact": "Contact" },
+
+  "hero": {
+    "tagline": "Eritrean and Ethiopian cuisine · Delémont",
+    "cta": "Book a table"
+  },
+
+  "intro": {
+    "text": "A family table in the heart of Delémont, where the recipes of Eritrea and Ethiopia are shared the way they are at home — injera in the middle, hands all around.",
+    "more": "Read more →"
+  },
+
+  "dishes": {
+    "eyebrow": "Our specialities",
+    "title": "Signature dishes",
+    "doro": "Chicken stew simmered in berbere, hard-boiled egg, on injera.",
+    "kitfo": "Minced beef with mitmita and niter kibbeh, served warm.",
+    "tibs": "Beef sautéed with onions, peppers and fresh rosemary.",
+    "all": "See the full menu →"
+  },
+
+  "hours": {
+    "eyebrow": "Hours",
+    "title": "Visit us",
+    "closed": "Closed"
+  },
+
+  "day": {
+    "mon": "Monday", "tue": "Tuesday", "wed": "Wednesday", "thu": "Thursday",
+    "fri": "Friday", "sat": "Saturday", "sun": "Sunday"
+  },
+
+  "menu": {
+    "title": "The menu",
+    "sub": "Everything is shared. Injera is your plate and your cutlery — tear it, scoop, savour.",
+    "cat": {
+      "starters": "Starters",
+      "meat": "Meat dishes",
+      "veg": "Vegetarian dishes",
+      "drinks": "Drinks",
+      "coffee": "Traditional coffee"
+    }
+  },
+
+  "tag": { "veg": "Vegetarian", "vegan": "Vegan", "spicy": "Spicy", "share": "To share" },
+
+  "dish": {
+    "sambusa": "Crisp pastries filled with spiced lentils.",
+    "timatim": "Tomato, onion and green chilli salad, lemon dressing.",
+    "full": "Simmered fava beans, tomato, onion and olive oil, warm bread.",
+    "doro": "Chicken stew simmered in berbere, hard-boiled egg, on injera.",
+    "kitfo": "Minced beef with mitmita and niter kibbeh, served warm.",
+    "tibs": "Beef sautéed with onions, peppers and fresh rosemary.",
+    "zilzil": "Thin strips of marinated beef, seared to order.",
+    "shiro": "Chickpea purée in berbere, simmered with garlic.",
+    "misir": "Red lentils stewed in a spicy berbere sauce.",
+    "beyaynetu": "A selection of vegetable and legume purées on a large injera.",
+    "plateau": "A selection of our specialities for two, on a large injera.",
+    "tej": "House Ethiopian honey wine, sweet and fragrant.",
+    "beer": "Asmara / Walia, 33 cl bottle.",
+    "hibiscus": "Chilled infusion of hibiscus flowers (karkadé).",
+    "ceremony": "Beans roasted before you, incense, three servings. For the table.",
+    "bunna": "Bold Ethiopian coffee, served in a small cup.",
+    "chai": "Spiced black tea with cardamom and ginger."
+  },
+
+  "about": {
+    "title": "Our story",
+    "p1": "Savanna was born from a wish to share, here in Delémont, the flavours that shaped our childhood in Eritrea and Ethiopia. Every dish carries a memory: a cuisine passed from mother to daughter, from feast to feast.",
+    "quote": "\"At our table, no one eats from their own plate. We break the injera together.\"",
+    "p2": "Our spices come straight from home. The injera is made fresh every morning, sourdough-style, and every wat simmers for hours until it finds its balance. Nothing is rushed — that is what makes the difference.",
+    "p3": "The house is family-run. You may be welcomed by one of us, served by another, and leave — we hope — already wanting to come back.",
+    "team_eyebrow": "The house",
+    "team_title": "Our team",
+    "team_text": "A small family team in the kitchen and the dining room, sharing the same table since day one."
+  },
+
+  "reserve": {
+    "title": "Book a table",
+    "sub": "Send your request — we'll confirm by phone within 24 hours.",
+    "how_eyebrow": "In three steps",
+    "how_title": "How it works",
+    "step1_t": "You send your request",
+    "step1_p": "Through this form, in under a minute.",
+    "step2_t": "We confirm",
+    "step2_p": "By phone within 24 hours.",
+    "step3_t": "See you at Savanna",
+    "step3_p": "Your table is waiting in Delémont.",
+    "callout": "Or call us directly on 032 422 73 10."
+  },
+
+  "contact": {
+    "title": "Contact",
+    "sub": "A question? Write to us or come by in Delémont.",
+    "address": "Address",
+    "phone": "Phone",
+    "hours": "Hours",
+    "hours_week": "Mon, Wed, Thu: 11:00–23:00",
+    "hours_weekend": "Fri, Sat: 10:30–01:30",
+    "hours_sun": "Sun: 10:00–23:00",
+    "closed": "Closed on Tuesday",
+    "address_label": "Our address",
+    "phone_label": "Phone number",
+    "maps": "View on Google Maps →"
+  },
+
+  "gallery": { "title": "Gallery" },
+
+  "form": {
+    "name": "Full name",
+    "phone": "Phone",
+    "email": "Email",
+    "date": "Date",
+    "time": "Time",
+    "time_ph": "Choose the date first…",
+    "guests": "Number of guests",
+    "guests_hint": "For groups larger than 8, please call us on 032 422 73 10.",
+    "message": "Message or special requests",
+    "message_c": "Message",
+    "optional": " (optional)",
+    "message_ph": "Allergies, occasion, high chair…",
+    "submit": "Send request",
+    "send": "Send message"
+  },
+
+  "footer": {
+    "tagline": "Eritrean and Ethiopian restaurant & bar · Delémont",
+    "contact": "Contact",
+    "hours": "Hours",
+    "hours_summary": "Mon–Sun, closed on Tuesday",
+    "reserve": "Book a table →",
+    "rights": "All rights reserved.",
+    "developed": "Developed by:"
+  },
+
+  "lang": { "fr": "Français", "en": "English", "de": "Deutsch", "it": "Italiano" },
+
+  "js": {
+    "form_required": "Please fill in all required fields.",
+    "res_tuesday": "We are closed on Tuesdays.",
+    "sending": "Sending…",
+    "res_success": "Thank you! We will confirm your reservation by phone within 24 hours.",
+    "generic_error": "Something went wrong. Please try again.",
+    "network_error": "Could not reach the server. Please try again later.",
+    "contact_required": "Please fill in all fields.",
+    "contact_success": "Thank you! Your message has been sent.",
+    "slot_pick_date": "Choose the date first…",
+    "slot_closed": "Closed on Tuesday",
+    "slot_none": "No slots",
+    "slot_choose": "Choose…"
+  }
+}

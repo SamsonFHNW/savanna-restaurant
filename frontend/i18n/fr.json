@@ -1,0 +1,153 @@
+{
+  "nav": { "menu": "Menu", "about": "À propos", "reserve": "Réserver", "contact": "Contact" },
+
+  "hero": {
+    "tagline": "Cuisine érythréenne et éthiopienne · Delémont",
+    "cta": "Réserver une table"
+  },
+
+  "intro": {
+    "text": "Une table familiale au cœur de Delémont, où les recettes de l'Érythrée et de l'Éthiopie se partagent comme à la maison — l'injera au centre, les mains autour.",
+    "more": "En savoir plus →"
+  },
+
+  "dishes": {
+    "eyebrow": "Nos spécialités",
+    "title": "Plats signature",
+    "doro": "Ragoût de poulet mijoté au berbère, œuf dur, sur injera.",
+    "kitfo": "Tartare de bœuf au mitmita et niter kibbeh, servi tiède.",
+    "tibs": "Bœuf sauté aux oignons, poivrons et romarin frais.",
+    "all": "Voir toute la carte →"
+  },
+
+  "hours": {
+    "eyebrow": "Horaires",
+    "title": "Nous rendre visite",
+    "closed": "Fermé"
+  },
+
+  "day": {
+    "mon": "Lundi", "tue": "Mardi", "wed": "Mercredi", "thu": "Jeudi",
+    "fri": "Vendredi", "sat": "Samedi", "sun": "Dimanche"
+  },
+
+  "menu": {
+    "title": "La carte",
+    "sub": "Tout se partage. L'injera tient lieu d'assiette et de couverts — rompez-la, saisissez, savourez.",
+    "cat": {
+      "starters": "Entrées",
+      "meat": "Plats de viande",
+      "veg": "Plats végétariens",
+      "drinks": "Boissons",
+      "coffee": "Café traditionnel"
+    }
+  },
+
+  "tag": { "veg": "Végétarien", "vegan": "Végan", "spicy": "Épicé", "share": "À partager" },
+
+  "dish": {
+    "sambusa": "Feuilletés croustillants aux lentilles épicées.",
+    "timatim": "Salade de tomates, oignons et piment vert, vinaigrette citronnée.",
+    "full": "Fèves mijotées, tomate, oignon et huile d'olive, pain chaud.",
+    "doro": "Ragoût de poulet mijoté au berbère, œuf dur, sur injera.",
+    "kitfo": "Tartare de bœuf au mitmita et niter kibbeh, servi tiède.",
+    "tibs": "Bœuf sauté aux oignons, poivrons et romarin frais.",
+    "zilzil": "Fines lanières de bœuf marinées, saisies à la commande.",
+    "shiro": "Purée de pois chiches parfumée au berbère, mijotée à l'ail.",
+    "misir": "Lentilles rouges mijotées dans une sauce berbère relevée.",
+    "beyaynetu": "Assortiment de purées de légumes et légumineuses sur grande injera.",
+    "plateau": "Assortiment de nos spécialités pour deux, sur grande injera.",
+    "tej": "Hydromel éthiopien maison, doux et parfumé.",
+    "beer": "Asmara / Walia, bouteille 33 cl.",
+    "hibiscus": "Infusion glacée de fleurs d'hibiscus (karkadé).",
+    "ceremony": "Grains torréfiés devant vous, encens, trois services. Pour la table.",
+    "bunna": "Café éthiopien corsé, servi en petite tasse.",
+    "chai": "Thé noir aux épices, cardamome et gingembre."
+  },
+
+  "about": {
+    "title": "Notre histoire",
+    "p1": "Savanna est né du désir de partager, à Delémont, les saveurs qui ont bercé notre enfance en Érythrée et en Éthiopie. Ici, chaque plat porte une mémoire : celle d'une cuisine transmise de mère en fille, de fête en fête.",
+    "quote": "« Chez nous, on ne mange pas chacun dans son assiette. On rompt l'injera ensemble. »",
+    "p2": "Nos épices arrivent directement du pays. L'injera est préparée chaque matin, au levain, et chaque wat mijote de longues heures jusqu'à trouver son équilibre. Rien n'est pressé — c'est ce qui fait la différence.",
+    "p3": "La maison est tenue en famille. Vous serez peut-être accueilli par l'un d'entre nous, servi par un autre, et repartirez, on l'espère, avec l'envie de revenir.",
+    "team_eyebrow": "La maison",
+    "team_title": "Notre équipe",
+    "team_text": "Une petite équipe familiale en cuisine et en salle, qui partage la même table depuis le premier jour."
+  },
+
+  "reserve": {
+    "title": "Réserver une table",
+    "sub": "Envoyez votre demande — nous vous confirmons par téléphone dans les 24 heures.",
+    "how_eyebrow": "En trois étapes",
+    "how_title": "Comment ça marche",
+    "step1_t": "Vous envoyez votre demande",
+    "step1_p": "Via ce formulaire, en moins d'une minute.",
+    "step2_t": "Nous vous confirmons",
+    "step2_p": "Par téléphone dans les 24 heures.",
+    "step3_t": "À bientôt chez Savanna",
+    "step3_p": "Votre table vous attend à Delémont.",
+    "callout": "Ou appelez-nous directement au 032 422 73 10."
+  },
+
+  "contact": {
+    "title": "Contact",
+    "sub": "Une question ? Écrivez-nous ou passez nous voir à Delémont.",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "hours": "Horaires",
+    "hours_week": "Lun, Mer, Jeu : 11:00–23:00",
+    "hours_weekend": "Ven, Sam : 10:30–01:30",
+    "hours_sun": "Dim : 10:00–23:00",
+    "closed": "Fermé le mardi",
+    "address_label": "Notre adresse",
+    "phone_label": "Numéro de téléphone",
+    "maps": "Voir sur Google Maps →"
+  },
+
+  "gallery": { "title": "Galerie" },
+
+  "form": {
+    "name": "Nom complet",
+    "phone": "Téléphone",
+    "email": "Email",
+    "date": "Date",
+    "time": "Heure",
+    "time_ph": "Choisir la date d'abord…",
+    "guests": "Nombre de personnes",
+    "guests_hint": "Pour les groupes de plus de 8, appelez-nous au 032 422 73 10.",
+    "message": "Message ou demandes spéciales",
+    "message_c": "Message",
+    "optional": " (facultatif)",
+    "message_ph": "Allergies, occasion, chaise haute…",
+    "submit": "Envoyer la demande",
+    "send": "Envoyer le message"
+  },
+
+  "footer": {
+    "tagline": "Restaurant érythréen et éthiopien & bar · Delémont",
+    "contact": "Contact",
+    "hours": "Horaires",
+    "hours_summary": "Lun–Dim, fermé le mardi",
+    "reserve": "Réserver une table →",
+    "rights": "Tous droits réservés.",
+    "developed": "Développé par :"
+  },
+
+  "lang": { "fr": "Français", "en": "English", "de": "Deutsch", "it": "Italiano" },
+
+  "js": {
+    "form_required": "Veuillez remplir tous les champs obligatoires.",
+    "res_tuesday": "Nous sommes fermés le mardi.",
+    "sending": "Envoi en cours…",
+    "res_success": "Merci ! Nous vous confirmerons votre réservation par téléphone dans les 24h.",
+    "generic_error": "Une erreur est survenue. Réessayez.",
+    "network_error": "Impossible de contacter le serveur. Réessayez plus tard.",
+    "contact_required": "Veuillez remplir tous les champs.",
+    "contact_success": "Merci ! Votre message a bien été envoyé.",
+    "slot_pick_date": "Choisir la date d'abord…",
+    "slot_closed": "Fermé le mardi",
+    "slot_none": "Aucun créneau",
+    "slot_choose": "Choisir…"
+  }
+}

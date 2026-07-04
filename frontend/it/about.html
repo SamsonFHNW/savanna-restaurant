@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos — Savanna · Delémont</title>
+  <meta name="description" content="L'histoire de Savanna, restaurant familial érythréen et éthiopien à Delémont.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css?v=0ecf503f">
+  <link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/about">
+  <link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/about">
+  <link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/about">
+  <link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/about">
+  <link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/about">
+</head>
+<body class="page-interior">
+
+  <header class="site-header site-header--solid" id="site-header">
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="nav__logo" aria-label="Savanna — Accueil">Savanna</a>
+      <button class="nav__hamburger" id="nav-toggle" aria-expanded="false" aria-controls="nav-cluster" aria-label="Ouvrir le menu">
+        <span class="nav__hamburger-line"></span><span class="nav__hamburger-line"></span><span class="nav__hamburger-line"></span>
+      </button>
+      <div class="nav__cluster" id="nav-cluster">
+        <ul class="nav__menu" role="list">
+          <li><a href="menu.html" class="nav__link" data-i18n="nav.menu">Menu</a></li>
+          <li><a href="about.html" class="nav__link" aria-current="page" data-i18n="nav.about">Chi siamo</a></li>
+          <li><a href="prenotare.html" class="nav__link" data-i18n="nav.reserve">Prenotare</a></li>
+          <li><a href="contatto.html" class="nav__link" data-i18n="nav.contact">Contatti</a></li>
+        </ul>
+        <div class="lang" id="lang">
+          <button class="lang__toggle" id="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="lang__code">IT</span>
+            <svg class="lang__caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <ul class="lang__menu" id="lang-menu" role="menu">
+          <li role="none"><a role="menuitem" class="lang__option" hreflang="fr" data-lang="fr" href="/fr/about.html">Français</a></li>
+          <li role="none"><a role="menuitem" class="lang__option" hreflang="en" data-lang="en" href="/en/about.html">English</a></li>
+          <li role="none"><a role="menuitem" class="lang__option" hreflang="de" data-lang="de" href="/de/about.html">Deutsch</a></li>
+          <li role="none"><a role="menuitem" class="lang__option lang__option--current" hreflang="it" data-lang="it" href="/it/about.html" aria-current="true">Italiano</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-header__title" data-i18n="about.title">La nostra storia</h1>
+      </div>
+    </div>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__img">
+            <!-- TODO: real family / portrait photo -->
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=760&q=80"
+              alt="La famille fondatrice de Savanna dans la salle du restaurant" loading="lazy" width="760" height="950">
+          </div>
+
+          <div class="about__text">
+            <p data-i18n="about.p1">Savanna nasce dal desiderio di condividere, qui a Delémont, i sapori che hanno accompagnato la nostra infanzia in Eritrea ed Etiopia. Qui ogni piatto porta un ricordo: quello di una cucina tramandata di madre in figlia, di festa in festa.</p>
+
+            <blockquote class="pull-quote" data-i18n="about.quote">«Da noi non si mangia ciascuno nel proprio piatto. Spezziamo l'injera insieme.»</blockquote>
+
+            <p data-i18n="about.p2">Le nostre spezie arrivano direttamente dal paese d'origine. L'injera si prepara ogni mattina con lievito madre, e ogni wat sobbolle per ore fino a trovare il suo equilibrio. Niente ha fretta — è questo che fa la differenza.</p>
+
+            <p data-i18n="about.p3">La casa è a conduzione familiare. Forse sarete accolti da uno di noi, serviti da un altro, e ripartirete — lo speriamo — con la voglia di tornare.</p>
+          </div>
+        </div>
+
+        <div class="team-strip">
+          <span class="eyebrow" data-i18n="about.team_eyebrow">La casa</span>
+          <h2 class="section-title" data-i18n="about.team_title">Il nostro team</h2>
+          <p class="section-intro" data-i18n="about.team_text">Un piccolo team familiare in cucina e in sala, che condivide la stessa tavola fin dal primo giorno.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span class="footer__name">Savanna</span>
+        <span>&copy; 2026 Savanna. <span data-i18n="footer.rights">Tutti i diritti riservati.</span></span>
+        <span class="footer__credit"><span data-i18n="footer.developed">Sviluppato da:</span> <a class="footer__credit-link" href="https://www.linkedin.com/in/samson-hadgu-052a42254/" target="_blank" rel="noopener noreferrer"><svg class="footer__credit-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>Samson Hadgu</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/config.js?v=0ecf503f"></script>
+  <script src="/main.js?v=0ecf503f"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savanna — Restaurant Érythréen et Éthiopien & Bar · Delémont</title>
+  <meta name="robots" content="noindex">
+  <link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/">
+  <link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/">
+  <link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/">
+  <link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/">
+  <link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/">
+  <script>
+    // Send visitors to their preferred language: saved choice > browser language > French.
+    (function () {
+      var supported = ['fr', 'en', 'de', 'it'];
+      var saved = null;
+      try { saved = localStorage.getItem('savanna_lang'); } catch (e) {}
+      var browser = (navigator.language || 'fr').slice(0, 2).toLowerCase();
+      var lang = (saved && supported.indexOf(saved) > -1) ? saved
+        : (supported.indexOf(browser) > -1 ? browser : 'fr');
+      window.location.replace('/' + lang + '/');
+    })();
+  </script>
+  <meta http-equiv="refresh" content="0; url=/fr/">
+</head>
+<body>
+  <noscript><a href="/fr/">Continuer en français · Continue · Weiter · Continua</a></noscript>
+</body>
+</html>

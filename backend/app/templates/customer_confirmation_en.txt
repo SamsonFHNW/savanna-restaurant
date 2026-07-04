@@ -1,0 +1,16 @@
+Hello {name},
+
+Thank you for your reservation request at Savanna!
+
+Here is a summary:
+  • Date   : {date}
+  • Time   : {time}
+  • Guests : {guests}
+
+This is not a confirmation yet: we will call you back within 24 hours to confirm your table.
+
+For any questions, call us on 032 422 73 10.
+
+See you soon,
+The Savanna team
+Rue Albert Schnyder 4, 2800 Delémont

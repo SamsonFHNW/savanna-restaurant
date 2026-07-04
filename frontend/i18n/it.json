@@ -1,0 +1,157 @@
+{
+  "_meta": {
+    "review": "TODO: machine-drafted Italian translation — have a native speaker review before launch. Dish names kept in the original; only descriptions translated."
+  },
+
+  "nav": { "menu": "Menu", "about": "Chi siamo", "reserve": "Prenotare", "contact": "Contatti" },
+
+  "hero": {
+    "tagline": "Cucina eritrea ed etiope · Delémont",
+    "cta": "Prenota un tavolo"
+  },
+
+  "intro": {
+    "text": "Una tavola di famiglia nel cuore di Delémont, dove le ricette dell'Eritrea e dell'Etiopia si condividono come a casa — l'injera al centro, le mani intorno.",
+    "more": "Scopri di più →"
+  },
+
+  "dishes": {
+    "eyebrow": "Le nostre specialità",
+    "title": "Piatti signature",
+    "doro": "Stufato di pollo cotto nel berbere, uovo sodo, su injera.",
+    "kitfo": "Tartare di manzo con mitmita e niter kibbeh, servita tiepida.",
+    "tibs": "Manzo saltato con cipolle, peperoni e rosmarino fresco.",
+    "all": "Vedi tutto il menu →"
+  },
+
+  "hours": {
+    "eyebrow": "Orari",
+    "title": "Vieni a trovarci",
+    "closed": "Chiuso"
+  },
+
+  "day": {
+    "mon": "Lunedì", "tue": "Martedì", "wed": "Mercoledì", "thu": "Giovedì",
+    "fri": "Venerdì", "sat": "Sabato", "sun": "Domenica"
+  },
+
+  "menu": {
+    "title": "Il menu",
+    "sub": "Tutto si condivide. L'injera fa da piatto e da posate — spezzala, raccogli, assapora.",
+    "cat": {
+      "starters": "Antipasti",
+      "meat": "Piatti di carne",
+      "veg": "Piatti vegetariani",
+      "drinks": "Bevande",
+      "coffee": "Caffè tradizionale"
+    }
+  },
+
+  "tag": { "veg": "Vegetariano", "vegan": "Vegano", "spicy": "Piccante", "share": "Da condividere" },
+
+  "dish": {
+    "sambusa": "Fagottini croccanti con lenticchie speziate.",
+    "timatim": "Insalata di pomodori, cipolle e peperoncino verde, condimento al limone.",
+    "full": "Fave stufate, pomodoro, cipolla e olio d'oliva, pane caldo.",
+    "doro": "Stufato di pollo cotto nel berbere, uovo sodo, su injera.",
+    "kitfo": "Tartare di manzo con mitmita e niter kibbeh, servita tiepida.",
+    "tibs": "Manzo saltato con cipolle, peperoni e rosmarino fresco.",
+    "zilzil": "Sottili striscioline di manzo marinate, scottate al momento.",
+    "shiro": "Purè di ceci al berbere, stufato con aglio.",
+    "misir": "Lenticchie rosse stufate in una salsa berbere piccante.",
+    "beyaynetu": "Assortimento di purè di verdure e legumi su grande injera.",
+    "plateau": "Assortimento delle nostre specialità per due, su grande injera.",
+    "tej": "Idromele etiope della casa, dolce e aromatico.",
+    "beer": "Asmara / Walia, bottiglia da 33 cl.",
+    "hibiscus": "Infuso ghiacciato di fiori di ibisco (karkadè).",
+    "ceremony": "Chicchi tostati davanti a voi, incenso, tre servizi. Per il tavolo.",
+    "bunna": "Caffè etiope corposo, servito in una piccola tazza.",
+    "chai": "Tè nero alle spezie, cardamomo e zenzero."
+  },
+
+  "about": {
+    "title": "La nostra storia",
+    "p1": "Savanna nasce dal desiderio di condividere, qui a Delémont, i sapori che hanno accompagnato la nostra infanzia in Eritrea ed Etiopia. Qui ogni piatto porta un ricordo: quello di una cucina tramandata di madre in figlia, di festa in festa.",
+    "quote": "«Da noi non si mangia ciascuno nel proprio piatto. Spezziamo l'injera insieme.»",
+    "p2": "Le nostre spezie arrivano direttamente dal paese d'origine. L'injera si prepara ogni mattina con lievito madre, e ogni wat sobbolle per ore fino a trovare il suo equilibrio. Niente ha fretta — è questo che fa la differenza.",
+    "p3": "La casa è a conduzione familiare. Forse sarete accolti da uno di noi, serviti da un altro, e ripartirete — lo speriamo — con la voglia di tornare.",
+    "team_eyebrow": "La casa",
+    "team_title": "Il nostro team",
+    "team_text": "Un piccolo team familiare in cucina e in sala, che condivide la stessa tavola fin dal primo giorno."
+  },
+
+  "reserve": {
+    "title": "Prenota un tavolo",
+    "sub": "Invia la tua richiesta — confermiamo per telefono entro 24 ore.",
+    "how_eyebrow": "In tre passi",
+    "how_title": "Come funziona",
+    "step1_t": "Invii la tua richiesta",
+    "step1_p": "Tramite questo modulo, in meno di un minuto.",
+    "step2_t": "Confermiamo",
+    "step2_p": "Per telefono entro 24 ore.",
+    "step3_t": "A presto da Savanna",
+    "step3_p": "Il tuo tavolo ti aspetta a Delémont.",
+    "callout": "Oppure chiamaci direttamente allo 032 422 73 10."
+  },
+
+  "contact": {
+    "title": "Contatti",
+    "sub": "Una domanda? Scrivici o vieni a trovarci a Delémont.",
+    "address": "Indirizzo",
+    "phone": "Telefono",
+    "hours": "Orari",
+    "hours_week": "Lun, Mer, Gio: 11:00–23:00",
+    "hours_weekend": "Ven, Sab: 10:30–01:30",
+    "hours_sun": "Dom: 10:00–23:00",
+    "closed": "Chiuso il martedì",
+    "address_label": "Il nostro indirizzo",
+    "phone_label": "Numero di telefono",
+    "maps": "Vedi su Google Maps →"
+  },
+
+  "gallery": { "title": "Galleria" },
+
+  "form": {
+    "name": "Nome completo",
+    "phone": "Telefono",
+    "email": "Email",
+    "date": "Data",
+    "time": "Ora",
+    "time_ph": "Scegli prima la data…",
+    "guests": "Numero di persone",
+    "guests_hint": "Per gruppi di più di 8 persone, chiamaci allo 032 422 73 10.",
+    "message": "Messaggio o richieste speciali",
+    "message_c": "Messaggio",
+    "optional": " (facoltativo)",
+    "message_ph": "Allergie, occasione, seggiolone…",
+    "submit": "Invia la richiesta",
+    "send": "Invia il messaggio"
+  },
+
+  "footer": {
+    "tagline": "Ristorante eritreo ed etiope & bar · Delémont",
+    "contact": "Contatti",
+    "hours": "Orari",
+    "hours_summary": "Lun–Dom, chiuso il martedì",
+    "reserve": "Prenota un tavolo →",
+    "rights": "Tutti i diritti riservati.",
+    "developed": "Sviluppato da:"
+  },
+
+  "lang": { "fr": "Français", "en": "English", "de": "Deutsch", "it": "Italiano" },
+
+  "js": {
+    "form_required": "Compila tutti i campi obbligatori.",
+    "res_tuesday": "Il martedì siamo chiusi.",
+    "sending": "Invio in corso…",
+    "res_success": "Grazie! Confermeremo la tua prenotazione per telefono entro 24 ore.",
+    "generic_error": "Si è verificato un errore. Riprova.",
+    "network_error": "Impossibile contattare il server. Riprova più tardi.",
+    "contact_required": "Compila tutti i campi.",
+    "contact_success": "Grazie! Il tuo messaggio è stato inviato.",
+    "slot_pick_date": "Scegli prima la data…",
+    "slot_closed": "Chiuso il martedì",
+    "slot_none": "Nessun orario",
+    "slot_choose": "Scegli…"
+  }
+}
