@@ -1,16 +1,19 @@
 {
-  "nav": { "menu": "Menu", "about": "About", "reserve": "Reserve", "contact": "Contact" },
-
-  "hero": {
-    "tagline": "Eritrean and Ethiopian cuisine · Delémont",
-    "cta": "Book a table"
+  "nav": {
+    "menu": "Menu",
+    "about": "About",
+    "reserve": "Reserve",
+    "contact": "Contact"
   },
-
+  "hero": {
+    "tagline": "Eritrean & Ethiopian cuisine",
+    "cta": "Book a table",
+    "place": "Delémont · Jura"
+  },
   "intro": {
     "text": "A family table in the heart of Delémont, where the recipes of Eritrea and Ethiopia are shared the way they are at home — injera in the middle, hands all around.",
     "more": "Read more →"
   },
-
   "dishes": {
     "eyebrow": "Our specialities",
     "title": "Signature dishes",
@@ -19,18 +22,21 @@
     "tibs": "Beef sautéed with onions, peppers and fresh rosemary.",
     "all": "See the full menu →"
   },
-
   "hours": {
     "eyebrow": "Hours",
     "title": "Visit us",
-    "closed": "Closed"
+    "closed": "Closed",
+    "late": "Open until 01:30"
   },
-
   "day": {
-    "mon": "Monday", "tue": "Tuesday", "wed": "Wednesday", "thu": "Thursday",
-    "fri": "Friday", "sat": "Saturday", "sun": "Sunday"
+    "mon": "Monday",
+    "tue": "Tuesday",
+    "wed": "Wednesday",
+    "thu": "Thursday",
+    "fri": "Friday",
+    "sat": "Saturday",
+    "sun": "Sunday"
   },
-
   "menu": {
     "title": "The menu",
     "sub": "Everything is shared. Injera is your plate and your cutlery — tear it, scoop, savour.",
@@ -40,11 +46,22 @@
       "veg": "Vegetarian dishes",
       "drinks": "Drinks",
       "coffee": "Traditional coffee"
+    },
+    "eyebrow": "To share",
+    "desc": {
+      "starters": "Where tradition begins.",
+      "meat": "The heart of our kitchen.",
+      "veg": "The garden, slowly simmered.",
+      "drinks": "To accompany the meal.",
+      "coffee": "The ceremony, served slowly."
     }
   },
-
-  "tag": { "veg": "Vegetarian", "vegan": "Vegan", "spicy": "Spicy", "share": "To share" },
-
+  "tag": {
+    "veg": "Vegetarian",
+    "vegan": "Vegan",
+    "spicy": "Spicy",
+    "share": "To share"
+  },
   "dish": {
     "sambusa": "Crisp pastries filled with spiced lentils.",
     "timatim": "Tomato, onion and green chilli salad, lemon dressing.",
@@ -64,7 +81,6 @@
     "bunna": "Bold Ethiopian coffee, served in a small cup.",
     "chai": "Spiced black tea with cardamom and ginger."
   },
-
   "about": {
     "title": "Our story",
     "p1": "Savanna was born from a wish to share, here in Delémont, the flavours that shaped our childhood in Eritrea and Ethiopia. Every dish carries a memory: a cuisine passed from mother to daughter, from feast to feast.",
@@ -73,9 +89,9 @@
     "p3": "The house is family-run. You may be welcomed by one of us, served by another, and leave — we hope — already wanting to come back.",
     "team_eyebrow": "The house",
     "team_title": "Our team",
-    "team_text": "A small family team in the kitchen and the dining room, sharing the same table since day one."
+    "team_text": "A small family team in the kitchen and the dining room, sharing the same table since day one.",
+    "eyebrow": "Family & cuisine"
   },
-
   "reserve": {
     "title": "Book a table",
     "sub": "Send your request — we'll confirm by phone within 24 hours.",
@@ -89,7 +105,6 @@
     "step3_p": "Your table is waiting in Delémont.",
     "callout": "Or call us directly on 032 422 73 10."
   },
-
   "contact": {
     "title": "Contact",
     "sub": "A question? Write to us or come by in Delémont.",
@@ -102,11 +117,13 @@
     "closed": "Closed on Tuesday",
     "address_label": "Our address",
     "phone_label": "Phone number",
-    "maps": "View on Google Maps →"
+    "maps": "View on Google Maps →",
+    "eyebrow": "Get in touch"
   },
-
-  "gallery": { "title": "Gallery" },
-
+  "gallery": {
+    "title": "Gallery",
+    "eyebrow": "In pictures"
+  },
   "form": {
     "name": "Full name",
     "phone": "Phone",
@@ -123,7 +140,6 @@
     "submit": "Send request",
     "send": "Send message"
   },
-
   "footer": {
     "tagline": "Eritrean and Ethiopian restaurant & bar · Delémont",
     "contact": "Contact",
@@ -131,11 +147,19 @@
     "hours_summary": "Mon–Sun, closed on Tuesday",
     "reserve": "Book a table →",
     "rights": "All rights reserved.",
-    "developed": "Developed by:"
+    "developed": "Developed by:",
+    "visit": "Visit us",
+    "explore": "Explore",
+    "hours_week": "Mon · Wed · Thu — 11:00–23:00",
+    "hours_weekend": "Fri · Sat — 10:30–01:30",
+    "hours_sun": "Sun — 10:00–23:00 · Tue closed"
   },
-
-  "lang": { "fr": "Français", "en": "English", "de": "Deutsch", "it": "Italiano" },
-
+  "lang": {
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "it": "Italiano"
+  },
   "js": {
     "form_required": "Please fill in all required fields.",
     "res_tuesday": "We are closed on Tuesdays.",

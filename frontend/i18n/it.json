@@ -2,19 +2,21 @@
   "_meta": {
     "review": "TODO: machine-drafted Italian translation — have a native speaker review before launch. Dish names kept in the original; only descriptions translated."
   },
-
-  "nav": { "menu": "Menu", "about": "Chi siamo", "reserve": "Prenotare", "contact": "Contatti" },
-
-  "hero": {
-    "tagline": "Cucina eritrea ed etiope · Delémont",
-    "cta": "Prenota un tavolo"
+  "nav": {
+    "menu": "Menu",
+    "about": "Chi siamo",
+    "reserve": "Prenotare",
+    "contact": "Contatti"
   },
-
+  "hero": {
+    "tagline": "Cucina eritrea ed etiope",
+    "cta": "Prenota un tavolo",
+    "place": "Delémont · Jura"
+  },
   "intro": {
     "text": "Una tavola di famiglia nel cuore di Delémont, dove le ricette dell'Eritrea e dell'Etiopia si condividono come a casa — l'injera al centro, le mani intorno.",
     "more": "Scopri di più →"
   },
-
   "dishes": {
     "eyebrow": "Le nostre specialità",
     "title": "Piatti signature",
@@ -23,18 +25,21 @@
     "tibs": "Manzo saltato con cipolle, peperoni e rosmarino fresco.",
     "all": "Vedi tutto il menu →"
   },
-
   "hours": {
     "eyebrow": "Orari",
     "title": "Vieni a trovarci",
-    "closed": "Chiuso"
+    "closed": "Chiuso",
+    "late": "Aperto fino all'01:30"
   },
-
   "day": {
-    "mon": "Lunedì", "tue": "Martedì", "wed": "Mercoledì", "thu": "Giovedì",
-    "fri": "Venerdì", "sat": "Sabato", "sun": "Domenica"
+    "mon": "Lunedì",
+    "tue": "Martedì",
+    "wed": "Mercoledì",
+    "thu": "Giovedì",
+    "fri": "Venerdì",
+    "sat": "Sabato",
+    "sun": "Domenica"
   },
-
   "menu": {
     "title": "Il menu",
     "sub": "Tutto si condivide. L'injera fa da piatto e da posate — spezzala, raccogli, assapora.",
@@ -44,11 +49,22 @@
       "veg": "Piatti vegetariani",
       "drinks": "Bevande",
       "coffee": "Caffè tradizionale"
+    },
+    "eyebrow": "Da condividere",
+    "desc": {
+      "starters": "Dove inizia la tradizione.",
+      "meat": "Il cuore della nostra cucina.",
+      "veg": "L'orto, cotto con pazienza.",
+      "drinks": "Per accompagnare il pasto.",
+      "coffee": "La cerimonia, servita lentamente."
     }
   },
-
-  "tag": { "veg": "Vegetariano", "vegan": "Vegano", "spicy": "Piccante", "share": "Da condividere" },
-
+  "tag": {
+    "veg": "Vegetariano",
+    "vegan": "Vegano",
+    "spicy": "Piccante",
+    "share": "Da condividere"
+  },
   "dish": {
     "sambusa": "Fagottini croccanti con lenticchie speziate.",
     "timatim": "Insalata di pomodori, cipolle e peperoncino verde, condimento al limone.",
@@ -68,7 +84,6 @@
     "bunna": "Caffè etiope corposo, servito in una piccola tazza.",
     "chai": "Tè nero alle spezie, cardamomo e zenzero."
   },
-
   "about": {
     "title": "La nostra storia",
     "p1": "Savanna nasce dal desiderio di condividere, qui a Delémont, i sapori che hanno accompagnato la nostra infanzia in Eritrea ed Etiopia. Qui ogni piatto porta un ricordo: quello di una cucina tramandata di madre in figlia, di festa in festa.",
@@ -77,9 +92,9 @@
     "p3": "La casa è a conduzione familiare. Forse sarete accolti da uno di noi, serviti da un altro, e ripartirete — lo speriamo — con la voglia di tornare.",
     "team_eyebrow": "La casa",
     "team_title": "Il nostro team",
-    "team_text": "Un piccolo team familiare in cucina e in sala, che condivide la stessa tavola fin dal primo giorno."
+    "team_text": "Un piccolo team familiare in cucina e in sala, che condivide la stessa tavola fin dal primo giorno.",
+    "eyebrow": "Famiglia e cucina"
   },
-
   "reserve": {
     "title": "Prenota un tavolo",
     "sub": "Invia la tua richiesta — confermiamo per telefono entro 24 ore.",
@@ -93,7 +108,6 @@
     "step3_p": "Il tuo tavolo ti aspetta a Delémont.",
     "callout": "Oppure chiamaci direttamente allo 032 422 73 10."
   },
-
   "contact": {
     "title": "Contatti",
     "sub": "Una domanda? Scrivici o vieni a trovarci a Delémont.",
@@ -106,11 +120,13 @@
     "closed": "Chiuso il martedì",
     "address_label": "Il nostro indirizzo",
     "phone_label": "Numero di telefono",
-    "maps": "Vedi su Google Maps →"
+    "maps": "Vedi su Google Maps →",
+    "eyebrow": "Contattaci"
   },
-
-  "gallery": { "title": "Galleria" },
-
+  "gallery": {
+    "title": "Galleria",
+    "eyebrow": "In immagini"
+  },
   "form": {
     "name": "Nome completo",
     "phone": "Telefono",
@@ -127,7 +143,6 @@
     "submit": "Invia la richiesta",
     "send": "Invia il messaggio"
   },
-
   "footer": {
     "tagline": "Ristorante eritreo ed etiope & bar · Delémont",
     "contact": "Contatti",
@@ -135,11 +150,19 @@
     "hours_summary": "Lun–Dom, chiuso il martedì",
     "reserve": "Prenota un tavolo →",
     "rights": "Tutti i diritti riservati.",
-    "developed": "Sviluppato da:"
+    "developed": "Sviluppato da:",
+    "visit": "Vieni a trovarci",
+    "explore": "Esplora",
+    "hours_week": "Lun · Mer · Gio — 11:00–23:00",
+    "hours_weekend": "Ven · Sab — 10:30–01:30",
+    "hours_sun": "Dom — 10:00–23:00 · Mar chiuso"
   },
-
-  "lang": { "fr": "Français", "en": "English", "de": "Deutsch", "it": "Italiano" },
-
+  "lang": {
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "it": "Italiano"
+  },
   "js": {
     "form_required": "Compila tutti i campi obbligatori.",
     "res_tuesday": "Il martedì siamo chiusi.",

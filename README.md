@@ -4,6 +4,8 @@ Website for Savanna, a family-run Eritrean & Ethiopian restaurant in Delémont (
 
 - **Frontend** — static HTML/CSS/JS, no framework. **4 languages** (FR default · EN · DE · IT)
   with path-based routing (`/fr/`, `/en/`, `/de/`, `/it/`) and localized slugs.
+  Aesthetic is *elegant · moody · luxurious* (dual-mode dark/light sections, slow motion) —
+  see [DESIGN.md](DESIGN.md) for the full visual/motion spec.
 - **Backend** — FastAPI reservation + contact service. Sends the owner an email and a
   WhatsApp message, and emails the customer a confirmation **in their language**.
   **No database** — reservations live in the owner's inbox and WhatsApp history.

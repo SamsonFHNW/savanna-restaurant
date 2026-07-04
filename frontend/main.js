@@ -69,21 +69,42 @@
     return out;
   }
 
-  /* ═══ Navigation (scroll + hamburger) ═══ */
+  /* ═══ Shared motion capabilities ═══ */
+  var REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var FINE_POINTER = window.matchMedia('(pointer: fine)').matches;
+
+  /* ═══ Adaptive navigation (colour + solidity from the section behind) ═══ */
   var header = document.getElementById('site-header');
   var isHome = header && header.hasAttribute('data-home');
-  if (isHome) {
-    var lastSolid = false;
-    var onScroll = function () {
-      var solid = window.scrollY > 80;
-      if (solid !== lastSolid) {
-        header.classList.toggle('site-header--solid', solid);
-        header.classList.toggle('site-header--over-hero', !solid);
-        lastSolid = solid;
-      }
+  if (header) {
+    var hero = document.querySelector('.hero');
+    // Which theme sits under the nav line right now?
+    var themed = Array.prototype.slice.call(document.querySelectorAll('[data-theme]'));
+    var navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height'), 10) || 72;
+
+    function setNavTheme(theme) {
+      header.classList.toggle('on-dark', theme === 'dark');
+      header.classList.toggle('on-light', theme === 'light');
+    }
+    // Observe each themed section; the one crossing the nav band wins.
+    if ('IntersectionObserver' in window && themed.length) {
+      var navObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) setNavTheme(e.target.getAttribute('data-theme'));
+        });
+      }, { rootMargin: '-' + (navH / 2) + 'px 0px -' + (window.innerHeight - navH / 2 - 1) + 'px 0px', threshold: 0 });
+      themed.forEach(function (s) { navObserver.observe(s); });
+    }
+    // Solid background once we've scrolled past the hero; interior pages are solid from the top.
+    var lastSolid = null;
+    var onNavScroll = function () {
+      var solid = hero ? window.scrollY > (hero.offsetHeight - navH) : true;
+      if (solid !== lastSolid) { header.classList.toggle('is-solid', solid); lastSolid = solid; }
     };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    window.addEventListener('scroll', onNavScroll, { passive: true });
+    // Seed the initial theme: hero (dark) on home, else the first themed section.
+    setNavTheme(isHome ? 'dark' : (themed[0] ? themed[0].getAttribute('data-theme') : 'light'));
+    onNavScroll();
   }
 
   var navToggle = document.getElementById('nav-toggle');
@@ -137,6 +158,9 @@
   }
   function applyDict(dict) {
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      // Skip elements we've split into word-spans for the hero entrance —
+      // rewriting textContent would destroy the animation markup.
+      if (el.hasAttribute('data-words')) return;
       var val = getNested(dict, el.getAttribute('data-i18n'));
       if (val != null) el.textContent = val;
     });
@@ -312,6 +336,147 @@
       else if (isThumb && img.src.indexOf('dish-placeholder') === -1) img.src = PLACEHOLDER;
     }
   });
+
+  /* ═══ Hero entrance — split the title into word-spans and animate ═══ */
+  document.querySelectorAll('[data-words]').forEach(function (el) {
+    var words = el.textContent.trim().split(/\s+/);
+    el.textContent = '';
+    words.forEach(function (w, i) {
+      var outer = document.createElement('span');
+      outer.className = 'word';
+      var inner = document.createElement('span');
+      inner.textContent = w;
+      inner.style.setProperty('--word-delay', (i * 100) + 'ms');
+      outer.appendChild(inner);
+      el.appendChild(outer);
+      if (i < words.length - 1) el.appendChild(document.createTextNode(' '));
+    });
+    // Trigger on next frame so the initial hidden state paints first.
+    requestAnimationFrame(function () { el.classList.add('words-in'); });
+  });
+
+  /* ═══ Scroll-triggered reveals (IntersectionObserver, once, staggered) ═══ */
+  (function () {
+    var groups = document.querySelectorAll('[data-reveal]');
+    var singles = document.querySelectorAll('.reveal');
+    // Stagger direct-child reveals inside a [data-reveal] container by ~80ms.
+    groups.forEach(function (group) {
+      var items = group.querySelectorAll('.reveal');
+      items.forEach(function (item, i) {
+        if (!item.style.getPropertyValue('--reveal-delay')) {
+          item.style.setProperty('--reveal-delay', (i * 80) + 'ms');
+        }
+      });
+    });
+    if (REDUCED || !('IntersectionObserver' in window)) {
+      singles.forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.2 });
+    singles.forEach(function (el) { io.observe(el); });
+  })();
+
+  /* ═══ Hero parallax — image scrolls 20% slower than the page ═══ */
+  (function () {
+    if (REDUCED) return;
+    var layer = document.querySelector('.hero__parallax');
+    if (!layer) return;
+    var ticking = false;
+    function update() {
+      layer.style.transform = 'translate3d(0,' + (window.scrollY * 0.2) + 'px,0)';
+      ticking = false;
+    }
+    window.addEventListener('scroll', function () {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+  })();
+
+  /* ═══ Menu — active chapter in the sticky sub-nav ═══ */
+  (function () {
+    var chapters = document.querySelectorAll('.menu-chapter[id]');
+    var links = document.querySelectorAll('.menu-nav__list a');
+    if (!chapters.length || !links.length || !('IntersectionObserver' in window)) return;
+    var byId = {};
+    links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+    var mio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          links.forEach(function (a) { a.classList.remove('is-active'); });
+          var a = byId[e.target.id];
+          if (a) a.classList.add('is-active');
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+    chapters.forEach(function (c) { mio.observe(c); });
+  })();
+
+  /* ═══ Custom cursor (desktop pointer devices only) ═══ */
+  (function () {
+    if (REDUCED || !FINE_POINTER) return;
+    var dot = document.createElement('div'); dot.className = 'cursor-dot';
+    var ring = document.createElement('div'); ring.className = 'cursor-ring';
+    dot.style.opacity = '0'; ring.style.opacity = '0';   // hidden until the pointer first moves
+    document.body.appendChild(dot); document.body.appendChild(ring);
+    document.body.classList.add('has-cursor');
+    var rx = 0, ry = 0, dx = 0, dy = 0, raf, shown = false;
+    document.addEventListener('mousemove', function (e) {
+      dx = e.clientX; dy = e.clientY;
+      if (!shown) { dot.style.opacity = '1'; ring.style.opacity = '1'; shown = true; }
+      dot.style.transform = 'translate(' + dx + 'px,' + dy + 'px) translate(-50%,-50%)';
+      if (!raf) raf = requestAnimationFrame(follow);
+    });
+    function follow() {
+      rx += (dx - rx) * 0.2; ry += (dy - ry) * 0.2;
+      ring.style.transform = 'translate(' + rx + 'px,' + ry + 'px) translate(-50%,-50%)';
+      raf = (Math.abs(dx - rx) > 0.1 || Math.abs(dy - ry) > 0.1) ? requestAnimationFrame(follow) : null;
+    }
+    var INTERACTIVE = 'a, button, input, select, textarea, [role="menuitem"], .dish-card, .masonry img';
+    document.addEventListener('mouseover', function (e) {
+      if (e.target.closest(INTERACTIVE)) ring.classList.add('is-hover');
+    });
+    document.addEventListener('mouseout', function (e) {
+      if (e.target.closest(INTERACTIVE)) ring.classList.remove('is-hover');
+    });
+  })();
+
+  /* ═══ Page transitions — fade to espresso, then navigate (no framework) ═══ */
+  (function () {
+    var root = document.documentElement;
+    root.classList.add('js-fade');
+    var overlay = document.createElement('div'); overlay.className = 'page-fade';
+    document.body.appendChild(overlay);
+
+    // Fade the new page up from dark on arrival.
+    requestAnimationFrame(function () { document.body.classList.add('is-ready'); });
+    // Restore state if the page is served from the bfcache (back/forward).
+    window.addEventListener('pageshow', function (e) {
+      if (e.persisted) { overlay.classList.remove('is-leaving'); document.body.classList.add('is-ready'); }
+    });
+    if (REDUCED) return;
+
+    function isInternal(a) {
+      if (!a || !a.href) return false;
+      if (a.target === '_blank' || a.hasAttribute('download')) return false;
+      if (a.getAttribute('href').indexOf('#') === 0) return false;
+      if (a.dataset.noTransition != null) return false;
+      var url = new URL(a.href, location.href);
+      if (url.origin !== location.origin) return false;
+      if (url.pathname === location.pathname && url.hash) return false; // same-page anchor
+      return url.protocol === 'http:' || url.protocol === 'https:';
+    }
+    document.addEventListener('click', function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+      var a = e.target.closest('a');
+      if (!isInternal(a)) return;
+      e.preventDefault();
+      overlay.classList.add('is-leaving');
+      setTimeout(function () { window.location.href = a.href; }, 300);
+    });
+  })();
 
   /* ═══ Load the current language dict (dynamic strings + safety re-apply) ═══ */
   fetch('/i18n/' + currentLang + '.json')

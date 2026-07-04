@@ -1,16 +1,19 @@
 {
-  "nav": { "menu": "Menu", "about": "À propos", "reserve": "Réserver", "contact": "Contact" },
-
-  "hero": {
-    "tagline": "Cuisine érythréenne et éthiopienne · Delémont",
-    "cta": "Réserver une table"
+  "nav": {
+    "menu": "Menu",
+    "about": "À propos",
+    "reserve": "Réserver",
+    "contact": "Contact"
   },
-
+  "hero": {
+    "tagline": "Cuisine érythréenne et éthiopienne",
+    "cta": "Réserver une table",
+    "place": "Delémont · Jura"
+  },
   "intro": {
     "text": "Une table familiale au cœur de Delémont, où les recettes de l'Érythrée et de l'Éthiopie se partagent comme à la maison — l'injera au centre, les mains autour.",
     "more": "En savoir plus →"
   },
-
   "dishes": {
     "eyebrow": "Nos spécialités",
     "title": "Plats signature",
@@ -19,18 +22,21 @@
     "tibs": "Bœuf sauté aux oignons, poivrons et romarin frais.",
     "all": "Voir toute la carte →"
   },
-
   "hours": {
     "eyebrow": "Horaires",
     "title": "Nous rendre visite",
-    "closed": "Fermé"
+    "closed": "Fermé",
+    "late": "Ouvert jusqu'à 01h30"
   },
-
   "day": {
-    "mon": "Lundi", "tue": "Mardi", "wed": "Mercredi", "thu": "Jeudi",
-    "fri": "Vendredi", "sat": "Samedi", "sun": "Dimanche"
+    "mon": "Lundi",
+    "tue": "Mardi",
+    "wed": "Mercredi",
+    "thu": "Jeudi",
+    "fri": "Vendredi",
+    "sat": "Samedi",
+    "sun": "Dimanche"
   },
-
   "menu": {
     "title": "La carte",
     "sub": "Tout se partage. L'injera tient lieu d'assiette et de couverts — rompez-la, saisissez, savourez.",
@@ -40,11 +46,22 @@
       "veg": "Plats végétariens",
       "drinks": "Boissons",
       "coffee": "Café traditionnel"
+    },
+    "eyebrow": "À partager",
+    "desc": {
+      "starters": "La tradition commence ici.",
+      "meat": "Le cœur de notre cuisine.",
+      "veg": "Le jardin, mijoté avec patience.",
+      "drinks": "Pour accompagner le repas.",
+      "coffee": "La cérémonie, servie lentement."
     }
   },
-
-  "tag": { "veg": "Végétarien", "vegan": "Végan", "spicy": "Épicé", "share": "À partager" },
-
+  "tag": {
+    "veg": "Végétarien",
+    "vegan": "Végan",
+    "spicy": "Épicé",
+    "share": "À partager"
+  },
   "dish": {
     "sambusa": "Feuilletés croustillants aux lentilles épicées.",
     "timatim": "Salade de tomates, oignons et piment vert, vinaigrette citronnée.",
@@ -64,7 +81,6 @@
     "bunna": "Café éthiopien corsé, servi en petite tasse.",
     "chai": "Thé noir aux épices, cardamome et gingembre."
   },
-
   "about": {
     "title": "Notre histoire",
     "p1": "Savanna est né du désir de partager, à Delémont, les saveurs qui ont bercé notre enfance en Érythrée et en Éthiopie. Ici, chaque plat porte une mémoire : celle d'une cuisine transmise de mère en fille, de fête en fête.",
@@ -73,9 +89,9 @@
     "p3": "La maison est tenue en famille. Vous serez peut-être accueilli par l'un d'entre nous, servi par un autre, et repartirez, on l'espère, avec l'envie de revenir.",
     "team_eyebrow": "La maison",
     "team_title": "Notre équipe",
-    "team_text": "Une petite équipe familiale en cuisine et en salle, qui partage la même table depuis le premier jour."
+    "team_text": "Une petite équipe familiale en cuisine et en salle, qui partage la même table depuis le premier jour.",
+    "eyebrow": "Famille & cuisine"
   },
-
   "reserve": {
     "title": "Réserver une table",
     "sub": "Envoyez votre demande — nous vous confirmons par téléphone dans les 24 heures.",
@@ -89,7 +105,6 @@
     "step3_p": "Votre table vous attend à Delémont.",
     "callout": "Ou appelez-nous directement au 032 422 73 10."
   },
-
   "contact": {
     "title": "Contact",
     "sub": "Une question ? Écrivez-nous ou passez nous voir à Delémont.",
@@ -102,11 +117,13 @@
     "closed": "Fermé le mardi",
     "address_label": "Notre adresse",
     "phone_label": "Numéro de téléphone",
-    "maps": "Voir sur Google Maps →"
+    "maps": "Voir sur Google Maps →",
+    "eyebrow": "Nous contacter"
   },
-
-  "gallery": { "title": "Galerie" },
-
+  "gallery": {
+    "title": "Galerie",
+    "eyebrow": "En images"
+  },
   "form": {
     "name": "Nom complet",
     "phone": "Téléphone",
@@ -123,7 +140,6 @@
     "submit": "Envoyer la demande",
     "send": "Envoyer le message"
   },
-
   "footer": {
     "tagline": "Restaurant érythréen et éthiopien & bar · Delémont",
     "contact": "Contact",
@@ -131,11 +147,19 @@
     "hours_summary": "Lun–Dim, fermé le mardi",
     "reserve": "Réserver une table →",
     "rights": "Tous droits réservés.",
-    "developed": "Développé par :"
+    "developed": "Développé par :",
+    "visit": "Nous rendre visite",
+    "explore": "Explorer",
+    "hours_week": "Lun · Mer · Jeu — 11:00–23:00",
+    "hours_weekend": "Ven · Sam — 10:30–01:30",
+    "hours_sun": "Dim — 10:00–23:00 · Mar fermé"
   },
-
-  "lang": { "fr": "Français", "en": "English", "de": "Deutsch", "it": "Italiano" },
-
+  "lang": {
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "it": "Italiano"
+  },
   "js": {
     "form_required": "Veuillez remplir tous les champs obligatoires.",
     "res_tuesday": "Nous sommes fermés le mardi.",

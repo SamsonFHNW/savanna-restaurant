@@ -8,8 +8,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css?v=0ecf503f">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css?v=f3dfeb7a">
   <link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/menu">
   <link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/menu">
   <link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/menu">
@@ -18,7 +18,7 @@
 </head>
 <body class="page-interior">
 
-  <header class="site-header site-header--solid" id="site-header">
+  <header class="site-header" id="site-header">
     <nav class="nav" aria-label="Navigation principale">
       <a href="index.html" class="nav__logo" aria-label="Savanna — Accueil">Savanna</a>
       <button class="nav__hamburger" id="nav-toggle" aria-expanded="false" aria-controls="nav-cluster" aria-label="Ouvrir le menu">
@@ -47,22 +47,23 @@
     </nav>
   </header>
 
-  <main>
-    <div class="page-header">
+  <main class="menu-main">
+    <div class="page-header" data-theme="light">
       <div class="container">
-        <h1 class="page-header__title" data-i18n="menu.title">Il menu</h1>
+        <span class="caption" data-i18n="menu.eyebrow">Da condividere</span>
+        <h1 class="page-header__title" style="margin-top: 18px;" data-i18n="menu.title">Il menu</h1>
         <p class="page-header__sub" data-i18n="menu.sub">Tutto si condivide. L'injera fa da piatto e da posate — spezzala, raccogli, assapora.</p>
       </div>
     </div>
 
     <!-- Gallery strip -->
     <div class="container">
-      <div class="menu-gallery">
+      <div class="menu-gallery" data-reveal>
         <!-- TODO: replace with real dish photos -->
-        <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=480&q=75" alt="Plateau d'injera" loading="lazy" width="480" height="480">
-        <img src="https://images.unsplash.com/photo-1567364816519-cbc9c4ceb4cc?w=480&q=75" alt="Doro Wat" loading="lazy" width="480" height="480">
-        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=480&q=75" alt="Assortiment végétarien" loading="lazy" width="480" height="480">
-        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=480&q=75" alt="Café traditionnel" loading="lazy" width="480" height="480">
+        <img class="reveal" src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=480&q=75" alt="Plateau d'injera" loading="lazy" width="480" height="480">
+        <img class="reveal" src="https://images.unsplash.com/photo-1567364816519-cbc9c4ceb4cc?w=480&q=75" alt="Doro Wat" loading="lazy" width="480" height="480">
+        <img class="reveal" src="https://images.unsplash.com/photo-1547592180-85f173990554?w=480&q=75" alt="Assortiment végétarien" loading="lazy" width="480" height="480">
+        <img class="reveal" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=480&q=75" alt="Café traditionnel" loading="lazy" width="480" height="480">
       </div>
     </div>
 
@@ -85,236 +86,301 @@
         · Unsplash URLs = warm-toned stand-ins matching the dish (TODO: replace)
         · assets/dish-placeholder.svg = neutral cream placeholder, no matching stock photo (TODO: add real photo)
     -->
-    <div class="container">
-      <!-- Entrées -->
-      <section class="menu-chapter" id="entrees">
-        <h2 class="menu-chapter__title" data-i18n="menu.cat.starters">Antipasti</h2>
 
-        <div class="menu-item">
-          <!-- TODO: add real photo of Sambusa -->
-          <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
-            alt="Sambusa — pâtisserie croustillante aux lentilles épicées" loading="lazy" width="80" height="80">
-          <div class="menu-item__head">
-            <span class="menu-item__name">Sambusa</span>
-            <span class="tag" data-i18n="tag.veg">Vegetariano</span>
+    <!-- Entrées -->
+    <section class="menu-chapter" id="entrees">
+      <div class="menu-chapter__banner" data-theme="dark">
+        <div class="container" data-reveal>
+          <h2 class="menu-chapter__title reveal" data-i18n="menu.cat.starters">Antipasti</h2>
+          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.starters">Dove inizia la tradizione.</p>
+        </div>
+      </div>
+      <div class="menu-list" data-theme="light">
+        <div class="container">
+          <div class="menu-item">
+            <!-- TODO: add real photo of Sambusa -->
+            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
+              alt="Sambusa — pâtisserie croustillante aux lentilles épicées" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Sambusa</span>
+              <span class="tag" data-i18n="tag.veg">Vegetariano</span>
+            </div>
+            <span class="menu-item__price">CHF 9</span>
+            <p class="menu-item__desc" data-i18n="dish.sambusa">Fagottini croccanti con lenticchie speziate.</p>
           </div>
-          <span class="menu-item__price">CHF 9</span>
-          <p class="menu-item__desc" data-i18n="dish.sambusa">Fagottini croccanti con lenticchie speziate.</p>
-        </div>
 
-        <div class="menu-item">
-          <!-- TODO: add real photo of Timatim Salata -->
-          <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
-            alt="Timatim Salata — salade de tomates, oignons et piment vert" loading="lazy" width="80" height="80">
-          <div class="menu-item__head">
-            <span class="menu-item__name">Timatim Salata</span>
-            <span class="tag" data-i18n="tag.vegan">Vegano</span>
+          <div class="menu-item">
+            <!-- TODO: add real photo of Timatim Salata -->
+            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
+              alt="Timatim Salata — salade de tomates, oignons et piment vert" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Timatim Salata</span>
+              <span class="tag" data-i18n="tag.vegan">Vegano</span>
+            </div>
+            <span class="menu-item__price">CHF 10</span>
+            <p class="menu-item__desc" data-i18n="dish.timatim">Insalata di pomodori, cipolle e peperoncino verde, condimento al limone.</p>
           </div>
-          <span class="menu-item__price">CHF 10</span>
-          <p class="menu-item__desc" data-i18n="dish.timatim">Insalata di pomodori, cipolle e peperoncino verde, condimento al limone.</p>
-        </div>
 
-        <div class="menu-item">
-          <!-- TODO: add real photo of Full Medames -->
-          <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
-            alt="Full Medames — fèves mijotées à la tomate et à l'oignon" loading="lazy" width="80" height="80">
-          <div class="menu-item__head">
-            <span class="menu-item__name">Full Medames</span>
-            <span class="tag" data-i18n="tag.vegan">Vegano</span>
+          <div class="menu-item">
+            <!-- TODO: add real photo of Full Medames -->
+            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
+              alt="Full Medames — fèves mijotées à la tomate et à l'oignon" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Full Medames</span>
+              <span class="tag" data-i18n="tag.vegan">Vegano</span>
+            </div>
+            <span class="menu-item__price">CHF 12</span>
+            <p class="menu-item__desc" data-i18n="dish.full">Fave stufate, pomodoro, cipolla e olio d'oliva, pane caldo.</p>
           </div>
-          <span class="menu-item__price">CHF 12</span>
-          <p class="menu-item__desc" data-i18n="dish.full">Fave stufate, pomodoro, cipolla e olio d'oliva, pane caldo.</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Plats de viande -->
-      <section class="menu-chapter" id="viande">
-        <h2 class="menu-chapter__title" data-i18n="menu.cat.meat">Piatti di carne</h2>
-
-        <div class="menu-item">
-          <!-- TODO: add real photo of Doro Wat (signature dish — no working stock stand-in) -->
-          <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
-            alt="Doro Wat — ragoût de poulet mijoté au berbère sur injera" loading="lazy" width="80" height="80">
-          <div class="menu-item__head">
-            <span class="menu-item__name">Doro Wat</span>
-            <span class="tag" data-i18n="tag.spicy">Piccante</span>
+    <!-- Plats de viande -->
+    <section class="menu-chapter" id="viande">
+      <div class="menu-chapter__banner" data-theme="dark">
+        <div class="container" data-reveal>
+          <h2 class="menu-chapter__title reveal" data-i18n="menu.cat.meat">Piatti di carne</h2>
+          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.meat">Il cuore della nostra cucina.</p>
+        </div>
+      </div>
+      <div class="menu-list" data-theme="light">
+        <div class="container">
+          <div class="menu-item">
+            <!-- TODO: add real photo of Doro Wat (signature dish — no working stock stand-in) -->
+            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
+              alt="Doro Wat — ragoût de poulet mijoté au berbère sur injera" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Doro Wat</span>
+              <span class="tag" data-i18n="tag.spicy">Piccante</span>
+            </div>
+            <span class="menu-item__price">CHF 28</span>
+            <p class="menu-item__desc" data-i18n="dish.doro">Stufato di pollo cotto nel berbere, uovo sodo, su injera.</p>
           </div>
-          <span class="menu-item__price">CHF 28</span>
-          <p class="menu-item__desc" data-i18n="dish.doro">Stufato di pollo cotto nel berbere, uovo sodo, su injera.</p>
-        </div>
 
-        <div class="menu-item">
-          <!-- TODO: replace Unsplash stand-in with real photo of Kitfo -->
-          <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=160&q=75"
-            alt="Kitfo — tartare de bœuf au mitmita et niter kibbeh" loading="lazy" width="80" height="80">
-          <div class="menu-item__head">
-            <span class="menu-item__name">Kitfo</span>
-            <span class="tag" data-i18n="tag.spicy">Piccante</span>
+          <div class="menu-item">
+            <!-- TODO: replace Unsplash stand-in with real photo of Kitfo -->
+            <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=160&q=75"
+              alt="Kitfo — tartare de bœuf au mitmita et niter kibbeh" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Kitfo</span>
+              <span class="tag" data-i18n="tag.spicy">Piccante</span>
+            </div>
+            <span class="menu-item__price">CHF 30</span>
+            <p class="menu-item__desc" data-i18n="dish.kitfo">Tartare di manzo con mitmita e niter kibbeh, servita tiepida.</p>
           </div>
-          <span class="menu-item__price">CHF 30</span>
-          <p class="menu-item__desc" data-i18n="dish.kitfo">Tartare di manzo con mitmita e niter kibbeh, servita tiepida.</p>
-        </div>
 
-        <div class="menu-item">
-          <!-- TODO: replace Unsplash stand-in with real photo of Tibs -->
-          <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=160&q=75"
-            alt="Tibs — bœuf sauté aux oignons et poivrons" loading="lazy" width="80" height="80">
-          <div class="menu-item__head">
-            <span class="menu-item__name">Tibs</span>
+          <div class="menu-item">
+            <!-- TODO: replace Unsplash stand-in with real photo of Tibs -->
+            <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=160&q=75"
+              alt="Tibs — bœuf sauté aux oignons et poivrons" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Tibs</span>
+            </div>
+            <span class="menu-item__price">CHF 28</span>
+            <p class="menu-item__desc" data-i18n="dish.tibs">Manzo saltato con cipolle, peperoni e rosmarino fresco.</p>
           </div>
-          <span class="menu-item__price">CHF 28</span>
-          <p class="menu-item__desc" data-i18n="dish.tibs">Manzo saltato con cipolle, peperoni e rosmarino fresco.</p>
-        </div>
 
-        <div class="menu-item">
-          <!-- TODO: add real photo of Zilzil Tibs -->
-          <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
-            alt="Zilzil Tibs — fines lanières de bœuf marinées et saisies" loading="lazy" width="80" height="80">
-          <div class="menu-item__head">
-            <span class="menu-item__name">Zilzil Tibs</span>
+          <div class="menu-item">
+            <!-- TODO: add real photo of Zilzil Tibs -->
+            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
+              alt="Zilzil Tibs — fines lanières de bœuf marinées et saisies" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Zilzil Tibs</span>
+            </div>
+            <span class="menu-item__price">CHF 29</span>
+            <p class="menu-item__desc" data-i18n="dish.zilzil">Sottili striscioline di manzo marinate, scottate al momento.</p>
           </div>
-          <span class="menu-item__price">CHF 29</span>
-          <p class="menu-item__desc" data-i18n="dish.zilzil">Sottili striscioline di manzo marinate, scottate al momento.</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Plats végétariens -->
-      <section class="menu-chapter" id="vegetarien">
-        <h2 class="menu-chapter__title" data-i18n="menu.cat.veg">Piatti vegetariani</h2>
-
-        <div class="menu-item">
-          <!-- TODO: replace Unsplash stand-in with real photo of Shiro -->
-          <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1547592180-85f173990554?w=160&q=75"
-            alt="Shiro — purée de pois chiches parfumée au berbère" loading="lazy" width="80" height="80">
-          <div class="menu-item__head">
-            <span class="menu-item__name">Shiro</span>
-            <span class="tag" data-i18n="tag.vegan">Vegano</span>
+    <!-- Plats végétariens -->
+    <section class="menu-chapter" id="vegetarien">
+      <div class="menu-chapter__banner" data-theme="dark">
+        <div class="container" data-reveal>
+          <h2 class="menu-chapter__title reveal" data-i18n="menu.cat.veg">Piatti vegetariani</h2>
+          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.veg">L'orto, cotto con pazienza.</p>
+        </div>
+      </div>
+      <div class="menu-list" data-theme="light">
+        <div class="container">
+          <div class="menu-item">
+            <!-- TODO: replace Unsplash stand-in with real photo of Shiro -->
+            <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1547592180-85f173990554?w=160&q=75"
+              alt="Shiro — purée de pois chiches parfumée au berbère" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Shiro</span>
+              <span class="tag" data-i18n="tag.vegan">Vegano</span>
+            </div>
+            <span class="menu-item__price">CHF 24</span>
+            <p class="menu-item__desc" data-i18n="dish.shiro">Purè di ceci al berbere, stufato con aglio.</p>
           </div>
-          <span class="menu-item__price">CHF 24</span>
-          <p class="menu-item__desc" data-i18n="dish.shiro">Purè di ceci al berbere, stufato con aglio.</p>
-        </div>
 
-        <div class="menu-item">
-          <!-- TODO: add real photo of Misir Wat -->
-          <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
-            alt="Misir Wat — lentilles rouges mijotées au berbère" loading="lazy" width="80" height="80">
-          <div class="menu-item__head">
-            <span class="menu-item__name">Misir Wat</span>
-            <span class="tag" data-i18n="tag.vegan">Vegano</span>
-            <span class="tag" data-i18n="tag.spicy">Piccante</span>
+          <div class="menu-item">
+            <!-- TODO: add real photo of Misir Wat -->
+            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
+              alt="Misir Wat — lentilles rouges mijotées au berbère" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Misir Wat</span>
+              <span class="tag" data-i18n="tag.vegan">Vegano</span>
+              <span class="tag" data-i18n="tag.spicy">Piccante</span>
+            </div>
+            <span class="menu-item__price">CHF 24</span>
+            <p class="menu-item__desc" data-i18n="dish.misir">Lenticchie rosse stufate in una salsa berbere piccante.</p>
           </div>
-          <span class="menu-item__price">CHF 24</span>
-          <p class="menu-item__desc" data-i18n="dish.misir">Lenticchie rosse stufate in una salsa berbere piccante.</p>
-        </div>
 
-        <div class="menu-item">
-          <!-- TODO: replace Unsplash stand-in with real photo of Beyaynetu -->
-          <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=160&q=75"
-            alt="Beyaynetu — assortiment de purées de légumes sur injera" loading="lazy" width="80" height="80">
-          <div class="menu-item__head">
-            <span class="menu-item__name">Beyaynetu</span>
-            <span class="tag" data-i18n="tag.veg">Vegetariano</span>
+          <div class="menu-item">
+            <!-- TODO: replace Unsplash stand-in with real photo of Beyaynetu -->
+            <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=160&q=75"
+              alt="Beyaynetu — assortiment de purées de légumes sur injera" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Beyaynetu</span>
+              <span class="tag" data-i18n="tag.veg">Vegetariano</span>
+            </div>
+            <span class="menu-item__price">CHF 26</span>
+            <p class="menu-item__desc" data-i18n="dish.beyaynetu">Assortimento di purè di verdure e legumi su grande injera.</p>
           </div>
-          <span class="menu-item__price">CHF 26</span>
-          <p class="menu-item__desc" data-i18n="dish.beyaynetu">Assortimento di purè di verdure e legumi su grande injera.</p>
-        </div>
 
-        <div class="menu-item">
-          <!-- TODO: replace Unsplash stand-in with real photo of the Plateau Injera -->
-          <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=160&q=75"
-            alt="Plateau Injera — assortiment de spécialités sur grande injera" loading="lazy" width="80" height="80">
-          <div class="menu-item__head">
-            <span class="menu-item__name">Plateau Injera (2 pers.)</span>
-            <span class="tag" data-i18n="tag.share">Da condividere</span>
+          <div class="menu-item">
+            <!-- TODO: replace Unsplash stand-in with real photo of the Plateau Injera -->
+            <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=160&q=75"
+              alt="Plateau Injera — assortiment de spécialités sur grande injera" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Plateau Injera (2 pers.)</span>
+              <span class="tag" data-i18n="tag.share">Da condividere</span>
+            </div>
+            <span class="menu-item__price">CHF 32</span>
+            <p class="menu-item__desc" data-i18n="dish.plateau">Assortimento delle nostre specialità per due, su grande injera.</p>
           </div>
-          <span class="menu-item__price">CHF 32</span>
-          <p class="menu-item__desc" data-i18n="dish.plateau">Assortimento delle nostre specialità per due, su grande injera.</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Boissons -->
-      <section class="menu-chapter" id="boissons">
-        <h2 class="menu-chapter__title" data-i18n="menu.cat.drinks">Bevande</h2>
-
-        <div class="menu-item">
-          <!-- TODO: add real photo of Tej -->
-          <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
-            alt="Tej — hydromel éthiopien maison" loading="lazy" width="80" height="80">
-          <div class="menu-item__head"><span class="menu-item__name">Tej</span></div>
-          <span class="menu-item__price">CHF 8</span>
-          <p class="menu-item__desc" data-i18n="dish.tej">Idromele etiope della casa, dolce e aromatico.</p>
+    <!-- Boissons -->
+    <section class="menu-chapter" id="boissons">
+      <div class="menu-chapter__banner" data-theme="dark">
+        <div class="container" data-reveal>
+          <h2 class="menu-chapter__title reveal" data-i18n="menu.cat.drinks">Bevande</h2>
+          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.drinks">Per accompagnare il pasto.</p>
         </div>
-
-        <div class="menu-item">
-          <!-- TODO: add real photo of the Eritrean beer -->
-          <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
-            alt="Bière érythréenne, bouteille de 33 cl" loading="lazy" width="80" height="80">
-          <div class="menu-item__head"><span class="menu-item__name">Bière érythréenne</span></div>
-          <span class="menu-item__price">CHF 6</span>
-          <p class="menu-item__desc" data-i18n="dish.beer">Asmara / Walia, bottiglia da 33 cl.</p>
-        </div>
-
-        <div class="menu-item">
-          <!-- TODO: add real photo of the hibiscus juice -->
-          <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
-            alt="Jus d'hibiscus glacé (karkadé)" loading="lazy" width="80" height="80">
-          <div class="menu-item__head">
-            <span class="menu-item__name">Jus d'hibiscus</span>
-            <span class="tag" data-i18n="tag.vegan">Vegano</span>
+      </div>
+      <div class="menu-list" data-theme="light">
+        <div class="container">
+          <div class="menu-item">
+            <!-- TODO: add real photo of Tej -->
+            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
+              alt="Tej — hydromel éthiopien maison" loading="lazy" width="80" height="80">
+            <div class="menu-item__head"><span class="menu-item__name">Tej</span></div>
+            <span class="menu-item__price">CHF 8</span>
+            <p class="menu-item__desc" data-i18n="dish.tej">Idromele etiope della casa, dolce e aromatico.</p>
           </div>
-          <span class="menu-item__price">CHF 5</span>
-          <p class="menu-item__desc" data-i18n="dish.hibiscus">Infuso ghiacciato di fiori di ibisco (karkadè).</p>
-        </div>
-      </section>
 
-      <!-- Café traditionnel -->
-      <section class="menu-chapter" id="cafe">
-        <h2 class="menu-chapter__title" data-i18n="menu.cat.coffee">Caffè tradizionale</h2>
-
-        <div class="menu-item">
-          <!-- TODO: replace Unsplash stand-in with real photo of the coffee ceremony -->
-          <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=160&q=75"
-            alt="Cérémonie du café — grains torréfiés et service traditionnel" loading="lazy" width="80" height="80">
-          <div class="menu-item__head">
-            <span class="menu-item__name">Cérémonie du café</span>
-            <span class="tag" data-i18n="tag.share">Da condividere</span>
+          <div class="menu-item">
+            <!-- TODO: add real photo of the Eritrean beer -->
+            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
+              alt="Bière érythréenne, bouteille de 33 cl" loading="lazy" width="80" height="80">
+            <div class="menu-item__head"><span class="menu-item__name">Bière érythréenne</span></div>
+            <span class="menu-item__price">CHF 6</span>
+            <p class="menu-item__desc" data-i18n="dish.beer">Asmara / Walia, bottiglia da 33 cl.</p>
           </div>
-          <span class="menu-item__price">CHF 14</span>
-          <p class="menu-item__desc" data-i18n="dish.ceremony">Chicchi tostati davanti a voi, incenso, tre servizi. Per il tavolo.</p>
-        </div>
 
-        <div class="menu-item">
-          <!-- TODO: replace Unsplash stand-in with real photo of Bunna -->
-          <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=160&q=75"
-            alt="Bunna — café éthiopien servi en petite tasse" loading="lazy" width="80" height="80">
-          <div class="menu-item__head"><span class="menu-item__name">Bunna</span></div>
-          <span class="menu-item__price">CHF 4</span>
-          <p class="menu-item__desc" data-i18n="dish.bunna">Caffè etiope corposo, servito in una piccola tazza.</p>
+          <div class="menu-item">
+            <!-- TODO: add real photo of the hibiscus juice -->
+            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
+              alt="Jus d'hibiscus glacé (karkadé)" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Jus d'hibiscus</span>
+              <span class="tag" data-i18n="tag.vegan">Vegano</span>
+            </div>
+            <span class="menu-item__price">CHF 5</span>
+            <p class="menu-item__desc" data-i18n="dish.hibiscus">Infuso ghiacciato di fiori di ibisco (karkadè).</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="menu-item">
-          <!-- TODO: add real photo of the spiced chai -->
-          <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
-            alt="Chai épicé — thé noir aux épices, cardamome et gingembre" loading="lazy" width="80" height="80">
-          <div class="menu-item__head"><span class="menu-item__name">Chai épicé</span></div>
-          <span class="menu-item__price">CHF 4</span>
-          <p class="menu-item__desc" data-i18n="dish.chai">Tè nero alle spezie, cardamomo e zenzero.</p>
+    <!-- Café traditionnel -->
+    <section class="menu-chapter" id="cafe">
+      <div class="menu-chapter__banner" data-theme="dark">
+        <div class="container" data-reveal>
+          <h2 class="menu-chapter__title reveal" data-i18n="menu.cat.coffee">Caffè tradizionale</h2>
+          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.coffee">La cerimonia, servita lentamente.</p>
         </div>
-      </section>
-    </div>
+      </div>
+      <div class="menu-list" data-theme="light">
+        <div class="container">
+          <div class="menu-item">
+            <!-- TODO: replace Unsplash stand-in with real photo of the coffee ceremony -->
+            <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=160&q=75"
+              alt="Cérémonie du café — grains torréfiés et service traditionnel" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Cérémonie du café</span>
+              <span class="tag" data-i18n="tag.share">Da condividere</span>
+            </div>
+            <span class="menu-item__price">CHF 14</span>
+            <p class="menu-item__desc" data-i18n="dish.ceremony">Chicchi tostati davanti a voi, incenso, tre servizi. Per il tavolo.</p>
+          </div>
+
+          <div class="menu-item">
+            <!-- TODO: replace Unsplash stand-in with real photo of Bunna -->
+            <img class="menu-item__thumb" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=160&q=75"
+              alt="Bunna — café éthiopien servi en petite tasse" loading="lazy" width="80" height="80">
+            <div class="menu-item__head"><span class="menu-item__name">Bunna</span></div>
+            <span class="menu-item__price">CHF 4</span>
+            <p class="menu-item__desc" data-i18n="dish.bunna">Caffè etiope corposo, servito in una piccola tazza.</p>
+          </div>
+
+          <div class="menu-item">
+            <!-- TODO: add real photo of the spiced chai -->
+            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
+              alt="Chai épicé — thé noir aux épices, cardamome et gingembre" loading="lazy" width="80" height="80">
+            <div class="menu-item__head"><span class="menu-item__name">Chai épicé</span></div>
+            <span class="menu-item__price">CHF 4</span>
+            <p class="menu-item__desc" data-i18n="dish.chai">Tè nero alle spezie, cardamomo e zenzero.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" data-theme="dark">
     <div class="container">
+      <div class="footer__grid" data-reveal>
+        <div class="footer__col reveal">
+          <h3 data-i18n="footer.visit">Vieni a trovarci</h3>
+          <address>
+            <p>Rue Albert Schnyder 4<br>2800 Delémont</p>
+            <p><a href="tel:+41324227310">032 422 73 10</a></p>
+          </address>
+        </div>
+        <div class="footer__col reveal">
+          <h3 data-i18n="footer.explore">Esplora</h3>
+          <nav class="footer__nav" aria-label="Navigation pied de page">
+            <a href="menu.html" data-i18n="nav.menu">Menu</a>
+            <a href="about.html" data-i18n="nav.about">Chi siamo</a>
+            <a href="prenotare.html" data-i18n="nav.reserve">Prenotare</a>
+            <a href="contatto.html" data-i18n="nav.contact">Contatti</a>
+          </nav>
+        </div>
+        <div class="footer__col reveal">
+          <h3 data-i18n="footer.hours">Orari</h3>
+          <p data-i18n="footer.hours_week">Lun · Mer · Gio — 11:00–23:00</p>
+          <p data-i18n="footer.hours_weekend">Ven · Sab — 10:30–01:30</p>
+          <p data-i18n="footer.hours_sun">Dom — 10:00–23:00 · Mar chiuso</p>
+        </div>
+      </div>
+
+      <div class="footer__divider"></div>
+      <span class="footer__monogram" aria-hidden="true">S</span>
       <div class="footer__bottom">
-        <span class="footer__name">Savanna</span>
         <span>&copy; 2026 Savanna. <span data-i18n="footer.rights">Tutti i diritti riservati.</span></span>
-        <span class="footer__credit"><span data-i18n="footer.developed">Sviluppato da:</span> <a class="footer__credit-link" href="https://www.linkedin.com/in/samson-hadgu-052a42254/" target="_blank" rel="noopener noreferrer"><svg class="footer__credit-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>Samson Hadgu</a></span>
+        <span class="footer__credit"><span data-i18n="footer.developed">Sviluppato da:</span> <a class="footer__credit-link" href="https://www.linkedin.com/in/samson-hadgu-052a42254/" target="_blank" rel="noopener noreferrer" data-no-transition><svg class="footer__credit-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>Samson Hadgu</a></span>
       </div>
     </div>
   </footer>
 
-  <script src="/config.js?v=0ecf503f"></script>
-  <script src="/main.js?v=0ecf503f"></script>
+  <script src="/config.js?v=f3dfeb7a"></script>
+  <script src="/main.js?v=f3dfeb7a"></script>
 </body>
 </html>
