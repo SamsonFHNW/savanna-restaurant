@@ -82,9 +82,10 @@
 
     <!--
       Menu item thumbnails: 80×80 (64×64 mobile), object-fit: cover, lazy-loaded.
-      Each src is flagged so real dish photos can be swapped in later:
-        · Unsplash URLs = warm-toned stand-ins matching the dish (TODO: replace)
-        · assets/dish-placeholder.svg = neutral cream placeholder, no matching stock photo (TODO: add real photo)
+      Thumbnails load the 160px optimised copies in assets/dishes/thumb/ (~5-10 KB each);
+      the full-size originals in assets/dishes/ back the gallery, hero and dish cards.
+      Photos are authentic per-dish images (see assets/PHOTO_CREDITS.md) — swap for the
+      restaurant's own photography when available.
     -->
 
     <!-- Entrées -->
@@ -99,7 +100,7 @@
         <div class="container">
           <div class="menu-item">
             <!-- TODO: add real photo of Sambusa -->
-            <img class="menu-item__thumb" src="/assets/dishes/sambusa.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/sambusa.jpg"
               alt="Sambusa — pâtisserie croustillante aux lentilles épicées" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Sambusa</span>
@@ -111,7 +112,7 @@
 
           <div class="menu-item">
             <!-- TODO: add real photo of Timatim Salata -->
-            <img class="menu-item__thumb" src="/assets/dishes/timatim.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/timatim.jpg"
               alt="Timatim Salata — salade de tomates, oignons et piment vert" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Timatim Salata</span>
@@ -123,7 +124,7 @@
 
           <div class="menu-item">
             <!-- TODO: add real photo of Full Medames -->
-            <img class="menu-item__thumb" src="/assets/dishes/ful-medames.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/ful-medames.jpg"
               alt="Full Medames — fèves mijotées à la tomate et à l'oignon" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Full Medames</span>
@@ -148,7 +149,7 @@
         <div class="container">
           <div class="menu-item">
             <!-- TODO: add real photo of Doro Wat (signature dish — no working stock stand-in) -->
-            <img class="menu-item__thumb" src="/assets/dishes/doro-wat.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/doro-wat.jpg"
               alt="Doro Wat — ragoût de poulet mijoté au berbère sur injera" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Doro Wat</span>
@@ -160,7 +161,7 @@
 
           <div class="menu-item">
             <!-- TODO: replace Unsplash stand-in with real photo of Kitfo -->
-            <img class="menu-item__thumb" src="/assets/dishes/kitfo.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/kitfo.jpg"
               alt="Kitfo — tartare de bœuf au mitmita et niter kibbeh" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Kitfo</span>
@@ -172,7 +173,7 @@
 
           <div class="menu-item">
             <!-- TODO: replace Unsplash stand-in with real photo of Tibs -->
-            <img class="menu-item__thumb" src="/assets/dishes/tibs.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/tibs.jpg"
               alt="Tibs — bœuf sauté aux oignons et poivrons" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Tibs</span>
@@ -183,7 +184,7 @@
 
           <div class="menu-item">
             <!-- TODO: add real photo of Zilzil Tibs -->
-            <img class="menu-item__thumb" src="/assets/dishes/tibs.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/tibs.jpg"
               alt="Zilzil Tibs — fines lanières de bœuf marinées et saisies" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Zilzil Tibs</span>
@@ -207,7 +208,7 @@
         <div class="container">
           <div class="menu-item">
             <!-- TODO: replace Unsplash stand-in with real photo of Shiro -->
-            <img class="menu-item__thumb" src="/assets/dishes/shiro.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/shiro.jpg"
               alt="Shiro — purée de pois chiches parfumée au berbère" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Shiro</span>
@@ -219,7 +220,7 @@
 
           <div class="menu-item">
             <!-- TODO: add real photo of Misir Wat -->
-            <img class="menu-item__thumb" src="/assets/dishes/misir-wat.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/misir-wat.jpg"
               alt="Misir Wat — lentilles rouges mijotées au berbère" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Misir Wat</span>
@@ -232,7 +233,7 @@
 
           <div class="menu-item">
             <!-- TODO: replace Unsplash stand-in with real photo of Beyaynetu -->
-            <img class="menu-item__thumb" src="/assets/dishes/injera.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/injera.jpg"
               alt="Beyaynetu — assortiment de purées de légumes sur injera" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Beyaynetu</span>
@@ -244,7 +245,7 @@
 
           <div class="menu-item">
             <!-- TODO: replace Unsplash stand-in with real photo of the Plateau Injera -->
-            <img class="menu-item__thumb" src="/assets/dishes/injera.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/injera.jpg"
               alt="Plateau Injera — assortiment de spécialités sur grande injera" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Plateau Injera (2 pers.)</span>
@@ -269,7 +270,7 @@
         <div class="container">
           <div class="menu-item">
             <!-- TODO: add real photo of Tej -->
-            <img class="menu-item__thumb" src="/assets/dishes/tej.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/tej.jpg"
               alt="Tej — hydromel éthiopien maison" loading="lazy" width="80" height="80">
             <div class="menu-item__head"><span class="menu-item__name">Tej</span></div>
             <span class="menu-item__price">CHF 8</span>
@@ -278,7 +279,7 @@
 
           <div class="menu-item">
             <!-- TODO: add real photo of the Eritrean beer -->
-            <img class="menu-item__thumb" src="/assets/dishes/beer.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/beer.jpg"
               alt="Bière érythréenne, bouteille de 33 cl" loading="lazy" width="80" height="80">
             <div class="menu-item__head"><span class="menu-item__name">Bière érythréenne</span></div>
             <span class="menu-item__price">CHF 6</span>
@@ -287,7 +288,7 @@
 
           <div class="menu-item">
             <!-- TODO: add real photo of the hibiscus juice -->
-            <img class="menu-item__thumb" src="/assets/dishes/hibiscus.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/hibiscus.jpg"
               alt="Jus d'hibiscus glacé (karkadé)" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Jus d'hibiscus</span>
@@ -312,7 +313,7 @@
         <div class="container">
           <div class="menu-item">
             <!-- TODO: replace Unsplash stand-in with real photo of the coffee ceremony -->
-            <img class="menu-item__thumb" src="/assets/dishes/coffee-ceremony.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/coffee-ceremony.jpg"
               alt="Cérémonie du café — grains torréfiés et service traditionnel" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Cérémonie du café</span>
@@ -324,7 +325,7 @@
 
           <div class="menu-item">
             <!-- TODO: replace Unsplash stand-in with real photo of Bunna -->
-            <img class="menu-item__thumb" src="/assets/dishes/bunna.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/bunna.jpg"
               alt="Bunna — café éthiopien servi en petite tasse" loading="lazy" width="80" height="80">
             <div class="menu-item__head"><span class="menu-item__name">Bunna</span></div>
             <span class="menu-item__price">CHF 4</span>
@@ -333,7 +334,7 @@
 
           <div class="menu-item">
             <!-- TODO: add real photo of the spiced chai -->
-            <img class="menu-item__thumb" src="/assets/dishes/chai.jpg"
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/chai.jpg"
               alt="Chai épicé — thé noir aux épices, cardamome et gingembre" loading="lazy" width="80" height="80">
             <div class="menu-item__head"><span class="menu-item__name">Chai épicé</span></div>
             <span class="menu-item__price">CHF 4</span>
