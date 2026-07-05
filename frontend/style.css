@@ -300,13 +300,14 @@ body.has-cursor [role="menuitem"] { cursor: none; }
   height: 100%;
 }
 .nav__logo {
-  font-family: var(--font-display);
-  font-weight: 300;
-  font-size: 22px;
-  letter-spacing: -0.02em;
-  color: var(--nav-fg);
-  transition: color var(--dur) var(--ease);
+  display: inline-flex;
+  align-items: center;
 }
+/* Real badge logo — tinted per nav theme (cream on dark, ink on light) */
+.nav__logo-img { height: 40px; width: auto; display: none; }
+.nav__logo-img--cream { display: block; }            /* default: transparent/dark nav */
+.site-header.on-light .nav__logo-img--cream { display: none; }
+.site-header.on-light .nav__logo-img--ink { display: block; }
 .nav__cluster { display: flex; align-items: center; gap: 40px; }
 .nav__menu { display: flex; gap: 32px; align-items: center; }
 
@@ -1133,6 +1134,8 @@ select.form__input { cursor: pointer; }
   color: var(--gold);
   margin-bottom: 20px;
 }
+/* Real badge logo in the footer (cream on espresso) */
+.footer__logo-img { display: block; height: 60px; width: auto; margin: 0 auto 22px; }
 .footer__bottom {
   font-size: 13px;
   color: rgba(245, 235, 216, 0.5);
