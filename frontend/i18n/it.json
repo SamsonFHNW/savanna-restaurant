@@ -23,7 +23,10 @@
     "doro": "Stufato di pollo cotto nel berbere, uovo sodo, su injera.",
     "kitfo": "Tartare di manzo con mitmita e niter kibbeh, servita tiepida.",
     "tibs": "Manzo saltato con cipolle, peperoni e rosmarino fresco.",
-    "all": "Vedi tutto il menu →"
+    "all": "Vedi tutto il menu →",
+    "savanna": "Un grande piatto da condividere, con carne o vegetariano, su injera.",
+    "kutfo": "Tartare di manzo con burro speziato, peperoncino rosso e pepe nero.",
+    "tiebsi": "Straccetti di manzo o agnello con verdure e spezie, su injera."
   },
   "hours": {
     "eyebrow": "Orari",
@@ -52,11 +55,16 @@
     },
     "eyebrow": "Da condividere",
     "desc": {
-      "starters": "Dove inizia la tradizione.",
+      "starters": "Per cominciare.",
       "meat": "Il cuore della nostra cucina.",
       "veg": "L'orto, cotto con pazienza.",
-      "drinks": "Per accompagnare il pasto.",
+      "drinks": "Presto in carta.",
       "coffee": "La cerimonia, servita lentamente."
+    },
+    "drinks_soon": "La nostra carta delle bevande arriva presto.",
+    "unit": {
+      "person": "a persona",
+      "two": "per 2 persone"
     }
   },
   "tag": {
@@ -73,7 +81,7 @@
     "kitfo": "Tartare di manzo con mitmita e niter kibbeh, servita tiepida.",
     "tibs": "Manzo saltato con cipolle, peperoni e rosmarino fresco.",
     "zilzil": "Sottili striscioline di manzo marinate, scottate al momento.",
-    "shiro": "Purè di ceci al berbere, stufato con aglio.",
+    "shiro": "Purè di ceci ravvivato con peperoncino verde, aglio e cipolle, su injera.",
     "misir": "Lenticchie rosse stufate in una salsa berbere piccante.",
     "beyaynetu": "Assortimento di purè di verdure e legumi su grande injera.",
     "plateau": "Assortimento delle nostre specialità per due, su grande injera.",
@@ -82,7 +90,17 @@
     "hibiscus": "Infuso ghiacciato di fiori di ibisco (karkadè).",
     "ceremony": "Chicchi tostati davanti a voi, incenso, tre servizi. Per il tavolo.",
     "bunna": "Caffè etiope corposo, servito in una piccola tazza.",
-    "chai": "Tè nero alle spezie, cardamomo e zenzero."
+    "chai": "Tè nero alle spezie, cardamomo e zenzero.",
+    "salade": "Insalata mista della casa, secondo l'estro della chef.",
+    "samosa_veg": "Fagottini croccanti ripieni di verdure speziate.",
+    "samosa_viande": "Fagottini croccanti ripieni di carne speziata.",
+    "degustation": "Lenticchie gialle, ceci, spinaci, patate speziate e formaggio fresco, su injera. Un piatto piccante — diteci la vostra preferenza.",
+    "degustation_viande": "Lenticchie gialle, ceci, spinaci, patate speziate, formaggio fresco e manzo brasato, su injera. Piccante, a vostro gusto.",
+    "tiebsi": "Straccetti di manzo o agnello con cipolle, aglio, pomodori, insalata verde, peperoncino e spezie, su injera.",
+    "kikil": "Zuppa di agnello cotta a lungo con cipolle, curry e peperoncino verde (contiene ossa), su injera.",
+    "shekla": "Manzo tritato con cipolle, peperoncino verde e spezie, servito su injera.",
+    "kutfo": "Tartare di manzo tritata a mano con burro speziato della casa, peperoncino rosso e pepe nero, su injera.",
+    "riz_besiga": "Straccetti di manzo con cipolle, peperoncino verde e spezie, serviti con riso."
   },
   "about": {
     "title": "La nostra storia",

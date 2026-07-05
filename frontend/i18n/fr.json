@@ -20,7 +20,10 @@
     "doro": "Ragoût de poulet mijoté au berbère, œuf dur, sur injera.",
     "kitfo": "Tartare de bœuf au mitmita et niter kibbeh, servi tiède.",
     "tibs": "Bœuf sauté aux oignons, poivrons et romarin frais.",
-    "all": "Voir toute la carte →"
+    "all": "Voir toute la carte →",
+    "savanna": "Grand plateau à partager, viande ou végétarien, sur injera.",
+    "kutfo": "Tartare de bœuf au beurre épicé, piment rouge et poivre noir.",
+    "tiebsi": "Bœuf ou agneau émincé aux légumes et aux épices, sur injera."
   },
   "hours": {
     "eyebrow": "Horaires",
@@ -49,11 +52,16 @@
     },
     "eyebrow": "À partager",
     "desc": {
-      "starters": "La tradition commence ici.",
+      "starters": "Pour bien commencer.",
       "meat": "Le cœur de notre cuisine.",
       "veg": "Le jardin, mijoté avec patience.",
-      "drinks": "Pour accompagner le repas.",
+      "drinks": "Bientôt à la carte.",
       "coffee": "La cérémonie, servie lentement."
+    },
+    "drinks_soon": "Notre carte des boissons arrive bientôt.",
+    "unit": {
+      "person": "par personne",
+      "two": "pour 2 personnes"
     }
   },
   "tag": {
@@ -70,7 +78,7 @@
     "kitfo": "Tartare de bœuf au mitmita et niter kibbeh, servi tiède.",
     "tibs": "Bœuf sauté aux oignons, poivrons et romarin frais.",
     "zilzil": "Fines lanières de bœuf marinées, saisies à la commande.",
-    "shiro": "Purée de pois chiches parfumée au berbère, mijotée à l'ail.",
+    "shiro": "Purée de pois chiche relevée au piment vert, à l'ail et aux oignons, sur injera.",
     "misir": "Lentilles rouges mijotées dans une sauce berbère relevée.",
     "beyaynetu": "Assortiment de purées de légumes et légumineuses sur grande injera.",
     "plateau": "Assortiment de nos spécialités pour deux, sur grande injera.",
@@ -79,7 +87,17 @@
     "hibiscus": "Infusion glacée de fleurs d'hibiscus (karkadé).",
     "ceremony": "Grains torréfiés devant vous, encens, trois services. Pour la table.",
     "bunna": "Café éthiopien corsé, servi en petite tasse.",
-    "chai": "Thé noir aux épices, cardamome et gingembre."
+    "chai": "Thé noir aux épices, cardamome et gingembre.",
+    "salade": "Salade composée maison, selon l'humeur de la cheffe.",
+    "samosa_veg": "Feuilletés croustillants garnis de légumes épicés.",
+    "samosa_viande": "Feuilletés croustillants garnis de viande épicée.",
+    "degustation": "Lentilles jaunes, pois chiche, épinards, pommes de terre épicées et fromage frais, sur injera. Un plat épicé — dites-nous votre préférence.",
+    "degustation_viande": "Lentilles jaunes, pois chiche, épinards, pommes de terre épicées, fromage frais et bœuf mijoté, sur injera. Plat épicé, à votre goût.",
+    "tiebsi": "Bœuf ou agneau émincé aux oignons, ail, tomates, salade verte, piment vert et épices, sur injera.",
+    "kikil": "Soupe d'agneau mijotée aux oignons, curry et piment vert (contient des os), sur injera.",
+    "shekla": "Bœuf émincé aux oignons, piment vert et épices, servi sur injera.",
+    "kutfo": "Tartare de bœuf haché à la main, beurre maison épicé, piment rouge et poivre noir, sur injera.",
+    "riz_besiga": "Émincé de bœuf aux oignons, piment vert et épices, servi avec du riz."
   },
   "about": {
     "title": "Notre histoire",

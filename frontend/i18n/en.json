@@ -20,7 +20,10 @@
     "doro": "Chicken stew simmered in berbere, hard-boiled egg, on injera.",
     "kitfo": "Minced beef with mitmita and niter kibbeh, served warm.",
     "tibs": "Beef sautéed with onions, peppers and fresh rosemary.",
-    "all": "See the full menu →"
+    "all": "See the full menu →",
+    "savanna": "A grand sharing platter, meat or vegetarian, on injera.",
+    "kutfo": "Beef tartare with spiced butter, red chilli and black pepper.",
+    "tiebsi": "Beef or lamb strips with vegetables and spices, on injera."
   },
   "hours": {
     "eyebrow": "Hours",
@@ -49,11 +52,16 @@
     },
     "eyebrow": "To share",
     "desc": {
-      "starters": "Where tradition begins.",
+      "starters": "To begin.",
       "meat": "The heart of our kitchen.",
       "veg": "The garden, slowly simmered.",
-      "drinks": "To accompany the meal.",
+      "drinks": "Coming soon to the menu.",
       "coffee": "The ceremony, served slowly."
+    },
+    "drinks_soon": "Our drinks list is coming soon.",
+    "unit": {
+      "person": "per person",
+      "two": "for 2 people"
     }
   },
   "tag": {
@@ -70,7 +78,7 @@
     "kitfo": "Minced beef with mitmita and niter kibbeh, served warm.",
     "tibs": "Beef sautéed with onions, peppers and fresh rosemary.",
     "zilzil": "Thin strips of marinated beef, seared to order.",
-    "shiro": "Chickpea purée in berbere, simmered with garlic.",
+    "shiro": "Chickpea purée sharpened with green chilli, garlic and onions, on injera.",
     "misir": "Red lentils stewed in a spicy berbere sauce.",
     "beyaynetu": "A selection of vegetable and legume purées on a large injera.",
     "plateau": "A selection of our specialities for two, on a large injera.",
@@ -79,7 +87,17 @@
     "hibiscus": "Chilled infusion of hibiscus flowers (karkadé).",
     "ceremony": "Beans roasted before you, incense, three servings. For the table.",
     "bunna": "Bold Ethiopian coffee, served in a small cup.",
-    "chai": "Spiced black tea with cardamom and ginger."
+    "chai": "Spiced black tea with cardamom and ginger.",
+    "salade": "House mixed salad, at the chef's whim.",
+    "samosa_veg": "Crisp pastry parcels filled with spiced vegetables.",
+    "samosa_viande": "Crisp pastry parcels filled with spiced meat.",
+    "degustation": "Yellow lentils, chickpeas, spinach, spiced potatoes and fresh cheese, on injera. A spicy dish — tell us your preference.",
+    "degustation_viande": "Yellow lentils, chickpeas, spinach, spiced potatoes, fresh cheese and simmered beef, on injera. Spicy, to your taste.",
+    "tiebsi": "Beef or lamb strips with onions, garlic, tomatoes, green salad, chilli and spices, on injera.",
+    "kikil": "Slow-cooked lamb soup with onions, curry and green chilli (contains bones), on injera.",
+    "shekla": "Minced beef with onions, green chilli and spices, served on injera.",
+    "kutfo": "Hand-chopped beef tartare with spiced house butter, red chilli and black pepper, on injera.",
+    "riz_besiga": "Beef strips with onions, green chilli and spices, served with rice."
   },
   "about": {
     "title": "Our story",

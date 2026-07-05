@@ -23,7 +23,10 @@
     "doro": "Hähnchen-Eintopf in Berbere geschmort, hartgekochtes Ei, auf Injera.",
     "kitfo": "Fein gehacktes Rindertatar mit Mitmita und Niter Kibbeh, lauwarm serviert.",
     "tibs": "Rindfleisch mit Zwiebeln, Paprika und frischem Rosmarin gebraten.",
-    "all": "Zur ganzen Karte →"
+    "all": "Zur ganzen Karte →",
+    "savanna": "Eine grosse Platte zum Teilen, mit Fleisch oder vegetarisch, auf Injera.",
+    "kutfo": "Rindertatar mit Gewürzbutter, rotem Chili und schwarzem Pfeffer.",
+    "tiebsi": "Rind- oder Lammstreifen mit Gemüse und Gewürzen, auf Injera."
   },
   "hours": {
     "eyebrow": "Öffnungszeiten",
@@ -52,11 +55,16 @@
     },
     "eyebrow": "Zum Teilen",
     "desc": {
-      "starters": "Wo die Tradition beginnt.",
+      "starters": "Zum Auftakt.",
       "meat": "Das Herz unserer Küche.",
       "veg": "Der Garten, geduldig geschmort.",
-      "drinks": "Zum Essen.",
+      "drinks": "Bald auf der Karte.",
       "coffee": "Die Zeremonie, langsam serviert."
+    },
+    "drinks_soon": "Unsere Getränkekarte folgt in Kürze.",
+    "unit": {
+      "person": "pro Person",
+      "two": "für 2 Personen"
     }
   },
   "tag": {
@@ -73,7 +81,7 @@
     "kitfo": "Fein gehacktes Rindertatar mit Mitmita und Niter Kibbeh, lauwarm serviert.",
     "tibs": "Rindfleisch mit Zwiebeln, Paprika und frischem Rosmarin gebraten.",
     "zilzil": "Feine marinierte Rindfleischstreifen, à la minute gebraten.",
-    "shiro": "Kichererbsenpüree mit Berbere, mit Knoblauch geschmort.",
+    "shiro": "Kichererbsenpüree, verfeinert mit grünem Chili, Knoblauch und Zwiebeln, auf Injera.",
     "misir": "Rote Linsen in scharfer Berbere-Sauce geschmort.",
     "beyaynetu": "Auswahl an Gemüse- und Hülsenfruchtpürees auf grossem Injera.",
     "plateau": "Auswahl unserer Spezialitäten für zwei, auf grossem Injera.",
@@ -82,7 +90,17 @@
     "hibiscus": "Eisgekühlter Aufguss aus Hibiskusblüten (Karkadé).",
     "ceremony": "Bohnen vor Ihnen geröstet, Weihrauch, drei Aufgüsse. Für den Tisch.",
     "bunna": "Kräftiger äthiopischer Kaffee, in einer kleinen Tasse serviert.",
-    "chai": "Schwarzer Tee mit Gewürzen, Kardamom und Ingwer."
+    "chai": "Schwarzer Tee mit Gewürzen, Kardamom und Ingwer.",
+    "salade": "Gemischter Salat des Hauses, nach Laune der Köchin.",
+    "samosa_veg": "Knusprige Teigtaschen mit würzigem Gemüse.",
+    "samosa_viande": "Knusprige Teigtaschen mit würzigem Fleisch.",
+    "degustation": "Gelbe Linsen, Kichererbsen, Spinat, würzige Kartoffeln und Frischkäse, auf Injera. Ein scharfes Gericht — sagen Sie uns Ihre Vorliebe.",
+    "degustation_viande": "Gelbe Linsen, Kichererbsen, Spinat, würzige Kartoffeln, Frischkäse und geschmortes Rind, auf Injera. Scharf, nach Ihrem Geschmack.",
+    "tiebsi": "Rind- oder Lammstreifen mit Zwiebeln, Knoblauch, Tomaten, grünem Salat, Chili und Gewürzen, auf Injera.",
+    "kikil": "Langsam gegarte Lammsuppe mit Zwiebeln, Curry und grünem Chili (enthält Knochen), auf Injera.",
+    "shekla": "Rindshackfleisch mit Zwiebeln, grünem Chili und Gewürzen, auf Injera serviert.",
+    "kutfo": "Von Hand gehacktes Rindertatar mit würziger Hausbutter, rotem Chili und schwarzem Pfeffer, auf Injera.",
+    "riz_besiga": "Rindstreifen mit Zwiebeln, grünem Chili und Gewürzen, mit Reis serviert."
   },
   "about": {
     "title": "Unsere Geschichte",

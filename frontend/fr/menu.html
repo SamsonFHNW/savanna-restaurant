@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu — Savanna · Delémont</title>
-  <meta name="description" content="La carte de Savanna : entrées, plats de viande, plats végétariens, boissons et café traditionnel érythréen et éthiopien.">
+  <meta name="description" content="La carte de Savanna : entrées, plats végétariens et plats de viande érythréens et éthiopiens, servis sur injera. Menu dégustation Savanna, Tiebsi, Kutfo, Shiro et plus.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css?v=f3dfeb7a">
+  <link rel="stylesheet" href="/style.css?v=51b9f9d7">
   <link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/menu">
   <link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/menu">
   <link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/menu">
@@ -59,11 +59,10 @@
     <!-- Gallery strip -->
     <div class="container">
       <div class="menu-gallery" data-reveal>
-        <!-- TODO: replace with real dish photos -->
-        <img class="reveal" src="/assets/dishes/injera.jpg" alt="Plateau d'injera" loading="lazy" width="480" height="480">
-        <img class="reveal" src="/assets/dishes/doro-wat.jpg" alt="Doro Wat" loading="lazy" width="480" height="480">
-        <img class="reveal" src="/assets/dishes/shiro.jpg" alt="Assortiment végétarien" loading="lazy" width="480" height="480">
-        <img class="reveal" src="/assets/dishes/coffee-ceremony.jpg" alt="Café traditionnel" loading="lazy" width="480" height="480">
+        <img class="reveal" src="/assets/dishes/injera.jpg" alt="Menu Dégustation Savanna sur injera" loading="lazy" width="480" height="480">
+        <img class="reveal" src="/assets/dishes/tiebsi.jpg" alt="Menu Tiebsi — bœuf émincé" loading="lazy" width="480" height="480">
+        <img class="reveal" src="/assets/dishes/kitfo.jpg" alt="Menu Kutfo — tartare de bœuf" loading="lazy" width="480" height="480">
+        <img class="reveal" src="/assets/dishes/shiro.jpg" alt="Menu Shiro — purée de pois chiche" loading="lazy" width="480" height="480">
       </div>
     </div>
 
@@ -72,20 +71,18 @@
       <div class="container">
         <div class="menu-nav__list">
           <a href="#entrees" data-i18n="menu.cat.starters">Entrées</a>
+          <a href="#vegetariens" data-i18n="menu.cat.veg">Plats végétariens</a>
           <a href="#viande" data-i18n="menu.cat.meat">Plats de viande</a>
-          <a href="#vegetarien" data-i18n="menu.cat.veg">Plats végétariens</a>
           <a href="#boissons" data-i18n="menu.cat.drinks">Boissons</a>
-          <a href="#cafe" data-i18n="menu.cat.coffee">Café traditionnel</a>
         </div>
       </div>
     </nav>
 
     <!--
-      Menu item thumbnails: 80×80 (64×64 mobile), object-fit: cover, lazy-loaded.
-      Thumbnails load the 160px optimised copies in assets/dishes/thumb/ (~5-10 KB each);
-      the full-size originals in assets/dishes/ back the gallery, hero and dish cards.
-      Photos are authentic per-dish images (see assets/PHOTO_CREDITS.md) — swap for the
-      restaurant's own photography when available.
+      Real menu supplied by the owner (July 2026), split vegetarian / non-vegetarian.
+      Dish names stay in the original; only descriptions are translated (data-i18n).
+      Thumbnails use the 160px copies in assets/dishes/thumb/ (see PHOTO_CREDITS.md).
+      Handwritten prices on the source menu — confirm with the owner before launch.
     -->
 
     <!-- Entrées -->
@@ -93,45 +90,79 @@
       <div class="menu-chapter__banner" data-theme="dark">
         <div class="container" data-reveal>
           <h2 class="menu-chapter__title reveal" data-i18n="menu.cat.starters">Entrées</h2>
-          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.starters">La tradition commence ici.</p>
+          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.starters">Pour bien commencer.</p>
         </div>
       </div>
       <div class="menu-list" data-theme="light">
         <div class="container">
           <div class="menu-item">
-            <!-- TODO: add real photo of Sambusa -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/sambusa.jpg"
-              alt="Sambusa — pâtisserie croustillante aux lentilles épicées" loading="lazy" width="80" height="80">
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/timatim.jpg"
+              alt="Salade composée maison" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
-              <span class="menu-item__name">Sambusa</span>
+              <span class="menu-item__name">Salade composée maison</span>
               <span class="tag" data-i18n="tag.veg">Végétarien</span>
             </div>
-            <span class="menu-item__price">CHF 9</span>
-            <p class="menu-item__desc" data-i18n="dish.sambusa">Feuilletés croustillants aux lentilles épicées.</p>
+            <span class="menu-item__price">CHF 8</span>
+            <p class="menu-item__desc" data-i18n="dish.salade">Salade composée maison, selon l'humeur de la cheffe.</p>
           </div>
 
           <div class="menu-item">
-            <!-- TODO: add real photo of Timatim Salata -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/timatim.jpg"
-              alt="Timatim Salata — salade de tomates, oignons et piment vert" loading="lazy" width="80" height="80">
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/sambusa.jpg"
+              alt="Samosas végétariens croustillants" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
-              <span class="menu-item__name">Timatim Salata</span>
-              <span class="tag" data-i18n="tag.vegan">Végan</span>
+              <span class="menu-item__name">Samosas végétariens</span>
+              <span class="tag" data-i18n="tag.veg">Végétarien</span>
             </div>
-            <span class="menu-item__price">CHF 10</span>
-            <p class="menu-item__desc" data-i18n="dish.timatim">Salade de tomates, oignons et piment vert, vinaigrette citronnée.</p>
+            <span class="menu-item__price">2 × CHF 4<br>4 × CHF 8</span>
+            <p class="menu-item__desc" data-i18n="dish.samosa_veg">Feuilletés croustillants garnis de légumes épicés.</p>
           </div>
 
           <div class="menu-item">
-            <!-- TODO: add real photo of Full Medames -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/ful-medames.jpg"
-              alt="Full Medames — fèves mijotées à la tomate et à l'oignon" loading="lazy" width="80" height="80">
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/sambusa.jpg"
+              alt="Samosas à la viande croustillants" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
-              <span class="menu-item__name">Full Medames</span>
-              <span class="tag" data-i18n="tag.vegan">Végan</span>
+              <span class="menu-item__name">Samosas à la viande</span>
             </div>
-            <span class="menu-item__price">CHF 12</span>
-            <p class="menu-item__desc" data-i18n="dish.full">Fèves mijotées, tomate, oignon et huile d'olive, pain chaud.</p>
+            <span class="menu-item__price">2 × CHF 4<br>4 × CHF 8</span>
+            <p class="menu-item__desc" data-i18n="dish.samosa_viande">Feuilletés croustillants garnis de viande épicée.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plats végétariens -->
+    <section class="menu-chapter" id="vegetariens">
+      <div class="menu-chapter__banner" data-theme="dark">
+        <div class="container" data-reveal>
+          <h2 class="menu-chapter__title reveal" data-i18n="menu.cat.veg">Plats végétariens</h2>
+          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.veg">Le jardin, mijoté avec patience.</p>
+        </div>
+      </div>
+      <div class="menu-list" data-theme="light">
+        <div class="container">
+          <div class="menu-item">
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/injera.jpg"
+              alt="Menu Dégustation Savanna végétarien sur injera" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Menu Dégustation « Savanna »</span>
+              <span class="tag" data-i18n="tag.veg">Végétarien</span>
+              <span class="tag" data-i18n="tag.spicy">Épicé</span>
+              <span class="tag" data-i18n="tag.share">À partager</span>
+            </div>
+            <span class="menu-item__price">CHF 52 <span class="menu-item__unit" data-i18n="menu.unit.two">pour 2 personnes</span></span>
+            <p class="menu-item__desc" data-i18n="dish.degustation">Lentilles jaunes, pois chiche, épinards, pommes de terre épicées et fromage frais, sur injera. Un plat épicé — dites-nous votre préférence.</p>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/shiro.jpg"
+              alt="Menu Shiro — purée de pois chiche" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Menu « Shiro »</span>
+              <span class="tag" data-i18n="tag.veg">Végétarien</span>
+              <span class="tag" data-i18n="tag.spicy">Épicé</span>
+            </div>
+            <span class="menu-item__price">CHF 17.50 <span class="menu-item__unit" data-i18n="menu.unit.person">par personne</span></span>
+            <p class="menu-item__desc" data-i18n="dish.shiro">Purée de pois chiche relevée au piment vert, à l'ail et aux oignons, sur injera.</p>
           </div>
         </div>
       </div>
@@ -148,198 +179,88 @@
       <div class="menu-list" data-theme="light">
         <div class="container">
           <div class="menu-item">
-            <!-- TODO: add real photo of Doro Wat (signature dish — no working stock stand-in) -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/doro-wat.jpg"
-              alt="Doro Wat — ragoût de poulet mijoté au berbère sur injera" loading="lazy" width="80" height="80">
-            <div class="menu-item__head">
-              <span class="menu-item__name">Doro Wat</span>
-              <span class="tag" data-i18n="tag.spicy">Épicé</span>
-            </div>
-            <span class="menu-item__price">CHF 28</span>
-            <p class="menu-item__desc" data-i18n="dish.doro">Ragoût de poulet mijoté au berbère, œuf dur, sur injera.</p>
-          </div>
-
-          <div class="menu-item">
-            <!-- TODO: replace Unsplash stand-in with real photo of Kitfo -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/kitfo.jpg"
-              alt="Kitfo — tartare de bœuf au mitmita et niter kibbeh" loading="lazy" width="80" height="80">
-            <div class="menu-item__head">
-              <span class="menu-item__name">Kitfo</span>
-              <span class="tag" data-i18n="tag.spicy">Épicé</span>
-            </div>
-            <span class="menu-item__price">CHF 30</span>
-            <p class="menu-item__desc" data-i18n="dish.kitfo">Tartare de bœuf au mitmita et niter kibbeh, servi tiède.</p>
-          </div>
-
-          <div class="menu-item">
-            <!-- TODO: replace Unsplash stand-in with real photo of Tibs -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/tibs.jpg"
-              alt="Tibs — bœuf sauté aux oignons et poivrons" loading="lazy" width="80" height="80">
-            <div class="menu-item__head">
-              <span class="menu-item__name">Tibs</span>
-            </div>
-            <span class="menu-item__price">CHF 28</span>
-            <p class="menu-item__desc" data-i18n="dish.tibs">Bœuf sauté aux oignons, poivrons et romarin frais.</p>
-          </div>
-
-          <div class="menu-item">
-            <!-- TODO: add real photo of Zilzil Tibs -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/tibs.jpg"
-              alt="Zilzil Tibs — fines lanières de bœuf marinées et saisies" loading="lazy" width="80" height="80">
-            <div class="menu-item__head">
-              <span class="menu-item__name">Zilzil Tibs</span>
-            </div>
-            <span class="menu-item__price">CHF 29</span>
-            <p class="menu-item__desc" data-i18n="dish.zilzil">Fines lanières de bœuf marinées, saisies à la commande.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Plats végétariens -->
-    <section class="menu-chapter" id="vegetarien">
-      <div class="menu-chapter__banner" data-theme="dark">
-        <div class="container" data-reveal>
-          <h2 class="menu-chapter__title reveal" data-i18n="menu.cat.veg">Plats végétariens</h2>
-          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.veg">Le jardin, mijoté avec patience.</p>
-        </div>
-      </div>
-      <div class="menu-list" data-theme="light">
-        <div class="container">
-          <div class="menu-item">
-            <!-- TODO: replace Unsplash stand-in with real photo of Shiro -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/shiro.jpg"
-              alt="Shiro — purée de pois chiches parfumée au berbère" loading="lazy" width="80" height="80">
-            <div class="menu-item__head">
-              <span class="menu-item__name">Shiro</span>
-              <span class="tag" data-i18n="tag.vegan">Végan</span>
-            </div>
-            <span class="menu-item__price">CHF 24</span>
-            <p class="menu-item__desc" data-i18n="dish.shiro">Purée de pois chiches parfumée au berbère, mijotée à l'ail.</p>
-          </div>
-
-          <div class="menu-item">
-            <!-- TODO: add real photo of Misir Wat -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/misir-wat.jpg"
-              alt="Misir Wat — lentilles rouges mijotées au berbère" loading="lazy" width="80" height="80">
-            <div class="menu-item__head">
-              <span class="menu-item__name">Misir Wat</span>
-              <span class="tag" data-i18n="tag.vegan">Végan</span>
-              <span class="tag" data-i18n="tag.spicy">Épicé</span>
-            </div>
-            <span class="menu-item__price">CHF 24</span>
-            <p class="menu-item__desc" data-i18n="dish.misir">Lentilles rouges mijotées dans une sauce berbère relevée.</p>
-          </div>
-
-          <div class="menu-item">
-            <!-- TODO: replace Unsplash stand-in with real photo of Beyaynetu -->
             <img class="menu-item__thumb" src="/assets/dishes/thumb/injera.jpg"
-              alt="Beyaynetu — assortiment de purées de légumes sur injera" loading="lazy" width="80" height="80">
+              alt="Menu Dégustation Savanna avec viande sur injera" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
-              <span class="menu-item__name">Beyaynetu</span>
-              <span class="tag" data-i18n="tag.veg">Végétarien</span>
-            </div>
-            <span class="menu-item__price">CHF 26</span>
-            <p class="menu-item__desc" data-i18n="dish.beyaynetu">Assortiment de purées de légumes et légumineuses sur grande injera.</p>
-          </div>
-
-          <div class="menu-item">
-            <!-- TODO: replace Unsplash stand-in with real photo of the Plateau Injera -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/injera.jpg"
-              alt="Plateau Injera — assortiment de spécialités sur grande injera" loading="lazy" width="80" height="80">
-            <div class="menu-item__head">
-              <span class="menu-item__name">Plateau Injera (2 pers.)</span>
+              <span class="menu-item__name">Menu Dégustation « Savanna »</span>
+              <span class="tag" data-i18n="tag.spicy">Épicé</span>
               <span class="tag" data-i18n="tag.share">À partager</span>
             </div>
-            <span class="menu-item__price">CHF 32</span>
-            <p class="menu-item__desc" data-i18n="dish.plateau">Assortiment de nos spécialités pour deux, sur grande injera.</p>
+            <span class="menu-item__price">CHF 58 <span class="menu-item__unit" data-i18n="menu.unit.two">pour 2 personnes</span></span>
+            <p class="menu-item__desc" data-i18n="dish.degustation_viande">Lentilles jaunes, pois chiche, épinards, pommes de terre épicées, fromage frais et bœuf mijoté, sur injera. Plat épicé, à votre goût.</p>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/tiebsi.jpg"
+              alt="Menu Tiebsi — bœuf ou agneau émincé sur injera" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Menu « Tiebsi »</span>
+              <span class="tag" data-i18n="tag.spicy">Épicé</span>
+            </div>
+            <span class="menu-item__price">CHF 25 <span class="menu-item__unit" data-i18n="menu.unit.person">par personne</span></span>
+            <p class="menu-item__desc" data-i18n="dish.tiebsi">Bœuf ou agneau émincé aux oignons, ail, tomates, salade verte, piment vert et épices, sur injera.</p>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/shekla.jpg"
+              alt="Menu Shekla — bœuf émincé en marmite d'argile" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Menu « Shekla »</span>
+              <span class="tag" data-i18n="tag.spicy">Épicé</span>
+            </div>
+            <span class="menu-item__price">CHF 25 <span class="menu-item__unit" data-i18n="menu.unit.person">par personne</span></span>
+            <p class="menu-item__desc" data-i18n="dish.shekla">Bœuf émincé aux oignons, piment vert et épices, servi sur injera.</p>
+          </div>
+
+          <div class="menu-item">
+            <!-- TODO: add a real photo of Kikil (no matching stock image) -->
+            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
+              alt="Menu Kikil — soupe d'agneau épicée" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Menu « Kikil »</span>
+              <span class="tag" data-i18n="tag.spicy">Épicé</span>
+            </div>
+            <span class="menu-item__price">CHF 25 <span class="menu-item__unit" data-i18n="menu.unit.person">par personne</span></span>
+            <p class="menu-item__desc" data-i18n="dish.kikil">Soupe d'agneau mijotée aux oignons, curry et piment vert (contient des os), sur injera.</p>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/kitfo.jpg"
+              alt="Menu Kutfo — tartare de bœuf éthiopien" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Menu « Kutfo »</span>
+              <span class="tag" data-i18n="tag.spicy">Épicé</span>
+            </div>
+            <span class="menu-item__price">CHF 30 <span class="menu-item__unit" data-i18n="menu.unit.person">par personne</span></span>
+            <p class="menu-item__desc" data-i18n="dish.kutfo">Tartare de bœuf haché à la main, beurre maison épicé, piment rouge et poivre noir, sur injera.</p>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/tiebsi.jpg"
+              alt="Menu Riz Besiga — émincé de bœuf servi avec du riz" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Menu « Riz Besiga »</span>
+              <span class="tag" data-i18n="tag.spicy">Épicé</span>
+            </div>
+            <span class="menu-item__price">CHF 19.50 <span class="menu-item__unit" data-i18n="menu.unit.person">par personne</span></span>
+            <p class="menu-item__desc" data-i18n="dish.riz_besiga">Émincé de bœuf aux oignons, piment vert et épices, servi avec du riz.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Boissons -->
+    <!-- Boissons (owner to add manually) -->
     <section class="menu-chapter" id="boissons">
       <div class="menu-chapter__banner" data-theme="dark">
         <div class="container" data-reveal>
           <h2 class="menu-chapter__title reveal" data-i18n="menu.cat.drinks">Boissons</h2>
-          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.drinks">Pour accompagner le repas.</p>
+          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.drinks">Bientôt à la carte.</p>
         </div>
       </div>
       <div class="menu-list" data-theme="light">
         <div class="container">
-          <div class="menu-item">
-            <!-- TODO: add real photo of Tej -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/tej.jpg"
-              alt="Tej — hydromel éthiopien maison" loading="lazy" width="80" height="80">
-            <div class="menu-item__head"><span class="menu-item__name">Tej</span></div>
-            <span class="menu-item__price">CHF 8</span>
-            <p class="menu-item__desc" data-i18n="dish.tej">Hydromel éthiopien maison, doux et parfumé.</p>
-          </div>
-
-          <div class="menu-item">
-            <!-- TODO: add real photo of the Eritrean beer -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/beer.jpg"
-              alt="Bière érythréenne, bouteille de 33 cl" loading="lazy" width="80" height="80">
-            <div class="menu-item__head"><span class="menu-item__name">Bière érythréenne</span></div>
-            <span class="menu-item__price">CHF 6</span>
-            <p class="menu-item__desc" data-i18n="dish.beer">Asmara / Walia, bouteille 33 cl.</p>
-          </div>
-
-          <div class="menu-item">
-            <!-- TODO: add real photo of the hibiscus juice -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/hibiscus.jpg"
-              alt="Jus d'hibiscus glacé (karkadé)" loading="lazy" width="80" height="80">
-            <div class="menu-item__head">
-              <span class="menu-item__name">Jus d'hibiscus</span>
-              <span class="tag" data-i18n="tag.vegan">Végan</span>
-            </div>
-            <span class="menu-item__price">CHF 5</span>
-            <p class="menu-item__desc" data-i18n="dish.hibiscus">Infusion glacée de fleurs d'hibiscus (karkadé).</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Café traditionnel -->
-    <section class="menu-chapter" id="cafe">
-      <div class="menu-chapter__banner" data-theme="dark">
-        <div class="container" data-reveal>
-          <h2 class="menu-chapter__title reveal" data-i18n="menu.cat.coffee">Café traditionnel</h2>
-          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.coffee">La cérémonie, servie lentement.</p>
-        </div>
-      </div>
-      <div class="menu-list" data-theme="light">
-        <div class="container">
-          <div class="menu-item">
-            <!-- TODO: replace Unsplash stand-in with real photo of the coffee ceremony -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/coffee-ceremony.jpg"
-              alt="Cérémonie du café — grains torréfiés et service traditionnel" loading="lazy" width="80" height="80">
-            <div class="menu-item__head">
-              <span class="menu-item__name">Cérémonie du café</span>
-              <span class="tag" data-i18n="tag.share">À partager</span>
-            </div>
-            <span class="menu-item__price">CHF 14</span>
-            <p class="menu-item__desc" data-i18n="dish.ceremony">Grains torréfiés devant vous, encens, trois services. Pour la table.</p>
-          </div>
-
-          <div class="menu-item">
-            <!-- TODO: replace Unsplash stand-in with real photo of Bunna -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/bunna.jpg"
-              alt="Bunna — café éthiopien servi en petite tasse" loading="lazy" width="80" height="80">
-            <div class="menu-item__head"><span class="menu-item__name">Bunna</span></div>
-            <span class="menu-item__price">CHF 4</span>
-            <p class="menu-item__desc" data-i18n="dish.bunna">Café éthiopien corsé, servi en petite tasse.</p>
-          </div>
-
-          <div class="menu-item">
-            <!-- TODO: add real photo of the spiced chai -->
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/chai.jpg"
-              alt="Chai épicé — thé noir aux épices, cardamome et gingembre" loading="lazy" width="80" height="80">
-            <div class="menu-item__head"><span class="menu-item__name">Chai épicé</span></div>
-            <span class="menu-item__price">CHF 4</span>
-            <p class="menu-item__desc" data-i18n="dish.chai">Thé noir aux épices, cardamome et gingembre.</p>
-          </div>
+          <!-- TODO: owner to add the real drinks list (Tej, bières, jus, café traditionnel, etc.) -->
+          <p class="menu-soon" data-i18n="menu.drinks_soon">Notre carte des boissons arrive bientôt.</p>
         </div>
       </div>
     </section>
@@ -381,7 +302,7 @@
     </div>
   </footer>
 
-  <script src="/config.js?v=f3dfeb7a"></script>
-  <script src="/main.js?v=f3dfeb7a"></script>
+  <script src="/config.js?v=51b9f9d7"></script>
+  <script src="/main.js?v=51b9f9d7"></script>
 </body>
 </html>
