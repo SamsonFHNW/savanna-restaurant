@@ -637,6 +637,39 @@ body.has-cursor [role="menuitem"] { cursor: none; }
 }
 
 /* ═══════════════════════════════════════════════════════
+   Traiteur / Catering (home, dark)
+   ═══════════════════════════════════════════════════════ */
+.catering__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 44px;
+  align-items: center;
+}
+.catering__text .caption { margin-bottom: 14px; }
+.catering__lead {
+  margin-top: 24px;
+  color: var(--fg-muted);
+  font-size: 18px;
+  line-height: 1.75;
+  max-width: 46ch;
+}
+.catering__cta { margin-top: 32px; }
+.catering__media { display: flex; flex-direction: column; gap: 16px; }
+.catering__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity var(--dur) var(--ease), transform 800ms var(--ease);
+}
+.catering__img.loaded { opacity: 1; }
+.catering__media:hover .catering__img { transform: scale(1.01); }
+@media (min-width: 900px) {
+  .catering__grid { grid-template-columns: 0.85fr 1.15fr; gap: 72px; }
+  .catering__media { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+}
+
+/* ═══════════════════════════════════════════════════════
    Hours + Location (home, light)
    ═══════════════════════════════════════════════════════ */
 .hours-loc { position: relative; }

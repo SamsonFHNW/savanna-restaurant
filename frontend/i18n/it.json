@@ -211,5 +211,11 @@
     "slot_closed": "Chiuso il martedì",
     "slot_none": "Nessun orario",
     "slot_choose": "Scegli…"
+  },
+  "catering": {
+    "eyebrow": "Catering",
+    "title": "La festa da voi",
+    "text": "Su richiesta, Savanna viene da voi: injera, wat e un grande piatto da condividere per compleanni, matrimoni e feste aziendali. Voi radunate gli ospiti, al resto pensiamo noi.",
+    "cta": "Richiedi un preventivo"
   }
 }

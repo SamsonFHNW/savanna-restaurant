@@ -211,5 +211,11 @@
     "slot_closed": "Dienstags geschlossen",
     "slot_none": "Keine Zeiten",
     "slot_choose": "Wählen…"
+  },
+  "catering": {
+    "eyebrow": "Catering",
+    "title": "Das Fest zu Ihnen",
+    "text": "Auf Anfrage kommt Savanna zu Ihnen: Injera, Wats und eine grosse Platte zum Teilen für Geburtstage, Hochzeiten und Firmenfeste. Sie versammeln die Gäste, wir bringen den Rest.",
+    "cta": "Angebot anfragen"
   }
 }

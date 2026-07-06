@@ -208,5 +208,11 @@
     "slot_closed": "Fermé le mardi",
     "slot_none": "Aucun créneau",
     "slot_choose": "Choisir…"
+  },
+  "catering": {
+    "eyebrow": "Traiteur",
+    "title": "La fête, chez vous",
+    "text": "Sur demande, Savanna se déplace : injera, wats et grand plateau à partager, dressés pour vos anniversaires, mariages et fêtes d'entreprise. Vous réunissez les convives, on apporte le reste.",
+    "cta": "Demander un devis"
   }
 }

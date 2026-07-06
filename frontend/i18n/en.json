@@ -208,5 +208,11 @@
     "slot_closed": "Closed on Tuesday",
     "slot_none": "No slots",
     "slot_choose": "Choose…"
+  },
+  "catering": {
+    "eyebrow": "Catering",
+    "title": "Bring the feast to you",
+    "text": "On request, Savanna comes to you: injera, wats and a grand sharing platter for birthdays, weddings and company events. You gather the guests, we bring the rest.",
+    "cta": "Request a quote"
   }
 }
