@@ -299,15 +299,26 @@ body.has-cursor [role="menuitem"] { cursor: none; }
   padding-inline: var(--gutter);
   height: 100%;
 }
+/* Logo lockup: badge + wordmark, one link to the home hero */
 .nav__logo {
   display: inline-flex;
   align-items: center;
+  gap: 11px;
 }
 /* Real badge logo — tinted per nav theme (cream on dark, ink on light) */
-.nav__logo-img { height: 40px; width: auto; display: none; }
+.nav__logo-img { height: 38px; width: auto; display: none; }
 .nav__logo-img--cream { display: block; }            /* default: transparent/dark nav */
 .site-header.on-light .nav__logo-img--cream { display: none; }
 .site-header.on-light .nav__logo-img--ink { display: block; }
+.nav__logo-word {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 23px;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--nav-fg);
+  transition: color var(--dur) var(--ease);
+}
 .nav__cluster { display: flex; align-items: center; gap: 40px; }
 .nav__menu { display: flex; gap: 32px; align-items: center; }
 
