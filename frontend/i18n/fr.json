@@ -47,7 +47,7 @@
       "starters": "Entrées",
       "meat": "Plats de viande",
       "veg": "Plats végétariens",
-      "drinks": "Boissons",
+      "drinks": "Desserts & cafés",
       "coffee": "Café traditionnel"
     },
     "eyebrow": "À partager",
@@ -55,13 +55,26 @@
       "starters": "Pour bien commencer.",
       "meat": "Le cœur de notre cuisine.",
       "veg": "Le jardin, mijoté avec patience.",
-      "drinks": "Bientôt à la carte.",
+      "drinks": "Pour finir en douceur.",
       "coffee": "La cérémonie, servie lentement."
     },
     "drinks_soon": "Notre carte des boissons arrive bientôt.",
     "unit": {
       "person": "par personne",
       "two": "pour 2 personnes"
+    },
+    "info": {
+      "title": "Informations",
+      "sub": "concernant notre carte",
+      "allergens_title": "Allergènes possibles",
+      "allergens_text": "Notre carte peut contenir les allergènes suivants : gluten, œufs, arachides, soja et lactose. N'hésitez pas à nous signaler vos allergies lors du service.",
+      "origin_title": "Provenance de la viande",
+      "veau": "Veau",
+      "boeuf": "Bœuf",
+      "agneau": "Agneau",
+      "poulet": "Poulet",
+      "ch": "Suisse",
+      "eu": "Europe"
     }
   },
   "tag": {
@@ -97,7 +110,11 @@
     "kikil": "Soupe d'agneau mijotée aux oignons, curry et piment vert (contient des os), sur injera.",
     "shekla": "Bœuf émincé aux oignons, piment vert et épices, servi sur injera.",
     "kutfo": "Tartare de bœuf haché à la main, beurre maison épicé, piment rouge et poivre noir, sur injera.",
-    "riz_besiga": "Émincé de bœuf aux oignons, piment vert et épices, servi avec du riz."
+    "riz_besiga": "Émincé de bœuf aux oignons, piment vert et épices, servi avec du riz.",
+    "cafe_trad": "Cérémonie du café, dès deux personnes — servi avec du pop-corn, ou avec le gâteau Henbasha (du jeudi au dimanche).",
+    "the_anis": "Spécialité de thé noir en portion, sucré à l'anis.",
+    "frappe": "Vanille, fraise ou chocolat.",
+    "glace": "Vanille, fraise, chocolat ou citron."
   },
   "about": {
     "title": "Notre histoire",

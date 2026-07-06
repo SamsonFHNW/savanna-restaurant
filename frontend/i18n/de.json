@@ -50,7 +50,7 @@
       "starters": "Vorspeisen",
       "meat": "Fleischgerichte",
       "veg": "Vegetarische Gerichte",
-      "drinks": "Getränke",
+      "drinks": "Desserts & Kaffee",
       "coffee": "Traditioneller Kaffee"
     },
     "eyebrow": "Zum Teilen",
@@ -58,13 +58,26 @@
       "starters": "Zum Auftakt.",
       "meat": "Das Herz unserer Küche.",
       "veg": "Der Garten, geduldig geschmort.",
-      "drinks": "Bald auf der Karte.",
+      "drinks": "Ein süsser Ausklang.",
       "coffee": "Die Zeremonie, langsam serviert."
     },
     "drinks_soon": "Unsere Getränkekarte folgt in Kürze.",
     "unit": {
       "person": "pro Person",
       "two": "für 2 Personen"
+    },
+    "info": {
+      "title": "Informationen",
+      "sub": "zu unserer Karte",
+      "allergens_title": "Mögliche Allergene",
+      "allergens_text": "Unsere Karte kann folgende Allergene enthalten: Gluten, Eier, Erdnüsse, Soja und Laktose. Bitte teilen Sie uns Ihre Allergien bei der Bestellung mit.",
+      "origin_title": "Herkunft des Fleisches",
+      "veau": "Kalb",
+      "boeuf": "Rind",
+      "agneau": "Lamm",
+      "poulet": "Huhn",
+      "ch": "Schweiz",
+      "eu": "Europa"
     }
   },
   "tag": {
@@ -100,7 +113,11 @@
     "kikil": "Langsam gegarte Lammsuppe mit Zwiebeln, Curry und grünem Chili (enthält Knochen), auf Injera.",
     "shekla": "Rindshackfleisch mit Zwiebeln, grünem Chili und Gewürzen, auf Injera serviert.",
     "kutfo": "Von Hand gehacktes Rindertatar mit würziger Hausbutter, rotem Chili und schwarzem Pfeffer, auf Injera.",
-    "riz_besiga": "Rindstreifen mit Zwiebeln, grünem Chili und Gewürzen, mit Reis serviert."
+    "riz_besiga": "Rindstreifen mit Zwiebeln, grünem Chili und Gewürzen, mit Reis serviert.",
+    "cafe_trad": "Traditionelle Kaffeezeremonie, ab zwei Personen — serviert mit Popcorn oder mit Henbasha-Kuchen (Donnerstag bis Sonntag).",
+    "the_anis": "Schwarztee-Spezialität in Portion, mit Anis gesüsst.",
+    "frappe": "Vanille, Erdbeere oder Schokolade.",
+    "glace": "Vanille, Erdbeere, Schokolade oder Zitrone."
   },
   "about": {
     "title": "Unsere Geschichte",

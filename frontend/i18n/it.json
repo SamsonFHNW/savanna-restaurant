@@ -50,7 +50,7 @@
       "starters": "Antipasti",
       "meat": "Piatti di carne",
       "veg": "Piatti vegetariani",
-      "drinks": "Bevande",
+      "drinks": "Dolci & caffè",
       "coffee": "Caffè tradizionale"
     },
     "eyebrow": "Da condividere",
@@ -58,13 +58,26 @@
       "starters": "Per cominciare.",
       "meat": "Il cuore della nostra cucina.",
       "veg": "L'orto, cotto con pazienza.",
-      "drinks": "Presto in carta.",
+      "drinks": "Per finire in dolcezza.",
       "coffee": "La cerimonia, servita lentamente."
     },
     "drinks_soon": "La nostra carta delle bevande arriva presto.",
     "unit": {
       "person": "a persona",
       "two": "per 2 persone"
+    },
+    "info": {
+      "title": "Informazioni",
+      "sub": "sulla nostra carta",
+      "allergens_title": "Allergeni possibili",
+      "allergens_text": "La nostra carta può contenere i seguenti allergeni: glutine, uova, arachidi, soia e lattosio. Segnalateci eventuali allergie al momento dell'ordine.",
+      "origin_title": "Provenienza della carne",
+      "veau": "Vitello",
+      "boeuf": "Manzo",
+      "agneau": "Agnello",
+      "poulet": "Pollo",
+      "ch": "Svizzera",
+      "eu": "Europa"
     }
   },
   "tag": {
@@ -100,7 +113,11 @@
     "kikil": "Zuppa di agnello cotta a lungo con cipolle, curry e peperoncino verde (contiene ossa), su injera.",
     "shekla": "Manzo tritato con cipolle, peperoncino verde e spezie, servito su injera.",
     "kutfo": "Tartare di manzo tritata a mano con burro speziato della casa, peperoncino rosso e pepe nero, su injera.",
-    "riz_besiga": "Straccetti di manzo con cipolle, peperoncino verde e spezie, serviti con riso."
+    "riz_besiga": "Straccetti di manzo con cipolle, peperoncino verde e spezie, serviti con riso.",
+    "cafe_trad": "Cerimonia del caffè tradizionale, da due persone — servita con pop-corn o con la torta Henbasha (da giovedì a domenica).",
+    "the_anis": "Specialità di tè nero in porzione, dolcificato all'anice.",
+    "frappe": "Vaniglia, fragola o cioccolato.",
+    "glace": "Vaniglia, fragola, cioccolato o limone."
   },
   "about": {
     "title": "La nostra storia",

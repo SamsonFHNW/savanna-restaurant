@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="/assets/logo-green.png">
-  <link rel="stylesheet" href="/style.css?v=3f6870d5">
+  <link rel="stylesheet" href="/style.css?v=299f7747">
   <link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/menu">
   <link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/menu">
   <link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/menu">
@@ -74,7 +74,7 @@
           <a href="#entrees" data-i18n="menu.cat.starters">Entrées</a>
           <a href="#vegetariens" data-i18n="menu.cat.veg">Plats végétariens</a>
           <a href="#viande" data-i18n="menu.cat.meat">Plats de viande</a>
-          <a href="#boissons" data-i18n="menu.cat.drinks">Boissons</a>
+          <a href="#desserts" data-i18n="menu.cat.drinks">Desserts & cafés</a>
         </div>
       </div>
     </nav>
@@ -250,18 +250,83 @@
       </div>
     </section>
 
-    <!-- Boissons (owner to add manually) -->
-    <section class="menu-chapter" id="boissons">
+    <!-- Desserts & boissons chaudes -->
+    <section class="menu-chapter" id="desserts">
       <div class="menu-chapter__banner" data-theme="dark">
         <div class="container" data-reveal>
-          <h2 class="menu-chapter__title reveal" data-i18n="menu.cat.drinks">Boissons</h2>
-          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.drinks">Bientôt à la carte.</p>
+          <h2 class="menu-chapter__title reveal" data-i18n="menu.cat.drinks">Desserts & cafés</h2>
+          <p class="menu-chapter__descriptor reveal" data-i18n="menu.desc.drinks">Pour finir en douceur.</p>
         </div>
       </div>
       <div class="menu-list" data-theme="light">
         <div class="container">
-          <!-- TODO: owner to add the real drinks list (Tej, bières, jus, café traditionnel, etc.) -->
-          <p class="menu-soon" data-i18n="menu.drinks_soon">Notre carte des boissons arrive bientôt.</p>
+          <div class="menu-item">
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/coffee-ceremony.jpg"
+              alt="Café traditionnel — cérémonie du café" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Café traditionnel</span>
+              <span class="tag" data-i18n="tag.share">À partager</span>
+            </div>
+            <span class="menu-item__price">Pop-corn · CHF 5<br>Henbasha · CHF 7 <span class="menu-item__unit" data-i18n="menu.unit.person">par personne</span></span>
+            <p class="menu-item__desc" data-i18n="dish.cafe_trad">Cérémonie du café, dès deux personnes — servi avec du pop-corn, ou avec le gâteau Henbasha (du jeudi au dimanche).</p>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__thumb" src="/assets/dishes/thumb/chai.jpg"
+              alt="Thé noir à l'anis" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Thé noir à l'anis</span>
+            </div>
+            <span class="menu-item__price">CHF 9 <span class="menu-item__unit" data-i18n="menu.unit.two">pour 2 personnes</span></span>
+            <p class="menu-item__desc" data-i18n="dish.the_anis">Spécialité de thé noir en portion, sucré à l'anis.</p>
+          </div>
+
+          <div class="menu-item">
+            <!-- TODO: add a real photo of the Frappé -->
+            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
+              alt="Frappé — vanille, fraise ou chocolat" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Frappé</span>
+            </div>
+            <span class="menu-item__price">CHF 8</span>
+            <p class="menu-item__desc" data-i18n="dish.frappe">Vanille, fraise ou chocolat.</p>
+          </div>
+
+          <div class="menu-item">
+            <!-- TODO: add a real photo of the ice cream -->
+            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
+              alt="Boule de glace" loading="lazy" width="80" height="80">
+            <div class="menu-item__head">
+              <span class="menu-item__name">Boule de glace</span>
+            </div>
+            <span class="menu-item__price">CHF 3.50</span>
+            <p class="menu-item__desc" data-i18n="dish.glace">Vanille, fraise, chocolat ou citron.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Informations : allergènes + provenance de la viande -->
+    <section class="menu-info" data-theme="light">
+      <div class="container">
+        <div class="menu-info__head reveal">
+          <span class="caption" data-i18n="menu.info.sub">concernant notre carte</span>
+          <h2 class="section-title" style="margin-top: 18px;" data-i18n="menu.info.title">Informations</h2>
+        </div>
+        <div class="menu-info__grid" data-reveal>
+          <div class="reveal">
+            <h3 class="menu-info__label" data-i18n="menu.info.allergens_title">Allergènes possibles</h3>
+            <p data-i18n="menu.info.allergens_text">Notre carte peut contenir les allergènes suivants : gluten, œufs, arachides, soja et lactose. N'hésitez pas à nous signaler vos allergies lors du service.</p>
+          </div>
+          <div class="reveal">
+            <h3 class="menu-info__label" data-i18n="menu.info.origin_title">Provenance de la viande</h3>
+            <dl class="menu-info__origin">
+              <div><dt data-i18n="menu.info.veau">Veau</dt><dd data-i18n="menu.info.ch">Suisse</dd></div>
+              <div><dt data-i18n="menu.info.boeuf">Bœuf</dt><dd data-i18n="menu.info.ch">Suisse</dd></div>
+              <div><dt data-i18n="menu.info.agneau">Agneau</dt><dd data-i18n="menu.info.ch">Suisse</dd></div>
+              <div><dt data-i18n="menu.info.poulet">Poulet</dt><dd data-i18n="menu.info.eu">Europe</dd></div>
+            </dl>
+          </div>
         </div>
       </div>
     </section>
@@ -303,7 +368,7 @@
     </div>
   </footer>
 
-  <script src="/config.js?v=3f6870d5"></script>
-  <script src="/main.js?v=3f6870d5"></script>
+  <script src="/config.js?v=299f7747"></script>
+  <script src="/main.js?v=299f7747"></script>
 </body>
 </html>

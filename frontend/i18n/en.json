@@ -47,7 +47,7 @@
       "starters": "Starters",
       "meat": "Meat dishes",
       "veg": "Vegetarian dishes",
-      "drinks": "Drinks",
+      "drinks": "Desserts & coffee",
       "coffee": "Traditional coffee"
     },
     "eyebrow": "To share",
@@ -55,13 +55,26 @@
       "starters": "To begin.",
       "meat": "The heart of our kitchen.",
       "veg": "The garden, slowly simmered.",
-      "drinks": "Coming soon to the menu.",
+      "drinks": "A sweet ending.",
       "coffee": "The ceremony, served slowly."
     },
     "drinks_soon": "Our drinks list is coming soon.",
     "unit": {
       "person": "per person",
       "two": "for 2 people"
+    },
+    "info": {
+      "title": "Information",
+      "sub": "about our menu",
+      "allergens_title": "Possible allergens",
+      "allergens_text": "Our menu may contain the following allergens: gluten, eggs, peanuts, soy and lactose. Please let us know of any allergies when ordering.",
+      "origin_title": "Meat origin",
+      "veau": "Veal",
+      "boeuf": "Beef",
+      "agneau": "Lamb",
+      "poulet": "Chicken",
+      "ch": "Switzerland",
+      "eu": "Europe"
     }
   },
   "tag": {
@@ -97,7 +110,11 @@
     "kikil": "Slow-cooked lamb soup with onions, curry and green chilli (contains bones), on injera.",
     "shekla": "Minced beef with onions, green chilli and spices, served on injera.",
     "kutfo": "Hand-chopped beef tartare with spiced house butter, red chilli and black pepper, on injera.",
-    "riz_besiga": "Beef strips with onions, green chilli and spices, served with rice."
+    "riz_besiga": "Beef strips with onions, green chilli and spices, served with rice.",
+    "cafe_trad": "Traditional coffee ceremony, from two people — served with popcorn, or with Henbasha cake (Thursday to Sunday).",
+    "the_anis": "Black tea speciality by the portion, sweetened with anise.",
+    "frappe": "Vanilla, strawberry or chocolate.",
+    "glace": "Vanilla, strawberry, chocolate or lemon."
   },
   "about": {
     "title": "Our story",

@@ -875,6 +875,46 @@ body.page-interior { background-color: var(--cream); color: var(--ink); }
   color: var(--ink-muted);
   padding-block: 8px 4px;
 }
+
+/* Menu info — allergens + meat provenance */
+.menu-info {
+  background-color: var(--bg);
+  color: var(--fg);
+  padding-block: var(--section-gap);
+  border-top: 1px solid var(--hairline);
+}
+.menu-info__head { margin-bottom: 44px; }
+.menu-info__head .caption { margin-bottom: 14px; }
+.menu-info__grid { display: grid; grid-template-columns: 1fr; gap: 44px; }
+@media (min-width: 900px) { .menu-info__grid { grid-template-columns: 1fr 1fr; gap: 72px; } }
+.menu-info__label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--hairline);
+}
+.menu-info p { color: var(--fg-muted); max-width: 52ch; line-height: 1.7; }
+.menu-info__origin { display: flex; flex-direction: column; }
+.menu-info__origin > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 11px;
+  border-bottom: 1px solid var(--hairline);
+}
+.menu-info__origin dt {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--fg);
+}
+.menu-info__origin dd { color: var(--gold); font-size: 15px; letter-spacing: 0.04em; }
 .tag {
   font-size: 10px;
   font-weight: 600;
