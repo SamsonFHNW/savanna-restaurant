@@ -96,6 +96,35 @@ def build_hreflang(page):
     return "\n".join(lines)
 
 
+OG_LOCALE = {"fr": "fr_CH", "en": "en_GB", "de": "de_CH", "it": "it_CH"}
+
+
+def build_page_meta(page, lang):
+    """Per-language canonical + og:url + og:locale for this page."""
+    url = f"{DOMAIN}/{lang}/{clean_path(page, lang)}"
+    return (
+        f'  <link rel="canonical" href="{url}">\n'
+        f'  <meta property="og:url" content="{url}">\n'
+        f'  <meta property="og:locale" content="{OG_LOCALE[lang]}">'
+    )
+
+
+def write_sitemap():
+    """A sitemap.xml listing every localized page (search-engine discovery)."""
+    urls = []
+    for page in PAGES:
+        for lang in LANGS:
+            urls.append(f"{DOMAIN}/{lang}/{clean_path(page, lang)}")
+    body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
+    xml = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{body}\n</urlset>\n"
+    )
+    with open(os.path.join(HERE, "sitemap.xml"), "w", encoding="utf-8") as f:
+        f.write(xml)
+
+
 def build_selector(page, current):
     labels = {"fr": "Français", "en": "English", "de": "Deutsch", "it": "Italiano"}
     opts = []
@@ -188,13 +217,15 @@ def generate():
             html = fix_assets(html, ver)
             html = rewrite_links(html, lang)
             html = OLD_TOGGLE_RE.sub(build_selector(page, lang), html)
-            html = html.replace("</head>", build_hreflang(page) + "\n</head>", 1)
+            head_extra = build_hreflang(page) + "\n" + build_page_meta(page, lang)
+            html = html.replace("</head>", head_extra + "\n</head>", 1)
             html = bake_text(html, dicts[lang])
             dest = os.path.join(HERE, lang, out_filename(page, lang))
             with open(dest, "w", encoding="utf-8") as f:
                 f.write(html)
             count += 1
-    print(f"Generated {count} files across {len(LANGS)} languages.")
+    write_sitemap()
+    print(f"Generated {count} files across {len(LANGS)} languages. Wrote sitemap.xml.")
 
 
 if __name__ == "__main__":

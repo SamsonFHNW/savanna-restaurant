@@ -171,14 +171,19 @@ def _customer_email_body(res: ReservationRequest) -> str:
 
 
 def _owner_whatsapp_body(res: ReservationRequest) -> str:
-    return (
+    # WhatsApp is the only notification channel, so it carries every detail.
+    body = (
         "🍽 Nouvelle réservation — Savanna\n\n"
         f"Nom: {res.name}\n"
         f"Personnes: {res.guests}\n"
         f"Date: {format_fr_date(res)} à {res.time}\n"
-        f"Tél: {res.phone}\n\n"
-        "Détails complets par email."
+        f"Tél: {res.phone}\n"
+        f"Email: {res.email}\n"
     )
+    if res.message:
+        body += f"Message: {res.message}\n"
+    body += "\n→ À confirmer par téléphone dans les 24h."
+    return body
 
 
 # ─────────────────────────────────────────────────────────────
