@@ -937,6 +937,21 @@ body.page-interior { background-color: var(--cream); color: var(--ink); }
   color: var(--fg);
 }
 .menu-info__origin dd { color: var(--gold); font-size: 15px; letter-spacing: 0.04em; }
+
+/* Legal / privacy page */
+.legal__content { max-width: 70ch; }
+.legal__content > div { margin-bottom: 40px; }
+.legal__content h2 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+  margin-bottom: 12px;
+}
+.legal__content p { color: var(--fg-muted); line-height: 1.8; }
+.legal__content a { color: var(--terracotta); }
+.footer__legal { color: inherit; }
 .tag {
   font-size: 10px;
   font-weight: 600;

@@ -40,6 +40,7 @@ PAGES = {
     "reserve": {"src": "reserver.html","slug": {"fr": "reserver",  "en": "reserve", "de": "reservieren", "it": "prenotare"}},
     "contact": {"src": "contact.html", "slug": {"fr": "contact",   "en": "contact", "de": "kontakt",     "it": "contatto"}},
     "gallery": {"src": "gallerie.html","slug": {"fr": "gallerie",  "en": "gallery", "de": "galerie",     "it": "galleria"}},
+    "legal":   {"src": "mentions.html","slug": {"fr": "mentions",  "en": "legal",   "de": "impressum",   "it": "note-legali"}},
 }
 
 # source flat filename -> page id (for rewriting internal links)
@@ -50,6 +51,7 @@ SRC_LINK_TO_PAGE = {
     "reserver.html": "reserve",
     "contact.html": "contact",
     "gallerie.html": "gallery",
+    "mentions.html": "legal",
 }
 
 
@@ -157,7 +159,7 @@ def rewrite_links(html, lang):
         src_file = m.group(1)
         page = SRC_LINK_TO_PAGE[src_file]
         return f'href="{out_filename(page, lang)}"'
-    return re.sub(r'href="(index\.html|menu\.html|about\.html|reserver\.html|contact\.html|gallerie\.html)"', repl, html)
+    return re.sub(r'href="(index\.html|menu\.html|about\.html|reserver\.html|contact\.html|gallerie\.html|mentions\.html)"', repl, html)
 
 
 def bake_text(html, dic):

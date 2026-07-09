@@ -188,7 +188,8 @@
     "explore": "Explorer",
     "hours_week": "Lun · Mer · Jeu — 11:00–23:00",
     "hours_weekend": "Ven · Sam — 10:30–01:30",
-    "hours_sun": "Dim — 10:00–23:00 · Mar fermé"
+    "hours_sun": "Dim — 10:00–23:00 · Mar fermé",
+    "legal": "Mentions légales"
   },
   "lang": {
     "fr": "Français",
@@ -215,5 +216,19 @@
     "title": "La fête, chez vous",
     "text": "Sur demande, Savanna se déplace : injera, wats et grand plateau à partager, dressés pour vos anniversaires, mariages et fêtes d'entreprise. Vous réunissez les convives, on apporte le reste.",
     "cta": "Demander un devis"
+  },
+  "legal": {
+    "eyebrow": "Informations légales",
+    "title": "Mentions légales",
+    "editor_title": "Éditeur",
+    "editor_text": "Restaurant Savanna — Bar & Restaurant, Rue Albert Schnyder 4, 2800 Delémont, Suisse. Téléphone : 032 422 73 10.",
+    "hosting_title": "Hébergement",
+    "hosting_text": "Le site est hébergé par Netlify ; le service de réservation par Render.",
+    "data_title": "Protection des données",
+    "data_text": "Les formulaires de réservation et de contact ne recueillent que les informations que vous fournissez (nom, téléphone, e-mail, date, heure, nombre de personnes, message). Elles servent uniquement à traiter votre demande et sont transmises au restaurant ; elles ne sont ni vendues ni partagées à des fins publicitaires. La notification de réservation est acheminée via WhatsApp (Twilio). Vos données ne sont conservées que le temps nécessaire au traitement de votre demande.",
+    "cookies_title": "Cookies",
+    "cookies_text": "Ce site n'utilise aucun cookie de suivi ni outil d'analyse. Seule votre préférence de langue est mémorisée localement dans votre navigateur. La carte Google Maps intégrée peut déposer ses propres cookies.",
+    "rights_title": "Vos droits",
+    "rights_text": "Conformément à la loi suisse sur la protection des données (nLPD) et au RGPD, vous pouvez demander l'accès, la rectification ou la suppression de vos données en nous contactant au 032 422 73 10."
   }
 }

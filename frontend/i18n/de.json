@@ -191,7 +191,8 @@
     "explore": "Entdecken",
     "hours_week": "Mo · Mi · Do — 11:00–23:00",
     "hours_weekend": "Fr · Sa — 10:30–01:30",
-    "hours_sun": "So — 10:00–23:00 · Di geschlossen"
+    "hours_sun": "So — 10:00–23:00 · Di geschlossen",
+    "legal": "Impressum"
   },
   "lang": {
     "fr": "Français",
@@ -218,5 +219,19 @@
     "title": "Das Fest zu Ihnen",
     "text": "Auf Anfrage kommt Savanna zu Ihnen: Injera, Wats und eine grosse Platte zum Teilen für Geburtstage, Hochzeiten und Firmenfeste. Sie versammeln die Gäste, wir bringen den Rest.",
     "cta": "Angebot anfragen"
+  },
+  "legal": {
+    "eyebrow": "Rechtliche Informationen",
+    "title": "Impressum",
+    "editor_title": "Herausgeber",
+    "editor_text": "Restaurant Savanna — Bar & Restaurant, Rue Albert Schnyder 4, 2800 Delémont, Schweiz. Telefon: 032 422 73 10.",
+    "hosting_title": "Hosting",
+    "hosting_text": "Die Website wird von Netlify gehostet; der Reservierungsdienst von Render.",
+    "data_title": "Datenschutz",
+    "data_text": "Die Reservierungs- und Kontaktformulare erfassen nur die von Ihnen angegebenen Informationen (Name, Telefon, E-Mail, Datum, Uhrzeit, Personenzahl, Nachricht). Sie dienen ausschliesslich der Bearbeitung Ihrer Anfrage und werden an das Restaurant übermittelt; sie werden weder verkauft noch zu Werbezwecken weitergegeben. Die Reservierungsbenachrichtigung erfolgt über WhatsApp (Twilio). Ihre Daten werden nur so lange gespeichert, wie es für die Bearbeitung nötig ist.",
+    "cookies_title": "Cookies",
+    "cookies_text": "Diese Website verwendet keine Tracking-Cookies oder Analyse-Tools. Nur Ihre Sprachpräferenz wird lokal in Ihrem Browser gespeichert. Die eingebettete Google-Maps-Karte kann eigene Cookies setzen.",
+    "rights_title": "Ihre Rechte",
+    "rights_text": "Gemäss dem schweizerischen Datenschutzgesetz (revDSG) und der DSGVO können Sie Auskunft, Berichtigung oder Löschung Ihrer Daten verlangen, indem Sie uns unter 032 422 73 10 kontaktieren."
   }
 }

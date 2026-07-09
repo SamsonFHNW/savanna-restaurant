@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À propos — Savanna · Delémont</title>
-  <meta name="description" content="L'histoire de Savanna, restaurant familial éthiopien et érythréen à Delémont.">
+  <title>Mentions légales — Savanna · Delémont</title>
+  <meta name="description" content="Mentions légales et protection des données du restaurant Savanna à Delémont.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Savanna — Bar & Restaurant">
-  <meta property="og:title" content="À propos — Savanna · Delémont">
-  <meta property="og:description" content="L'histoire de Savanna, restaurant familial éthiopien et érythréen à Delémont.">
+  <meta property="og:title" content="Mentions légales — Savanna · Delémont">
+  <meta property="og:description" content="Mentions légales et protection des données du restaurant Savanna à Delémont.">
   <meta property="og:image" content="https://savanna-restaurant.ch/assets/og.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -18,15 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="/assets/logo-green.png">
-  <link rel="stylesheet" href="/style.css?v=ba7da973">
-  <link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/about">
-  <link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/about">
-  <link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/about">
-  <link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/about">
-  <link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/about">
-  <link rel="canonical" href="https://savanna-restaurant.ch/fr/about">
-  <meta property="og:url" content="https://savanna-restaurant.ch/fr/about">
-  <meta property="og:locale" content="fr_CH">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-interior">
 
@@ -39,22 +31,11 @@
       <div class="nav__cluster" id="nav-cluster">
         <ul class="nav__menu" role="list">
           <li><a href="menu.html" class="nav__link" data-i18n="nav.menu">Menu</a></li>
-          <li><a href="about.html" class="nav__link" aria-current="page" data-i18n="nav.about">À propos</a></li>
+          <li><a href="about.html" class="nav__link" data-i18n="nav.about">À propos</a></li>
           <li><a href="reserver.html" class="nav__link" data-i18n="nav.reserve">Réserver</a></li>
           <li><a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a></li>
         </ul>
-        <div class="lang" id="lang">
-          <button class="lang__toggle" id="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
-            <span class="lang__code">FR</span>
-            <svg class="lang__caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-          </button>
-          <ul class="lang__menu" id="lang-menu" role="menu">
-          <li role="none"><a role="menuitem" class="lang__option lang__option--current" hreflang="fr" data-lang="fr" href="/fr/about.html" aria-current="true">Français</a></li>
-          <li role="none"><a role="menuitem" class="lang__option" hreflang="en" data-lang="en" href="/en/about.html">English</a></li>
-          <li role="none"><a role="menuitem" class="lang__option" hreflang="de" data-lang="de" href="/de/about.html">Deutsch</a></li>
-          <li role="none"><a role="menuitem" class="lang__option" hreflang="it" data-lang="it" href="/it/about.html">Italiano</a></li>
-          </ul>
-        </div>
+        <button class="nav__lang" id="lang-toggle" aria-label="Switch to English">EN</button>
       </div>
     </nav>
   </header>
@@ -62,35 +43,34 @@
   <main>
     <div class="page-header" data-theme="light">
       <div class="container">
-        <span class="caption" data-i18n="about.eyebrow">Famille & cuisine</span>
-        <h1 class="page-header__title" style="margin-top: 18px;" data-i18n="about.title">Notre histoire</h1>
+        <span class="caption" data-i18n="legal.eyebrow">Informations légales</span>
+        <h1 class="page-header__title" style="margin-top: 18px;" data-i18n="legal.title">Mentions légales</h1>
       </div>
     </div>
 
     <section class="section" data-theme="light" style="padding-top: 0;" data-reveal>
       <div class="container">
-        <div class="about__grid">
-          <div class="about__img reveal">
-            <!-- TODO: swap for a real photo of the Savanna family / dining room -->
-            <img src="/assets/dishes/bunna.jpg"
-              alt="Le café en partage — l'hospitalité éthiopienne et érythréenne" loading="lazy" width="760" height="950">
+        <div class="legal__content">
+          <div class="reveal">
+            <h2 data-i18n="legal.editor_title">Éditeur</h2>
+            <p data-i18n="legal.editor_text">Restaurant Savanna — Bar & Restaurant, Rue Albert Schnyder 4, 2800 Delémont, Suisse. Téléphone : 032 422 73 10.</p>
           </div>
-
-          <div class="about__text reveal">
-            <p data-i18n="about.p1">Savanna est né du désir de partager, à Delémont, les saveurs qui ont bercé notre enfance en Éthiopie et en Érythrée. Ici, chaque plat porte une mémoire : celle d'une cuisine transmise de mère en fille, de fête en fête.</p>
-
-            <blockquote class="pull-quote" data-i18n="about.quote">« Chez nous, on ne mange pas chacun dans son assiette. On rompt l'injera ensemble. »</blockquote>
-
-            <p data-i18n="about.p2">Nos épices arrivent directement du pays. L'injera est préparée chaque matin, au levain, et chaque wat mijote de longues heures jusqu'à trouver son équilibre. Rien n'est pressé — c'est ce qui fait la différence.</p>
-
-            <p data-i18n="about.p3">La maison est tenue en famille. Vous serez peut-être accueilli par l'un d'entre nous, servi par un autre, et repartirez, on l'espère, avec l'envie de revenir.</p>
+          <div class="reveal">
+            <h2 data-i18n="legal.hosting_title">Hébergement</h2>
+            <p data-i18n="legal.hosting_text">Le site est hébergé par Netlify ; le service de réservation par Render.</p>
           </div>
-        </div>
-
-        <div class="team-strip reveal">
-          <span class="caption" data-i18n="about.team_eyebrow">La maison</span>
-          <h2 class="section-title" style="margin-top: 18px;" data-i18n="about.team_title">Notre équipe</h2>
-          <p class="section-intro" data-i18n="about.team_text">Une petite équipe familiale en cuisine et en salle, qui partage la même table depuis le premier jour.</p>
+          <div class="reveal">
+            <h2 data-i18n="legal.data_title">Protection des données</h2>
+            <p data-i18n="legal.data_text">Les formulaires de réservation et de contact ne recueillent que les informations que vous fournissez (nom, téléphone, e-mail, date, heure, nombre de personnes, message). Elles servent uniquement à traiter votre demande et sont transmises au restaurant ; elles ne sont ni vendues ni partagées à des fins publicitaires. La notification de réservation est acheminée via WhatsApp (Twilio). Vos données ne sont conservées que le temps nécessaire au traitement de votre demande.</p>
+          </div>
+          <div class="reveal">
+            <h2 data-i18n="legal.cookies_title">Cookies</h2>
+            <p data-i18n="legal.cookies_text">Ce site n'utilise aucun cookie de suivi ni outil d'analyse. Seule votre préférence de langue est mémorisée localement dans votre navigateur. La carte Google Maps intégrée peut déposer ses propres cookies.</p>
+          </div>
+          <div class="reveal">
+            <h2 data-i18n="legal.rights_title">Vos droits</h2>
+            <p data-i18n="legal.rights_text">Conformément à la loi suisse sur la protection des données (nLPD) et au RGPD, vous pouvez demander l'accès, la rectification ou la suppression de vos données en nous contactant au 032 422 73 10.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -132,7 +112,7 @@
     </div>
   </footer>
 
-  <script src="/config.js?v=ba7da973"></script>
-  <script src="/main.js?v=ba7da973"></script>
+  <script src="config.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
