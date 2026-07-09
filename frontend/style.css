@@ -636,8 +636,11 @@ img.hero__bg { animation: kenburns 20s ease-in-out 2s infinite alternate; }
 .dish-card:hover::after { background: linear-gradient(to bottom, rgba(15,11,8,0.15) 0%, rgba(15,11,8,0.9) 100%); }
 .dish-card:hover .dish-card__desc { opacity: 1; transform: none; }
 .dishes__more { margin-top: 48px; }
-@media (min-width: 700px) {
-  .dishes__grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+@media (min-width: 640px) {
+  .dishes__grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
+@media (min-width: 900px) {
+  .dishes__grid { grid-template-columns: repeat(4, 1fr); gap: 20px; }
 }
 
 /* ═══════════════════════════════════════════════════════
