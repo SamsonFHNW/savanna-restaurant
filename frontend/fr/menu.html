@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="/assets/logo-green.png">
-  <link rel="stylesheet" href="/style.css?v=cebb0147">
+  <link rel="stylesheet" href="/style.css?v=cd7178c7">
   <link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/menu">
   <link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/menu">
   <link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/menu">
@@ -57,15 +57,6 @@
       </div>
     </div>
 
-    <!-- Gallery strip -->
-    <div class="container">
-      <div class="menu-gallery" data-reveal>
-        <img class="reveal" src="/assets/dishes/injera.jpg" alt="Menu Dégustation Savanna sur injera" loading="lazy" width="480" height="480">
-        <img class="reveal" src="/assets/dishes/tiebsi.jpg" alt="Menu Tiebsi — bœuf émincé" loading="lazy" width="480" height="480">
-        <img class="reveal" src="/assets/dishes/kitfo.jpg" alt="Menu Kutfo — tartare de bœuf" loading="lazy" width="480" height="480">
-        <img class="reveal" src="/assets/dishes/shiro.jpg" alt="Menu Shiro — purée de pois chiche" loading="lazy" width="480" height="480">
-      </div>
-    </div>
 
     <!-- Chapter nav -->
     <nav class="menu-nav" aria-label="Sections du menu">
@@ -81,8 +72,8 @@
 
     <!--
       Real menu supplied by the owner (July 2026), split vegetarian / non-vegetarian.
+      Text-only list (dish photos removed on request — can be re-added later).
       Dish names stay in the original; only descriptions are translated (data-i18n).
-      Thumbnails use the 160px copies in assets/dishes/thumb/ (see PHOTO_CREDITS.md).
       Handwritten prices on the source menu — confirm with the owner before launch.
     -->
 
@@ -97,8 +88,6 @@
       <div class="menu-list" data-theme="light">
         <div class="container">
           <div class="menu-item">
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/timatim.jpg"
-              alt="Salade composée maison" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Salade composée maison</span>
               <span class="tag" data-i18n="tag.veg">Végétarien</span>
@@ -108,8 +97,6 @@
           </div>
 
           <div class="menu-item">
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/sambusa.jpg"
-              alt="Samosas végétariens croustillants" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Samosas végétariens</span>
               <span class="tag" data-i18n="tag.veg">Végétarien</span>
@@ -119,8 +106,6 @@
           </div>
 
           <div class="menu-item">
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/sambusa.jpg"
-              alt="Samosas à la viande croustillants" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Samosas à la viande</span>
             </div>
@@ -142,8 +127,6 @@
       <div class="menu-list" data-theme="light">
         <div class="container">
           <div class="menu-item">
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/injera.jpg"
-              alt="Menu Dégustation Savanna végétarien sur injera" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Menu Dégustation « Savanna »</span>
               <span class="tag" data-i18n="tag.veg">Végétarien</span>
@@ -155,8 +138,6 @@
           </div>
 
           <div class="menu-item">
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/shiro.jpg"
-              alt="Menu Shiro — purée de pois chiche" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Menu « Shiro »</span>
               <span class="tag" data-i18n="tag.veg">Végétarien</span>
@@ -180,8 +161,6 @@
       <div class="menu-list" data-theme="light">
         <div class="container">
           <div class="menu-item">
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/injera.jpg"
-              alt="Menu Dégustation Savanna avec viande sur injera" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Menu Dégustation « Savanna »</span>
               <span class="tag" data-i18n="tag.spicy">Épicé</span>
@@ -192,8 +171,6 @@
           </div>
 
           <div class="menu-item">
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/tiebsi.jpg"
-              alt="Menu Tiebsi — bœuf ou agneau émincé sur injera" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Menu « Tiebsi »</span>
               <span class="tag" data-i18n="tag.spicy">Épicé</span>
@@ -203,8 +180,6 @@
           </div>
 
           <div class="menu-item">
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/shekla.jpg"
-              alt="Menu Shekla — bœuf émincé en marmite d'argile" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Menu « Shekla »</span>
               <span class="tag" data-i18n="tag.spicy">Épicé</span>
@@ -214,9 +189,6 @@
           </div>
 
           <div class="menu-item">
-            <!-- TODO: add a real photo of Kikil (no matching stock image) -->
-            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
-              alt="Menu Kikil — soupe d'agneau épicée" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Menu « Kikil »</span>
               <span class="tag" data-i18n="tag.spicy">Épicé</span>
@@ -226,8 +198,6 @@
           </div>
 
           <div class="menu-item">
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/kitfo.jpg"
-              alt="Menu Kutfo — tartare de bœuf éthiopien" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Menu « Kutfo »</span>
               <span class="tag" data-i18n="tag.spicy">Épicé</span>
@@ -237,8 +207,6 @@
           </div>
 
           <div class="menu-item">
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/tiebsi.jpg"
-              alt="Menu Riz Besiga — émincé de bœuf servi avec du riz" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Menu « Riz Besiga »</span>
               <span class="tag" data-i18n="tag.spicy">Épicé</span>
@@ -261,8 +229,6 @@
       <div class="menu-list" data-theme="light">
         <div class="container">
           <div class="menu-item">
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/coffee-ceremony.jpg"
-              alt="Café traditionnel — cérémonie du café" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Café traditionnel</span>
               <span class="tag" data-i18n="tag.share">À partager</span>
@@ -272,8 +238,6 @@
           </div>
 
           <div class="menu-item">
-            <img class="menu-item__thumb" src="/assets/dishes/thumb/chai.jpg"
-              alt="Thé noir à l'anis" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Thé noir à l'anis</span>
             </div>
@@ -282,9 +246,6 @@
           </div>
 
           <div class="menu-item">
-            <!-- TODO: add a real photo of the Frappé -->
-            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
-              alt="Frappé — vanille, fraise ou chocolat" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Frappé</span>
             </div>
@@ -293,9 +254,6 @@
           </div>
 
           <div class="menu-item">
-            <!-- TODO: add a real photo of the ice cream -->
-            <img class="menu-item__thumb" src="/assets/dish-placeholder.svg"
-              alt="Boule de glace" loading="lazy" width="80" height="80">
             <div class="menu-item__head">
               <span class="menu-item__name">Boule de glace</span>
             </div>
@@ -368,7 +326,7 @@
     </div>
   </footer>
 
-  <script src="/config.js?v=cebb0147"></script>
-  <script src="/main.js?v=cebb0147"></script>
+  <script src="/config.js?v=cd7178c7"></script>
+  <script src="/main.js?v=cd7178c7"></script>
 </body>
 </html>

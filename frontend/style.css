@@ -838,33 +838,15 @@ body.page-interior { background-color: var(--cream); color: var(--ink); }
 .menu-list { padding-block: 8px var(--section-gap); }
 .menu-item {
   display: grid;
-  grid-template-columns: 80px 1fr auto;
-  column-gap: 24px;
+  grid-template-columns: 1fr auto;
+  column-gap: 32px;
   row-gap: 6px;
   align-items: start;
   padding-block: 22px;
   border-bottom: 1px solid var(--hairline);
 }
-.menu-item__thumb {
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  background-color: #efe3cd;
-  border: 2px solid transparent;
-  opacity: 0;
-  transition: opacity var(--dur) var(--ease), transform 800ms var(--ease),
-              border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
-}
-.menu-item__thumb.loaded { opacity: 1; }
-.menu-item:hover .menu-item__thumb {
-  transform: rotate(-1deg) scale(1.05);
-  border: 4px solid var(--gold);
-  box-shadow: 0 10px 30px rgba(31, 22, 16, 0.18);
-}
 .menu-item__head {
-  grid-column: 2; grid-row: 1;
+  grid-column: 1; grid-row: 1;
   display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px;
 }
 .menu-item__name {
@@ -875,14 +857,14 @@ body.page-interior { background-color: var(--cream); color: var(--ink); }
   color: var(--ink);
 }
 .menu-item__desc {
-  grid-column: 2; grid-row: 2;
+  grid-column: 1; grid-row: 2;
   color: var(--ink-muted);
   font-size: 15px;
   line-height: 1.6;
   max-width: 62ch;
 }
 .menu-item__price {
-  grid-column: 3; grid-row: 1;
+  grid-column: 2; grid-row: 1;
   font-variant-numeric: tabular-nums;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -961,9 +943,8 @@ body.page-interior { background-color: var(--cream); color: var(--ink); }
 .tag--forest { color: var(--forest); border-color: var(--forest); }
 
 @media (max-width: 639px) {
-  .menu-item { grid-template-columns: 64px 1fr auto; column-gap: 16px; }
-  .menu-item__thumb { grid-row: 1; width: 64px; height: 64px; }
-  .menu-item__desc { grid-column: 1 / -1; grid-row: 2; max-width: none; }
+  .menu-item { column-gap: 20px; }
+  .menu-item__desc { max-width: none; }
 }
 
 /* ═══════════════════════════════════════════════════════
