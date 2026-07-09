@@ -444,21 +444,18 @@ body.has-cursor [role="menuitem"] { cursor: none; }
   inset: 0;
   width: 100%; height: 100%;
   object-fit: cover;
-  animation: kenburns 20s ease-in-out 2s infinite alternate;
 }
-/* Functional vertical gradient — transparent top → espresso 0.5 bottom */
+img.hero__bg { animation: kenburns 20s ease-in-out 2s infinite alternate; }
+/* Functional gradient — darker top & bottom so nav + title stay legible over the fire */
 .hero__scrim {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(to bottom, rgba(15, 11, 8, 0) 0%, rgba(15, 11, 8, 0.5) 100%);
-}
-/* Fire/ember canvas — rises from the shekla coals, sits under the text */
-.hero__fire {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  pointer-events: none;
+  background: linear-gradient(to bottom,
+    rgba(15, 11, 8, 0.5) 0%,
+    rgba(15, 11, 8, 0.25) 32%,
+    rgba(15, 11, 8, 0.35) 60%,
+    rgba(15, 11, 8, 0.72) 100%);
 }
 .hero__inner {
   position: relative;
