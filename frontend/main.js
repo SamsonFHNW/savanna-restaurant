@@ -395,6 +395,101 @@
     }, { passive: true });
   })();
 
+  /* ═══ Hero fire — glow + embers rising from the shekla coals ═══ */
+  (function () {
+    if (REDUCED) return;
+    var canvas = document.getElementById('hero-fire');
+    if (!canvas || !canvas.getContext) return;
+    var hero = canvas.closest('.hero');
+    var ctx = canvas.getContext('2d');
+    var img = hero.querySelector('.hero__bg');
+    var DPR = Math.min(window.devicePixelRatio || 1, 2);
+    var W = 0, H = 0, coalX = 0, coalY = 0;
+    var FX = 0.62, FY = 0.53;          // coal window within the photo
+    function computeCoal() {
+      var nw = img && img.naturalWidth, nh = img && img.naturalHeight;
+      if (!nw || !nh) { coalX = W * FX; coalY = H * FY; return; }
+      var s = Math.max(W / nw, H / nh), rw = nw * s, rh = nh * s;   // object-fit: cover
+      coalX = (W - rw) / 2 + FX * rw;
+      coalY = (H - rh) / 2 + FY * rh;
+    }
+    function size() {
+      var r = hero.getBoundingClientRect();
+      W = r.width; H = r.height;
+      canvas.width = Math.round(W * DPR); canvas.height = Math.round(H * DPR);
+      canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+      computeCoal();
+    }
+    size();
+    window.addEventListener('resize', size, { passive: true });
+    if (img) img.addEventListener('load', size);
+
+    var embers = [];
+    function spawn() {
+      embers.push({
+        x: coalX + (Math.random() - 0.5) * W * 0.07,
+        y: coalY + (Math.random() - 0.5) * 10,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: -(0.35 + Math.random() * 0.85),
+        r: 0.8 + Math.random() * 1.7,
+        life: 0, max: 90 + Math.random() * 90,
+        hue: 20 + Math.random() * 22
+      });
+    }
+    var visible = true;
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (e) { visible = e[0].isIntersecting; })
+        .observe(hero);
+    }
+    function frame() {
+      requestAnimationFrame(frame);
+      ctx.clearRect(0, 0, W, H);
+      if (!visible || document.hidden) return;
+      ctx.globalCompositeOperation = 'lighter';
+      var flick = 0.5 + 0.08 * Math.sin(Date.now() / 130) + Math.random() * 0.12;
+      // Soft flickering glow over the coals
+      var gr = Math.max(W, H) * 0.2;
+      var gg = ctx.createRadialGradient(coalX, coalY, 0, coalX, coalY, gr);
+      gg.addColorStop(0, 'hsla(22,100%,55%,' + (0.32 * flick) + ')');
+      gg.addColorStop(1, 'hsla(22,100%,50%,0)');
+      ctx.fillStyle = gg; ctx.fillRect(0, 0, W, H);
+      // Flame licking up from the coals
+      var fh = Math.min(W, H) * (0.17 + 0.035 * Math.sin(Date.now() / 90) + Math.random() * 0.03);
+      var fw = Math.min(W, H) * 0.06;
+      ctx.save();
+      ctx.translate(coalX + (Math.random() - 0.5) * fw * 0.4, coalY + fh * 0.08);
+      var fg = ctx.createLinearGradient(0, 0, 0, -fh);
+      fg.addColorStop(0, 'hsla(32,100%,62%,' + (0.55 * flick) + ')');
+      fg.addColorStop(0.5, 'hsla(24,100%,52%,' + (0.24 * flick) + ')');
+      fg.addColorStop(1, 'hsla(18,100%,45%,0)');
+      ctx.fillStyle = fg;
+      ctx.beginPath(); ctx.ellipse(0, -fh / 2, fw, fh / 2, 0, 0, 6.283); ctx.fill();
+      ctx.restore();
+      // Rising embers
+      if (embers.length < 90 && Math.random() < 0.9) spawn();
+      for (var i = embers.length - 1; i >= 0; i--) {
+        var p = embers[i];
+        p.life++;
+        p.x += p.vx; p.y += p.vy;
+        p.vy -= 0.0018;
+        p.vx += (Math.random() - 0.5) * 0.05;
+        var t = p.life / p.max;
+        if (t >= 1) { embers.splice(i, 1); continue; }
+        var a = Math.sin((1 - t) * Math.PI) * 0.9 * (0.7 + Math.random() * 0.3);
+        var rad = p.r * 4;
+        var g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, rad);
+        g.addColorStop(0, 'hsla(' + p.hue + ',100%,72%,' + a + ')');
+        g.addColorStop(0.35, 'hsla(' + p.hue + ',100%,58%,' + (a * 0.7) + ')');
+        g.addColorStop(1, 'hsla(' + p.hue + ',100%,50%,0)');
+        ctx.fillStyle = g;
+        ctx.beginPath(); ctx.arc(p.x, p.y, rad, 0, 6.283); ctx.fill();
+      }
+      ctx.globalCompositeOperation = 'source-over';
+    }
+    requestAnimationFrame(frame);
+  })();
+
   /* ═══ Menu — active chapter in the sticky sub-nav ═══ */
   (function () {
     var chapters = document.querySelectorAll('.menu-chapter[id]');
