@@ -6,12 +6,12 @@
     "contact": "Contact"
   },
   "hero": {
-    "tagline": "Cuisine érythréenne et éthiopienne",
+    "tagline": "Cuisine éthiopienne et érythréenne",
     "cta": "Réserver une table",
     "place": "Delémont · Jura"
   },
   "intro": {
-    "text": "Une table familiale au cœur de Delémont, où les recettes de l'Érythrée et de l'Éthiopie se partagent comme à la maison — l'injera au centre, les mains autour.",
+    "text": "Une table familiale au cœur de Delémont, où les recettes de l'Éthiopie et de l'Érythrée se partagent comme à la maison — l'injera au centre, les mains autour.",
     "more": "En savoir plus →"
   },
   "dishes": {
@@ -119,7 +119,7 @@
   },
   "about": {
     "title": "Notre histoire",
-    "p1": "Savanna est né du désir de partager, à Delémont, les saveurs qui ont bercé notre enfance en Érythrée et en Éthiopie. Ici, chaque plat porte une mémoire : celle d'une cuisine transmise de mère en fille, de fête en fête.",
+    "p1": "Savanna est né du désir de partager, à Delémont, les saveurs qui ont bercé notre enfance en Éthiopie et en Érythrée. Ici, chaque plat porte une mémoire : celle d'une cuisine transmise de mère en fille, de fête en fête.",
     "quote": "« Chez nous, on ne mange pas chacun dans son assiette. On rompt l'injera ensemble. »",
     "p2": "Nos épices arrivent directement du pays. L'injera est préparée chaque matin, au levain, et chaque wat mijote de longues heures jusqu'à trouver son équilibre. Rien n'est pressé — c'est ce qui fait la différence.",
     "p3": "La maison est tenue en famille. Vous serez peut-être accueilli par l'un d'entre nous, servi par un autre, et repartirez, on l'espère, avec l'envie de revenir.",
@@ -177,7 +177,7 @@
     "send": "Envoyer le message"
   },
   "footer": {
-    "tagline": "Restaurant érythréen et éthiopien & bar · Delémont",
+    "tagline": "Restaurant éthiopien et érythréen & bar · Delémont",
     "contact": "Contact",
     "hours": "Horaires",
     "hours_summary": "Lun–Dim, fermé le mardi",

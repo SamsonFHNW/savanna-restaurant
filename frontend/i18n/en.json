@@ -6,12 +6,12 @@
     "contact": "Contact"
   },
   "hero": {
-    "tagline": "Eritrean & Ethiopian cuisine",
+    "tagline": "Ethiopian & Eritrean cuisine",
     "cta": "Book a table",
     "place": "Delémont · Jura"
   },
   "intro": {
-    "text": "A family table in the heart of Delémont, where the recipes of Eritrea and Ethiopia are shared the way they are at home — injera in the middle, hands all around.",
+    "text": "A family table in the heart of Delémont, where the recipes of Ethiopia and Eritrea are shared the way they are at home — injera in the middle, hands all around.",
     "more": "Read more →"
   },
   "dishes": {
@@ -119,7 +119,7 @@
   },
   "about": {
     "title": "Our story",
-    "p1": "Savanna was born from a wish to share, here in Delémont, the flavours that shaped our childhood in Eritrea and Ethiopia. Every dish carries a memory: a cuisine passed from mother to daughter, from feast to feast.",
+    "p1": "Savanna was born from a wish to share, here in Delémont, the flavours that shaped our childhood in Ethiopia and Eritrea. Every dish carries a memory: a cuisine passed from mother to daughter, from feast to feast.",
     "quote": "\"At our table, no one eats from their own plate. We break the injera together.\"",
     "p2": "Our spices come straight from home. The injera is made fresh every morning, sourdough-style, and every wat simmers for hours until it finds its balance. Nothing is rushed — that is what makes the difference.",
     "p3": "The house is family-run. You may be welcomed by one of us, served by another, and leave — we hope — already wanting to come back.",
@@ -177,7 +177,7 @@
     "send": "Send message"
   },
   "footer": {
-    "tagline": "Eritrean and Ethiopian restaurant & bar · Delémont",
+    "tagline": "Ethiopian and Eritrean restaurant & bar · Delémont",
     "contact": "Contact",
     "hours": "Hours",
     "hours_summary": "Mon–Sun, closed on Tuesday",

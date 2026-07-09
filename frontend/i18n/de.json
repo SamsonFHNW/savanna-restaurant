@@ -9,12 +9,12 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "tagline": "Eritreische & äthiopische Küche",
+    "tagline": "Äthiopische & eritreische Küche",
     "cta": "Tisch reservieren",
     "place": "Delémont · Jura"
   },
   "intro": {
-    "text": "Ein Familientisch im Herzen von Delémont, wo die Rezepte Eritreas und Äthiopiens geteilt werden wie zu Hause — das Injera in der Mitte, alle Hände darum.",
+    "text": "Ein Familientisch im Herzen von Delémont, wo die Rezepte Äthiopiens und Eritreas geteilt werden wie zu Hause — das Injera in der Mitte, alle Hände darum.",
     "more": "Mehr erfahren →"
   },
   "dishes": {
@@ -122,7 +122,7 @@
   },
   "about": {
     "title": "Unsere Geschichte",
-    "p1": "Savanna entstand aus dem Wunsch, in Delémont die Aromen zu teilen, die unsere Kindheit in Eritrea und Äthiopien geprägt haben. Hier trägt jedes Gericht eine Erinnerung: die einer Küche, die von Mutter zu Tochter, von Fest zu Fest weitergegeben wird.",
+    "p1": "Savanna entstand aus dem Wunsch, in Delémont die Aromen zu teilen, die unsere Kindheit in Äthiopien und Eritrea geprägt haben. Hier trägt jedes Gericht eine Erinnerung: die einer Küche, die von Mutter zu Tochter, von Fest zu Fest weitergegeben wird.",
     "quote": "«Bei uns isst niemand von seinem eigenen Teller. Wir brechen das Injera gemeinsam.»",
     "p2": "Unsere Gewürze kommen direkt aus der Heimat. Das Injera wird jeden Morgen frisch mit Sauerteig zubereitet, und jedes Wat köchelt stundenlang, bis es seine Balance findet. Nichts wird überstürzt — das macht den Unterschied.",
     "p3": "Das Haus wird als Familie geführt. Vielleicht werden Sie von einem von uns begrüsst, von einem anderen bedient, und gehen — so hoffen wir — mit dem Wunsch, wiederzukommen.",
@@ -180,7 +180,7 @@
     "send": "Nachricht senden"
   },
   "footer": {
-    "tagline": "Eritreisches und äthiopisches Restaurant & Bar · Delémont",
+    "tagline": "Äthiopisches und eritreisches Restaurant & Bar · Delémont",
     "contact": "Kontakt",
     "hours": "Öffnungszeiten",
     "hours_summary": "Mo–So, dienstags geschlossen",

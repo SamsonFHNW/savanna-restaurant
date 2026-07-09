@@ -1,6 +1,6 @@
-# Savanna — Restaurant Érythréen et Éthiopien & Bar
+# Savanna — Restaurant Éthiopien et Érythréen & Bar
 
-Website for Savanna, a family-run Eritrean & Ethiopian restaurant in Delémont (Jura, Switzerland).
+Website for Savanna, a family-run Ethiopian & Eritrean restaurant in Delémont (Jura, Switzerland).
 
 - **Frontend** — static HTML/CSS/JS, no framework. **4 languages** (FR default · EN · DE · IT)
   with path-based routing (`/fr/`, `/en/`, `/de/`, `/it/`) and localized slugs.
