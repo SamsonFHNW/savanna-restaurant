@@ -100,6 +100,49 @@ def build_hreflang(page):
 
 OG_LOCALE = {"fr": "fr_CH", "en": "en_GB", "de": "de_CH", "it": "it_CH"}
 
+TWITTER_IMAGE = f"{DOMAIN}/assets/og.jpg"
+
+
+def esc_attr(s):
+    """Escape a string for use inside a double-quoted HTML attribute."""
+    return (s.replace("&", "&amp;").replace('"', "&quot;")
+             .replace("<", "&lt;").replace(">", "&gt;"))
+
+
+def apply_meta(html, page, lang, dic):
+    """Bake the per-language <title>, description, Open Graph and Twitter tags.
+
+    The src templates carry hardcoded French SEO meta; here we swap in the
+    translated title/description from i18n (meta.<page>.{title,description}),
+    set og:type=restaurant, and add explicit twitter title/description/image.
+    If a page has no meta entry, the template defaults are left untouched.
+    """
+    meta = get_nested(dic, f"meta.{page}") or {}
+    title, desc = meta.get("title"), meta.get("description")
+    if not title or not desc:
+        return html
+    t, d = esc_attr(title), esc_attr(desc)
+
+    html = re.sub(r"<title>.*?</title>", f"<title>{t}</title>", html, count=1, flags=re.S)
+    html = re.sub(r'<meta name="description" content="[^"]*">',
+                  f'<meta name="description" content="{d}">', html, count=1)
+    html = html.replace('<meta property="og:type" content="website">',
+                        '<meta property="og:type" content="restaurant">', 1)
+    html = re.sub(r'<meta property="og:title" content="[^"]*">',
+                  f'<meta property="og:title" content="{t}">', html, count=1)
+    html = re.sub(r'<meta property="og:description" content="[^"]*">',
+                  f'<meta property="og:description" content="{d}">', html, count=1)
+
+    twitter_extra = (
+        '<meta name="twitter:card" content="summary_large_image">'
+        f'\n  <meta name="twitter:title" content="{t}">'
+        f'\n  <meta name="twitter:description" content="{d}">'
+        f'\n  <meta name="twitter:image" content="{TWITTER_IMAGE}">'
+    )
+    html = html.replace('<meta name="twitter:card" content="summary_large_image">',
+                        twitter_extra, 1)
+    return html
+
 
 def build_page_meta(page, lang):
     """Per-language canonical + og:url + og:locale for this page."""
@@ -112,19 +155,37 @@ def build_page_meta(page, lang):
 
 
 def write_sitemap():
-    """A sitemap.xml listing every localized page (search-engine discovery)."""
-    urls = []
+    """sitemap.xml listing every localized page with hreflang alternates.
+
+    Each <url> carries the full set of <xhtml:link rel="alternate"> pointers to
+    every language version of the same page (plus x-default → French), so search
+    engines understand the four localized variants belong together.
+    """
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
+        ' xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+    ]
     for page in PAGES:
+        alts = [
+            f'    <xhtml:link rel="alternate" hreflang="{l}"'
+            f' href="{DOMAIN}/{l}/{clean_path(page, l)}"/>'
+            for l in LANGS
+        ]
+        alts.append(
+            f'    <xhtml:link rel="alternate" hreflang="x-default"'
+            f' href="{DOMAIN}/fr/{clean_path(page, "fr")}"/>'
+        )
+        alt_block = "\n".join(alts)
         for lang in LANGS:
-            urls.append(f"{DOMAIN}/{lang}/{clean_path(page, lang)}")
-    body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
-    xml = (
-        '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f"{body}\n</urlset>\n"
-    )
+            loc = f"{DOMAIN}/{lang}/{clean_path(page, lang)}"
+            lines.append("  <url>")
+            lines.append(f"    <loc>{loc}</loc>")
+            lines.append(alt_block)
+            lines.append("  </url>")
+    lines.append("</urlset>")
     with open(os.path.join(HERE, "sitemap.xml"), "w", encoding="utf-8") as f:
-        f.write(xml)
+        f.write("\n".join(lines) + "\n")
 
 
 def build_selector(page, current):
@@ -221,6 +282,7 @@ def generate():
             html = OLD_TOGGLE_RE.sub(build_selector(page, lang), html)
             head_extra = build_hreflang(page) + "\n" + build_page_meta(page, lang)
             html = html.replace("</head>", head_extra + "\n</head>", 1)
+            html = apply_meta(html, page, lang, dicts[lang])
             html = bake_text(html, dicts[lang])
             dest = os.path.join(HERE, lang, out_filename(page, lang))
             with open(dest, "w", encoding="utf-8") as f:

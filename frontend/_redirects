@@ -1,0 +1,17 @@
+# Cloudflare Pages redirects — Savanna
+#
+# Language entry point ("/"):
+#   The root index.html redirects the visitor in JS to /fr/, /en/, /de/ or /it/,
+#   honoring a saved choice in localStorage (falling back to /fr/, with a
+#   <meta refresh> + <noscript> link as a no-JS fallback). We deliberately do
+#   NOT place a hard "/  /fr/  302" rule here: Cloudflare evaluates redirects
+#   before serving static assets, so an edge 302 would bypass the root page's
+#   script and ignore the stored language preference. Keeping "/" client-side is
+#   what makes the localStorage behavior work.
+#
+# www -> apex is configured as a Cloudflare redirect rule (see DEPLOYMENT.md),
+# since Pages _redirects match on path only, not hostname.
+
+# Keep build-only sources out of the served site.
+/src/*          /fr/   404
+/build_i18n.py  /fr/   404

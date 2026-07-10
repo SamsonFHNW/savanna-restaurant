@@ -25,7 +25,7 @@
     form_required: 'Veuillez remplir tous les champs obligatoires.',
     res_tuesday: 'Nous sommes fermés le mardi.',
     sending: 'Envoi en cours…',
-    res_success: 'Merci ! Nous vous confirmerons votre réservation par téléphone dans les 24h.',
+    res_success: 'Merci ! Nous vous confirmerons votre réservation par email dans les 24h. Pour une réservation le jour même, appelez-nous au 032 422 73 10.',
     generic_error: 'Une erreur est survenue. Réessayez.',
     network_error: 'Impossible de contacter le serveur. Réessayez plus tard.',
     contact_required: 'Veuillez remplir tous les champs.',

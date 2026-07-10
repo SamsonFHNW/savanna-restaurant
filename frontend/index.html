@@ -10,18 +10,9 @@
   <link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/">
   <link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/">
   <link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/">
-  <script>
-    // Send visitors to their preferred language: saved choice > browser language > French.
-    (function () {
-      var supported = ['fr', 'en', 'de', 'it'];
-      var saved = null;
-      try { saved = localStorage.getItem('savanna_lang'); } catch (e) {}
-      var browser = (navigator.language || 'fr').slice(0, 2).toLowerCase();
-      var lang = (saved && supported.indexOf(saved) > -1) ? saved
-        : (supported.indexOf(browser) > -1 ? browser : 'fr');
-      window.location.replace('/' + lang + '/');
-    })();
-  </script>
+  <!-- Language redirect is an external script so the site can run a strict CSP
+       (script-src 'self'). The meta refresh below is the no-JS fallback. -->
+  <script src="/assets/root-redirect.js"></script>
   <meta http-equiv="refresh" content="0; url=/fr/">
 </head>
 <body>

@@ -1,4 +1,34 @@
 {
+  "meta": {
+    "home": {
+      "title": "Savanna — Äthiopisches & eritreisches Restaurant · Delémont",
+      "description": "Äthiopisches und eritreisches Restaurant in Delémont: Injera, Tibs, Kitfo, Doro Wat und vegetarische Gerichte in warmer Atmosphäre. Jetzt Tisch reservieren."
+    },
+    "menu": {
+      "title": "Speisekarte — Savanna · Delémont",
+      "description": "Die Speisekarte von Savanna in Delémont: Vorspeisen, Fleischgerichte sowie vegetarische und vegane äthiopische und eritreische Spezialitäten auf Injera."
+    },
+    "about": {
+      "title": "Über uns — Savanna · Delémont",
+      "description": "Die Geschichte von Savanna, einem familiären äthiopischen und eritreischen Restaurant in Delémont: traditionelle Küche, Kaffeezeremonie und herzlicher Empfang."
+    },
+    "reserve": {
+      "title": "Reservieren — Savanna · Delémont",
+      "description": "Reservieren Sie Ihren Tisch im Restaurant Savanna in Delémont. Bestätigung per E-Mail innert 24 Std.; am selben Tag: 032 422 73 10. Dienstags geschlossen."
+    },
+    "contact": {
+      "title": "Kontakt — Savanna · Delémont",
+      "description": "Kontaktieren Sie das Restaurant Savanna in Delémont: Adresse Rue Albert Schnyder 4, Telefon 032 422 73 10, Öffnungszeiten und Online-Nachrichtenformular."
+    },
+    "gallery": {
+      "title": "Galerie — Savanna · Delémont",
+      "description": "Fotogalerie des Restaurants Savanna in Delémont: äthiopische und eritreische Gerichte, Injera, Kaffeezeremonie und die warme Atmosphäre von Saal und Bar."
+    },
+    "legal": {
+      "title": "Impressum — Savanna · Delémont",
+      "description": "Impressum und Datenschutz des Restaurants Savanna in Delémont: Betreiber der Website, Hosting und Verarbeitung der über die Formulare übermittelten Daten."
+    }
+  },
   "_meta": {
     "review": "TODO: machine-drafted German translation — have a native speaker review before launch. Swiss spelling (ss, no ß). Dish names kept in the original; only descriptions translated."
   },
@@ -204,7 +234,7 @@
     "form_required": "Bitte füllen Sie alle Pflichtfelder aus.",
     "res_tuesday": "Dienstags haben wir geschlossen.",
     "sending": "Wird gesendet…",
-    "res_success": "Danke! Wir bestätigen Ihre Reservierung telefonisch innerhalb von 24 Stunden.",
+    "res_success": "Danke! Wir bestätigen Ihre Reservierung per E-Mail innerhalb von 24 Stunden. Für Reservierungen am selben Tag rufen Sie uns bitte an: 032 422 73 10.",
     "generic_error": "Ein Fehler ist aufgetreten. Bitte erneut versuchen.",
     "network_error": "Server nicht erreichbar. Bitte später erneut versuchen.",
     "contact_required": "Bitte füllen Sie alle Felder aus.",
@@ -228,7 +258,7 @@
     "hosting_title": "Hosting",
     "hosting_text": "Die Website wird von Netlify gehostet; der Reservierungsdienst von Render.",
     "data_title": "Datenschutz",
-    "data_text": "Die Reservierungs- und Kontaktformulare erfassen nur die von Ihnen angegebenen Informationen (Name, Telefon, E-Mail, Datum, Uhrzeit, Personenzahl, Nachricht). Sie dienen ausschliesslich der Bearbeitung Ihrer Anfrage und werden an das Restaurant übermittelt; sie werden weder verkauft noch zu Werbezwecken weitergegeben. Die Reservierungsbenachrichtigung erfolgt über WhatsApp (Twilio). Ihre Daten werden nur so lange gespeichert, wie es für die Bearbeitung nötig ist.",
+    "data_text": "Die Reservierungs- und Kontaktformulare erfassen nur die von Ihnen angegebenen Informationen (Name, Telefon, E-Mail, Datum, Uhrzeit, Personenzahl, Nachricht). Sie dienen ausschliesslich der Bearbeitung Ihrer Anfrage und werden an das Restaurant übermittelt; sie werden weder verkauft noch zu Werbezwecken weitergegeben. Die Reservierungsbenachrichtigung erfolgt per E-Mail. Ihre Daten werden nur so lange gespeichert, wie es für die Bearbeitung nötig ist.",
     "cookies_title": "Cookies",
     "cookies_text": "Diese Website verwendet keine Tracking-Cookies oder Analyse-Tools. Nur Ihre Sprachpräferenz wird lokal in Ihrem Browser gespeichert. Die eingebettete Google-Maps-Karte kann eigene Cookies setzen.",
     "rights_title": "Ihre Rechte",

@@ -1,5 +1,16 @@
-"""Environment-driven configuration for the Savanna backend."""
+"""Environment-driven configuration for the Savanna backend.
+
+Values come from environment variables. For local development, a `.env` file
+(see `.env.example`) is loaded automatically via python-dotenv; in production
+(Render) the variables are set in the dashboard and no `.env` file is present.
+"""
 import os
+
+from dotenv import load_dotenv
+
+# Load a local .env if present. In production the real environment wins, so this
+# is a no-op there (load_dotenv does not override already-set variables).
+load_dotenv()
 
 
 def _split_csv(value: str) -> list[str]:
@@ -7,34 +18,19 @@ def _split_csv(value: str) -> list[str]:
 
 
 class Settings:
+    # ─── Runtime ───
+    ENVIRONMENT: str = os.getenv("ENVIRONMENT", "development")
+
     # ─── Recipients ───
     OWNER_EMAIL: str = os.getenv("OWNER_EMAIL", "")
-    OWNER_WHATSAPP: str = os.getenv("OWNER_WHATSAPP", "")  # E.164, e.g. +41...
 
-    # ─── Email: Resend (preferred) or SMTP ───
+    # ─── Email via Resend ───
     RESEND_API_KEY: str = os.getenv("RESEND_API_KEY", "")
-    EMAIL_FROM: str = os.getenv("EMAIL_FROM", "Savanna <reservations@savanna-restaurant.ch>")
-
-    SMTP_HOST: str = os.getenv("SMTP_HOST", "")
-    SMTP_PORT: int = int(os.getenv("SMTP_PORT", "587"))
-    SMTP_USER: str = os.getenv("SMTP_USER", "")
-    SMTP_PASSWORD: str = os.getenv("SMTP_PASSWORD", "")
-    SMTP_STARTTLS: bool = os.getenv("SMTP_STARTTLS", "true").lower() == "true"
-
-    # ─── Twilio WhatsApp ───
-    TWILIO_ACCOUNT_SID: str = os.getenv("TWILIO_ACCOUNT_SID", "")
-    TWILIO_AUTH_TOKEN: str = os.getenv("TWILIO_AUTH_TOKEN", "")
-    TWILIO_WHATSAPP_FROM: str = os.getenv("TWILIO_WHATSAPP_FROM", "")  # e.g. whatsapp:+14155238886
+    FROM_EMAIL: str = os.getenv("FROM_EMAIL", "reservations@savanna-restaurant.ch")
 
     # ─── CORS ───
-    # Comma-separated list of allowed origins. Defaults to production + local dev.
-    ALLOWED_ORIGINS: list[str] = _split_csv(
-        os.getenv(
-            "ALLOWED_ORIGINS",
-            "https://savanna-restaurant.ch,https://www.savanna-restaurant.ch,"
-            "http://localhost:8000,http://localhost:5173,http://127.0.0.1:5500",
-        )
-    )
+    # Comma-separated list of allowed origins. Defaults to local dev.
+    CORS_ORIGINS: list[str] = _split_csv(os.getenv("CORS_ORIGINS", "http://localhost:3000"))
 
     # ─── Rate limiting ───
     RATE_LIMIT_MAX: int = int(os.getenv("RATE_LIMIT_MAX", "5"))
@@ -42,11 +38,7 @@ class Settings:
 
     @property
     def email_enabled(self) -> bool:
-        return bool(self.RESEND_API_KEY or self.SMTP_HOST)
-
-    @property
-    def whatsapp_enabled(self) -> bool:
-        return bool(self.TWILIO_ACCOUNT_SID and self.TWILIO_AUTH_TOKEN and self.TWILIO_WHATSAPP_FROM and self.OWNER_WHATSAPP)
+        return bool(self.RESEND_API_KEY)
 
 
 settings = Settings()

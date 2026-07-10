@@ -1,31 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://savanna-restaurant.ch/fr/</loc></url>
-  <url><loc>https://savanna-restaurant.ch/en/</loc></url>
-  <url><loc>https://savanna-restaurant.ch/de/</loc></url>
-  <url><loc>https://savanna-restaurant.ch/it/</loc></url>
-  <url><loc>https://savanna-restaurant.ch/fr/menu</loc></url>
-  <url><loc>https://savanna-restaurant.ch/en/menu</loc></url>
-  <url><loc>https://savanna-restaurant.ch/de/menu</loc></url>
-  <url><loc>https://savanna-restaurant.ch/it/menu</loc></url>
-  <url><loc>https://savanna-restaurant.ch/fr/about</loc></url>
-  <url><loc>https://savanna-restaurant.ch/en/about</loc></url>
-  <url><loc>https://savanna-restaurant.ch/de/about</loc></url>
-  <url><loc>https://savanna-restaurant.ch/it/about</loc></url>
-  <url><loc>https://savanna-restaurant.ch/fr/reserver</loc></url>
-  <url><loc>https://savanna-restaurant.ch/en/reserve</loc></url>
-  <url><loc>https://savanna-restaurant.ch/de/reservieren</loc></url>
-  <url><loc>https://savanna-restaurant.ch/it/prenotare</loc></url>
-  <url><loc>https://savanna-restaurant.ch/fr/contact</loc></url>
-  <url><loc>https://savanna-restaurant.ch/en/contact</loc></url>
-  <url><loc>https://savanna-restaurant.ch/de/kontakt</loc></url>
-  <url><loc>https://savanna-restaurant.ch/it/contatto</loc></url>
-  <url><loc>https://savanna-restaurant.ch/fr/gallerie</loc></url>
-  <url><loc>https://savanna-restaurant.ch/en/gallery</loc></url>
-  <url><loc>https://savanna-restaurant.ch/de/galerie</loc></url>
-  <url><loc>https://savanna-restaurant.ch/it/galleria</loc></url>
-  <url><loc>https://savanna-restaurant.ch/fr/mentions</loc></url>
-  <url><loc>https://savanna-restaurant.ch/en/legal</loc></url>
-  <url><loc>https://savanna-restaurant.ch/de/impressum</loc></url>
-  <url><loc>https://savanna-restaurant.ch/it/note-legali</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://savanna-restaurant.ch/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/de/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/it/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/fr/menu</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/menu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/menu"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/menu"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/menu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/menu"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/en/menu</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/menu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/menu"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/menu"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/menu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/menu"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/de/menu</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/menu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/menu"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/menu"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/menu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/menu"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/it/menu</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/menu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/menu"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/menu"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/menu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/menu"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/fr/about</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/about"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/about"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/de/about</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/about"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/it/about</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/about"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/fr/reserver</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/reserver"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/reserve"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/reservieren"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/prenotare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/reserver"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/en/reserve</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/reserver"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/reserve"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/reservieren"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/prenotare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/reserver"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/de/reservieren</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/reserver"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/reserve"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/reservieren"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/prenotare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/reserver"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/it/prenotare</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/reserver"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/reserve"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/reservieren"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/prenotare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/reserver"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/fr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/contatto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/contact"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/contatto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/contact"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/de/kontakt</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/contatto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/contact"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/it/contatto</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/contatto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/contact"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/fr/gallerie</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/gallerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/gallery"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/galerie"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/galleria"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/gallerie"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/en/gallery</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/gallerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/gallery"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/galerie"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/galleria"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/gallerie"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/de/galerie</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/gallerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/gallery"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/galerie"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/galleria"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/gallerie"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/it/galleria</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/gallerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/gallery"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/galerie"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/galleria"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/gallerie"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/fr/mentions</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/mentions"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/legal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/note-legali"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/mentions"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/en/legal</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/mentions"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/legal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/note-legali"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/mentions"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/de/impressum</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/mentions"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/legal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/note-legali"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/mentions"/>
+  </url>
+  <url>
+    <loc>https://savanna-restaurant.ch/it/note-legali</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/mentions"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://savanna-restaurant.ch/en/legal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://savanna-restaurant.ch/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://savanna-restaurant.ch/it/note-legali"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://savanna-restaurant.ch/fr/mentions"/>
+  </url>
 </urlset>

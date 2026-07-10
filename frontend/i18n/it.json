@@ -1,4 +1,34 @@
 {
+  "meta": {
+    "home": {
+      "title": "Savanna — Ristorante etiope & eritreo · Delémont",
+      "description": "Ristorante etiope ed eritreo a Delémont: injera, tibs, kitfo, doro wat e piatti vegetariani in un'atmosfera calorosa. Prenota il tuo tavolo da Savanna."
+    },
+    "menu": {
+      "title": "Menù — Savanna · Delémont",
+      "description": "Il menù di Savanna a Delémont: antipasti, piatti di carne e specialità vegetariane e vegane etiopi ed eritree servite sull'injera. Un menù da condividere."
+    },
+    "about": {
+      "title": "Chi siamo — Savanna · Delémont",
+      "description": "Scopri la storia di Savanna, ristorante familiare etiope ed eritreo a Delémont: cucina tradizionale, cerimonia del caffè e un'accoglienza calorosa e autentica."
+    },
+    "reserve": {
+      "title": "Prenota — Savanna · Delémont",
+      "description": "Prenota il tuo tavolo al ristorante Savanna a Delémont. Conferma via email entro 24 ore; per il giorno stesso chiama 032 422 73 10. Chiuso il martedì."
+    },
+    "contact": {
+      "title": "Contatti — Savanna · Delémont",
+      "description": "Contatta il ristorante Savanna a Delémont: indirizzo Rue Albert Schnyder 4, telefono 032 422 73 10, orari di apertura e modulo di contatto per scriverci."
+    },
+    "gallery": {
+      "title": "Galleria — Savanna · Delémont",
+      "description": "Galleria fotografica del ristorante Savanna a Delémont: piatti etiopi ed eritrei, injera, cerimonia del caffè e la calda atmosfera della sala e del bar."
+    },
+    "legal": {
+      "title": "Note legali — Savanna · Delémont",
+      "description": "Note legali e protezione dei dati del ristorante Savanna a Delémont: editore del sito, hosting e trattamento delle informazioni inviate tramite i moduli."
+    }
+  },
   "_meta": {
     "review": "TODO: machine-drafted Italian translation — have a native speaker review before launch. Dish names kept in the original; only descriptions translated."
   },
@@ -204,7 +234,7 @@
     "form_required": "Compila tutti i campi obbligatori.",
     "res_tuesday": "Il martedì siamo chiusi.",
     "sending": "Invio in corso…",
-    "res_success": "Grazie! Confermeremo la tua prenotazione per telefono entro 24 ore.",
+    "res_success": "Grazie! Confermeremo la vostra prenotazione via email entro 24 ore. Per prenotazioni in giornata, chiamateci al 032 422 73 10.",
     "generic_error": "Si è verificato un errore. Riprova.",
     "network_error": "Impossibile contattare il server. Riprova più tardi.",
     "contact_required": "Compila tutti i campi.",
@@ -228,7 +258,7 @@
     "hosting_title": "Hosting",
     "hosting_text": "Il sito è ospitato da Netlify; il servizio di prenotazione da Render.",
     "data_title": "Protezione dei dati",
-    "data_text": "I moduli di prenotazione e di contatto raccolgono solo le informazioni che fornisci (nome, telefono, e-mail, data, ora, numero di persone, messaggio). Sono utilizzate esclusivamente per gestire la tua richiesta e trasmesse al ristorante; non vengono mai vendute né condivise a fini pubblicitari. La notifica di prenotazione è inviata tramite WhatsApp (Twilio). I tuoi dati sono conservati solo per il tempo necessario a gestire la tua richiesta.",
+    "data_text": "I moduli di prenotazione e di contatto raccolgono solo le informazioni che fornisci (nome, telefono, e-mail, data, ora, numero di persone, messaggio). Sono utilizzate esclusivamente per gestire la tua richiesta e trasmesse al ristorante; non vengono mai vendute né condivise a fini pubblicitari. La notifica di prenotazione è inviata via email. I tuoi dati sono conservati solo per il tempo necessario a gestire la tua richiesta.",
     "cookies_title": "Cookie",
     "cookies_text": "Questo sito non utilizza cookie di tracciamento né strumenti di analisi. Solo la tua preferenza di lingua è memorizzata localmente nel browser. La mappa Google Maps integrata può impostare cookie propri.",
     "rights_title": "I tuoi diritti",
