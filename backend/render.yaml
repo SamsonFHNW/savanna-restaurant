@@ -10,8 +10,6 @@ services:
       # ─── Recipients ───
       - key: OWNER_EMAIL
         sync: false
-      - key: OWNER_WHATSAPP        # E.164, e.g. +41791234567
-        sync: false
       # ─── Email: Resend (preferred) OR SMTP ───
       - key: RESEND_API_KEY
         sync: false
@@ -24,13 +22,6 @@ services:
       - key: SMTP_USER
         sync: false
       - key: SMTP_PASSWORD
-        sync: false
-      # ─── Twilio WhatsApp ───
-      - key: TWILIO_ACCOUNT_SID
-        sync: false
-      - key: TWILIO_AUTH_TOKEN
-        sync: false
-      - key: TWILIO_WHATSAPP_FROM  # e.g. whatsapp:+14155238886
         sync: false
       # ─── CORS ───
       - key: ALLOWED_ORIGINS

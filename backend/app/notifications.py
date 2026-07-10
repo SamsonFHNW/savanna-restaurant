@@ -1,9 +1,9 @@
-"""Notification senders: owner email, customer email, owner WhatsApp.
+"""Notification senders: owner email, customer email.
 
 All senders are async and defensive: a failure in one channel is logged and
-does not raise, so a single reservation still succeeds if e.g. WhatsApp is down.
-Owner email + WhatsApp are always French; the customer email uses the language
-the customer selected on the site (res.lang).
+does not raise, so a single reservation still succeeds if e.g. the customer
+confirmation email fails. The owner email is always French; the customer email
+uses the language the customer selected on the site (res.lang).
 """
 from __future__ import annotations
 
@@ -110,28 +110,6 @@ async def _send_via_smtp(to: str, subject: str, body_text: str) -> None:
 
 
 # ─────────────────────────────────────────────────────────────
-# WhatsApp via Twilio
-# ─────────────────────────────────────────────────────────────
-async def _send_whatsapp(body: str) -> None:
-    if not settings.whatsapp_enabled:
-        logger.warning("WhatsApp not configured — would have sent: %s", body.replace("\n", " | "))
-        return
-
-    url = f"https://api.twilio.com/2010-04-01/Accounts/{settings.TWILIO_ACCOUNT_SID}/Messages.json"
-    to = settings.OWNER_WHATSAPP
-    if not to.startswith("whatsapp:"):
-        to = "whatsapp:" + to
-
-    async with httpx.AsyncClient(timeout=15) as client:
-        resp = await client.post(
-            url,
-            data={"From": settings.TWILIO_WHATSAPP_FROM, "To": to, "Body": body},
-            auth=(settings.TWILIO_ACCOUNT_SID, settings.TWILIO_AUTH_TOKEN),
-        )
-        resp.raise_for_status()
-
-
-# ─────────────────────────────────────────────────────────────
 # Message builders
 # ─────────────────────────────────────────────────────────────
 def _owner_email_body(res: ReservationRequest) -> str:
@@ -170,22 +148,6 @@ def _customer_email_body(res: ReservationRequest) -> str:
     )
 
 
-def _owner_whatsapp_body(res: ReservationRequest) -> str:
-    # WhatsApp is the only notification channel, so it carries every detail.
-    body = (
-        "🍽 Nouvelle réservation — Savanna\n\n"
-        f"Nom: {res.name}\n"
-        f"Personnes: {res.guests}\n"
-        f"Date: {format_fr_date(res)} à {res.time}\n"
-        f"Tél: {res.phone}\n"
-        f"Email: {res.email}\n"
-    )
-    if res.message:
-        body += f"Message: {res.message}\n"
-    body += "\n→ À confirmer par téléphone dans les 24h."
-    return body
-
-
 # ─────────────────────────────────────────────────────────────
 # Public entry points (each wraps failures so gather() never fails hard)
 # ─────────────────────────────────────────────────────────────
@@ -202,13 +164,6 @@ async def notify_customer_email(res: ReservationRequest) -> None:
         await _send_email(res.email, subject, _customer_email_body(res))
     except Exception:  # noqa: BLE001
         logger.exception("Customer confirmation email failed")
-
-
-async def notify_owner_whatsapp(res: ReservationRequest) -> None:
-    try:
-        await _send_whatsapp(_owner_whatsapp_body(res))
-    except Exception:  # noqa: BLE001
-        logger.exception("Owner WhatsApp failed")
 
 
 async def notify_contact_email(msg: ContactRequest) -> None:
