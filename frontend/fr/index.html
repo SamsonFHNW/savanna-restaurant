@@ -21,6 +21,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <!-- Prioritize the hero: the poster is the video's first frame, so the start is seamless. -->
+  <link rel="preload" as="image" href="/assets/hero-fire-poster.jpg">
+  <link rel="preload" as="video" href="/assets/hero-fire.mp4?v=2" type="video/mp4">
+
   <link rel="icon" type="image/png" href="/assets/logo-green.png">
   <link rel="stylesheet" href="/style.css?v=c5ebdbbc">
   <link rel="alternate" hreflang="fr" href="https://savanna-restaurant.ch/fr/">
@@ -74,8 +78,8 @@
       <div class="hero__parallax">
         <div class="hero__media">
           <video class="hero__bg" id="hero-video"
-            autoplay muted loop playsinline preload="auto"
-            poster="/assets/hero-shekla.jpg"
+            autoplay muted loop playsinline preload="auto" loading="eager"
+            poster="/assets/hero-fire-poster.jpg"
             aria-label="Gros plan sur des braises ardentes">
             <source src="/assets/hero-fire.mp4?v=2" type="video/mp4">
           </video>
