@@ -25,14 +25,17 @@ from .models import ReservationRequest, ContactRequest
 from .ratelimit import RateLimiter
 from . import notifications as notify
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s %(name)s: %(message)s",
+)
 logger = logging.getLogger("savanna")
 
 app = FastAPI(title="Savanna Reservations", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.ALLOWED_ORIGINS,
+    allow_origins=settings.CORS_ORIGINS,
     allow_credentials=False,
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["Content-Type"],
@@ -70,10 +73,18 @@ def error(message: str, code: int = 400) -> JSONResponse:
     return JSONResponse({"status": "error", "message": message}, status_code=code)
 
 
-@app.get("/api/health")
+@app.get("/health")
 async def health() -> dict:
+    """Liveness probe for Render's health check."""
+    return {"status": "ok"}
+
+
+@app.get("/api/health")
+async def api_health() -> dict:
+    """Extended health: reports whether email delivery is configured."""
     return {
         "status": "ok",
+        "environment": settings.ENVIRONMENT,
         "email_configured": settings.email_enabled,
         "time": datetime.now().isoformat(timespec="seconds"),
     }
@@ -111,14 +122,15 @@ async def create_reservation(request: Request) -> JSONResponse:
     except ValidationError as exc:
         return error(_first_error_message(exc), 422)
 
+    # Log the submission without personal info (no name/phone/email in logs).
+    logger.info("Reservation received: date=%s time=%s guests=%s lang=%s",
+                res.date, res.time, res.guests, res.lang)
+
     # Fire both emails concurrently; each is failure-tolerant.
     await asyncio.gather(
         notify.notify_owner_email(res),
         notify.notify_customer_email(res),
     )
-
-    logger.info("Reservation: %s · %s · %s at %s · %s pers.",
-                res.name, res.phone, res.date, res.time, res.guests)
     return ok()
 
 
@@ -138,5 +150,5 @@ async def contact(request: Request) -> JSONResponse:
         return error(_first_error_message(exc), 422)
 
     await notify.notify_contact_email(msg)
-    logger.info("Contact message from %s <%s>", msg.name, msg.email)
+    logger.info("Contact message received from %s", notify.mask_email(msg.email))
     return ok()

@@ -1,4 +1,34 @@
 {
+  "meta": {
+    "home": {
+      "title": "Savanna — Restaurant éthiopien & érythréen · Delémont",
+      "description": "Restaurant éthiopien et érythréen à Delémont : injera, tibs, kitfo, doro wat et plats végétariens, servis dans une ambiance chaleureuse. Réservez votre table."
+    },
+    "menu": {
+      "title": "Menu — Savanna · Delémont",
+      "description": "La carte de Savanna à Delémont : entrées, plats de viande et options végétariennes et véganes éthiopiens et érythréens, servis sur injera. Menu à partager."
+    },
+    "about": {
+      "title": "À propos — Savanna · Delémont",
+      "description": "Découvrez l'histoire de Savanna, restaurant familial éthiopien et érythréen à Delémont : cuisine traditionnelle, café en cérémonie et accueil chaleureux."
+    },
+    "reserve": {
+      "title": "Réserver — Savanna · Delémont",
+      "description": "Réservez votre table au restaurant Savanna à Delémont. Confirmation par email sous 24 heures ; pour le jour même, appelez le 032 422 73 10. Fermé le mardi."
+    },
+    "contact": {
+      "title": "Contact — Savanna · Delémont",
+      "description": "Contactez le restaurant Savanna à Delémont : adresse Rue Albert Schnyder 4, téléphone 032 422 73 10, horaires d'ouverture et formulaire de contact en ligne."
+    },
+    "gallery": {
+      "title": "Galerie — Savanna · Delémont",
+      "description": "Galerie photo du restaurant Savanna à Delémont : plats éthiopiens et érythréens, injera, café en cérémonie et ambiance chaleureuse de la salle et du bar."
+    },
+    "legal": {
+      "title": "Mentions légales — Savanna · Delémont",
+      "description": "Mentions légales et protection des données du restaurant Savanna à Delémont : éditeur du site, hébergement et traitement des informations des formulaires."
+    }
+  },
   "nav": {
     "menu": "Menu",
     "about": "À propos",

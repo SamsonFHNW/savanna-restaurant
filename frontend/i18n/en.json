@@ -1,4 +1,34 @@
 {
+  "meta": {
+    "home": {
+      "title": "Savanna — Ethiopian & Eritrean Restaurant · Delémont",
+      "description": "Ethiopian and Eritrean restaurant in Delémont: injera, tibs, kitfo, doro wat and vegetarian dishes served in a warm setting. Book your table at Savanna."
+    },
+    "menu": {
+      "title": "Menu — Savanna · Delémont",
+      "description": "Savanna's menu in Delémont: starters, meat dishes and vegetarian and vegan Ethiopian and Eritrean specialties served on injera. A tasting menu to share."
+    },
+    "about": {
+      "title": "About — Savanna · Delémont",
+      "description": "Discover the story of Savanna, a family-run Ethiopian and Eritrean restaurant in Delémont: traditional cuisine, the coffee ceremony and a warm welcome."
+    },
+    "reserve": {
+      "title": "Reserve — Savanna · Delémont",
+      "description": "Reserve your table at Savanna restaurant in Delémont. Email confirmation within 24h; for same-day booking call 032 422 73 10. Closed Tuesdays; groups welcome."
+    },
+    "contact": {
+      "title": "Contact — Savanna · Delémont",
+      "description": "Contact Savanna restaurant in Delémont: address Rue Albert Schnyder 4, phone 032 422 73 10, opening hours and a message form. We'd love to hear from you."
+    },
+    "gallery": {
+      "title": "Gallery — Savanna · Delémont",
+      "description": "Photo gallery of Savanna restaurant in Delémont: Ethiopian and Eritrean dishes, injera, the coffee ceremony and the warm atmosphere of the room and bar."
+    },
+    "legal": {
+      "title": "Legal notice — Savanna · Delémont",
+      "description": "Legal notice and data protection for Savanna restaurant in Delémont: site publisher, hosting and how information from the forms is processed and stored."
+    }
+  },
   "nav": {
     "menu": "Menu",
     "about": "About",

@@ -7,11 +7,12 @@ uses the language the customer selected on the site (res.lang).
 """
 from __future__ import annotations
 
+import asyncio
 import logging
 from datetime import datetime
 from pathlib import Path
 
-import httpx
+import resend
 
 from .config import settings
 from .models import ReservationRequest, ContactRequest
@@ -59,54 +60,49 @@ def format_fr_date(res: ReservationRequest) -> str:
 
 
 # ─────────────────────────────────────────────────────────────
-# Email transport (Resend preferred, SMTP fallback)
+# Email transport (Resend)
 # ─────────────────────────────────────────────────────────────
+def mask_email(addr: str) -> str:
+    """Redact an address for logs — keep the first char + domain, hide the rest."""
+    if not addr or "@" not in addr:
+        return "—"
+    local, _, domain = addr.partition("@")
+    head = local[0] if local else ""
+    return f"{head}***@{domain}"
+
+
+def _send_via_resend(to: str, subject: str, body_text: str) -> str | None:
+    """Synchronous Resend SDK call. Returns the message id, or raises on failure."""
+    resend.api_key = settings.RESEND_API_KEY
+    result = resend.Emails.send(
+        {
+            "from": settings.FROM_EMAIL,
+            "to": [to],
+            "subject": subject,
+            "text": body_text,
+        }
+    )
+    # SDK returns a dict-like {"id": "..."} on success.
+    if isinstance(result, dict):
+        return result.get("id")
+    return getattr(result, "id", None)
+
+
 async def _send_email(to: str, subject: str, body_text: str) -> None:
+    """Send one email via Resend and log the outcome. Raises on send failure."""
     if not to:
         return
 
-    if settings.RESEND_API_KEY:
-        await _send_via_resend(to, subject, body_text)
-    elif settings.SMTP_HOST:
-        await _send_via_smtp(to, subject, body_text)
-    else:
-        logger.warning("Email not configured — would have sent to %s: %s", to, subject)
-
-
-async def _send_via_resend(to: str, subject: str, body_text: str) -> None:
-    async with httpx.AsyncClient(timeout=15) as client:
-        resp = await client.post(
-            "https://api.resend.com/emails",
-            headers={"Authorization": f"Bearer {settings.RESEND_API_KEY}"},
-            json={
-                "from": settings.EMAIL_FROM,
-                "to": [to],
-                "subject": subject,
-                "text": body_text,
-            },
+    if not settings.RESEND_API_KEY:
+        logger.warning(
+            "Email not configured (RESEND_API_KEY unset) — skipped send to %s (subject=%r)",
+            mask_email(to), subject,
         )
-        resp.raise_for_status()
+        return
 
-
-async def _send_via_smtp(to: str, subject: str, body_text: str) -> None:
-    # Imported lazily so the dependency is optional when using Resend.
-    import aiosmtplib
-    from email.message import EmailMessage
-
-    msg = EmailMessage()
-    msg["From"] = settings.EMAIL_FROM
-    msg["To"] = to
-    msg["Subject"] = subject
-    msg.set_content(body_text)
-
-    await aiosmtplib.send(
-        msg,
-        hostname=settings.SMTP_HOST,
-        port=settings.SMTP_PORT,
-        username=settings.SMTP_USER or None,
-        password=settings.SMTP_PASSWORD or None,
-        start_tls=settings.SMTP_STARTTLS,
-    )
+    # The Resend SDK is synchronous; run it off the event loop.
+    message_id = await asyncio.to_thread(_send_via_resend, to, subject, body_text)
+    logger.info("Email sent to %s (subject=%r, id=%s)", mask_email(to), subject, message_id)
 
 
 # ─────────────────────────────────────────────────────────────
@@ -155,7 +151,7 @@ async def notify_owner_email(res: ReservationRequest) -> None:
     try:
         await _send_email(settings.OWNER_EMAIL, "Nouvelle réservation — Savanna", _owner_email_body(res))
     except Exception:  # noqa: BLE001
-        logger.exception("Owner reservation email failed")
+        logger.exception("Owner reservation email failed (to=%s)", mask_email(settings.OWNER_EMAIL))
 
 
 async def notify_customer_email(res: ReservationRequest) -> None:
@@ -163,7 +159,7 @@ async def notify_customer_email(res: ReservationRequest) -> None:
         subject = CUSTOMER_SUBJECT.get(res.lang, CUSTOMER_SUBJECT["fr"])
         await _send_email(res.email, subject, _customer_email_body(res))
     except Exception:  # noqa: BLE001
-        logger.exception("Customer confirmation email failed")
+        logger.exception("Customer confirmation email failed (to=%s)", mask_email(res.email))
 
 
 async def notify_contact_email(msg: ContactRequest) -> None:
@@ -179,4 +175,4 @@ async def notify_contact_email(msg: ContactRequest) -> None:
         )
         await _send_email(settings.OWNER_EMAIL, "Nouveau message — Savanna", body)
     except Exception:  # noqa: BLE001
-        logger.exception("Contact email failed")
+        logger.exception("Contact email failed (to=%s)", mask_email(settings.OWNER_EMAIL))
