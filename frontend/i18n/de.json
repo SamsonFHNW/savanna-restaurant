@@ -1,4 +1,34 @@
 {
+  "meta": {
+    "home": {
+      "title": "Savanna — Äthiopisches & eritreisches Restaurant · Delémont",
+      "description": "Äthiopisches und eritreisches Restaurant in Delémont: Injera, Tibs, Kitfo, Doro Wat und vegetarische Gerichte in warmer Atmosphäre. Jetzt Tisch reservieren."
+    },
+    "menu": {
+      "title": "Speisekarte — Savanna · Delémont",
+      "description": "Die Speisekarte von Savanna in Delémont: Vorspeisen, Fleischgerichte sowie vegetarische und vegane äthiopische und eritreische Spezialitäten auf Injera."
+    },
+    "about": {
+      "title": "Über uns — Savanna · Delémont",
+      "description": "Die Geschichte von Savanna, einem familiären äthiopischen und eritreischen Restaurant in Delémont: traditionelle Küche, Kaffeezeremonie und herzlicher Empfang."
+    },
+    "reserve": {
+      "title": "Reservieren — Savanna · Delémont",
+      "description": "Reservieren Sie Ihren Tisch im Restaurant Savanna in Delémont. Bestätigung per E-Mail innert 24 Std.; am selben Tag: 032 422 73 10. Dienstags geschlossen."
+    },
+    "contact": {
+      "title": "Kontakt — Savanna · Delémont",
+      "description": "Kontaktieren Sie das Restaurant Savanna in Delémont: Adresse Rue Albert Schnyder 4, Telefon 032 422 73 10, Öffnungszeiten und Online-Nachrichtenformular."
+    },
+    "gallery": {
+      "title": "Galerie — Savanna · Delémont",
+      "description": "Fotogalerie des Restaurants Savanna in Delémont: äthiopische und eritreische Gerichte, Injera, Kaffeezeremonie und die warme Atmosphäre von Saal und Bar."
+    },
+    "legal": {
+      "title": "Impressum — Savanna · Delémont",
+      "description": "Impressum und Datenschutz des Restaurants Savanna in Delémont: Betreiber der Website, Hosting und Verarbeitung der über die Formulare übermittelten Daten."
+    }
+  },
   "_meta": {
     "review": "TODO: machine-drafted German translation — have a native speaker review before launch. Swiss spelling (ss, no ß). Dish names kept in the original; only descriptions translated."
   },
