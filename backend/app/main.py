@@ -3,10 +3,10 @@
 Endpoints:
   GET  /api/health          — liveness + config sanity
   GET  /api/slots?date=…    — bookable time slots for a date (feeds the form)
-  POST /api/reservations    — validate + notify owner (email + WhatsApp) & customer
+  POST /api/reservations    — validate + email the owner & customer
   POST /api/contact         — validate + email the owner
 
-No database: reservations live in the owner's inbox + WhatsApp history.
+No database: reservations live in the owner's inbox.
 """
 from __future__ import annotations
 
@@ -75,7 +75,6 @@ async def health() -> dict:
     return {
         "status": "ok",
         "email_configured": settings.email_enabled,
-        "whatsapp_configured": settings.whatsapp_enabled,
         "time": datetime.now().isoformat(timespec="seconds"),
     }
 
@@ -112,11 +111,10 @@ async def create_reservation(request: Request) -> JSONResponse:
     except ValidationError as exc:
         return error(_first_error_message(exc), 422)
 
-    # Fire the three notifications concurrently; each is failure-tolerant.
+    # Fire both emails concurrently; each is failure-tolerant.
     await asyncio.gather(
         notify.notify_owner_email(res),
         notify.notify_customer_email(res),
-        notify.notify_owner_whatsapp(res),
     )
 
     logger.info("Reservation: %s · %s · %s at %s · %s pers.",

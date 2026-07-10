@@ -9,7 +9,6 @@ def _split_csv(value: str) -> list[str]:
 class Settings:
     # ─── Recipients ───
     OWNER_EMAIL: str = os.getenv("OWNER_EMAIL", "")
-    OWNER_WHATSAPP: str = os.getenv("OWNER_WHATSAPP", "")  # E.164, e.g. +41...
 
     # ─── Email: Resend (preferred) or SMTP ───
     RESEND_API_KEY: str = os.getenv("RESEND_API_KEY", "")
@@ -20,11 +19,6 @@ class Settings:
     SMTP_USER: str = os.getenv("SMTP_USER", "")
     SMTP_PASSWORD: str = os.getenv("SMTP_PASSWORD", "")
     SMTP_STARTTLS: bool = os.getenv("SMTP_STARTTLS", "true").lower() == "true"
-
-    # ─── Twilio WhatsApp ───
-    TWILIO_ACCOUNT_SID: str = os.getenv("TWILIO_ACCOUNT_SID", "")
-    TWILIO_AUTH_TOKEN: str = os.getenv("TWILIO_AUTH_TOKEN", "")
-    TWILIO_WHATSAPP_FROM: str = os.getenv("TWILIO_WHATSAPP_FROM", "")  # e.g. whatsapp:+14155238886
 
     # ─── CORS ───
     # Comma-separated list of allowed origins. Defaults to production + local dev.
@@ -43,10 +37,6 @@ class Settings:
     @property
     def email_enabled(self) -> bool:
         return bool(self.RESEND_API_KEY or self.SMTP_HOST)
-
-    @property
-    def whatsapp_enabled(self) -> bool:
-        return bool(self.TWILIO_ACCOUNT_SID and self.TWILIO_AUTH_TOKEN and self.TWILIO_WHATSAPP_FROM and self.OWNER_WHATSAPP)
 
 
 settings = Settings()

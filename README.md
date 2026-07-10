@@ -6,9 +6,9 @@ Website for Savanna, a family-run Ethiopian & Eritrean restaurant in Delémont (
   with path-based routing (`/fr/`, `/en/`, `/de/`, `/it/`) and localized slugs.
   Aesthetic is *elegant · moody · luxurious* (dual-mode dark/light sections, slow motion) —
   see [DESIGN.md](DESIGN.md) for the full visual/motion spec.
-- **Backend** — FastAPI reservation + contact service. Sends the owner an email and a
-  WhatsApp message, and emails the customer a confirmation **in their language**.
-  **No database** — reservations live in the owner's inbox and WhatsApp history.
+- **Backend** — FastAPI reservation + contact service. Email-only (powered by SMTP or
+  Resend): emails the owner a notification and emails the customer a confirmation
+  **in their language**. **No database** — reservations live in the owner's inbox.
 
 ```
 frontend/
@@ -66,7 +66,7 @@ uvicorn app.main:app --reload --port 8000
 ```
 Health check: <http://localhost:8000/api/health>
 
-With no email/WhatsApp credentials set, the backend still validates and returns
+With no email credentials set, the backend still validates and returns
 `{"status":"ok"}`; it logs what it *would* have sent. Fill in `.env` to actually deliver.
 
 The frontend talks to the backend via `window.SAVANNA_API` (see `frontend/config.js`),
@@ -78,9 +78,9 @@ defaulting to `http://localhost:8000`.
 
 | Method | Path                | Purpose                                        |
 |--------|---------------------|------------------------------------------------|
-| GET    | `/api/health`       | Liveness + whether email/WhatsApp are configured |
+| GET    | `/api/health`       | Liveness + whether email is configured         |
 | GET    | `/api/slots?date=`  | Bookable time slots for an ISO date            |
-| POST   | `/api/reservations` | Validate + notify (owner email + WhatsApp, customer email) |
+| POST   | `/api/reservations` | Validate + email the owner and the customer    |
 | POST   | `/api/contact`      | Validate + email the owner                     |
 
 Success: `{"status":"ok"}` · Error: `{"status":"error","message":"…"}` (French).
@@ -88,7 +88,7 @@ Success: `{"status":"ok"}` · Error: `{"status":"error","message":"…"}` (Frenc
 The reservation payload includes a `lang` field (`"fr" | "en" | "de" | "it"`, default `"fr"`).
 The **customer** confirmation email is sent in that language, using the templates in
 `backend/app/templates/customer_confirmation_{lang}.txt` (DE/IT drafted for native review).
-The **owner** email + WhatsApp are always French.
+The **owner** notification email is always French.
 
 **Server-side validation** rejects: Tuesdays, times outside that day's opening hours,
 dates in the past or more than 60 days ahead, party size > 8, and filled honeypot.
@@ -113,22 +113,9 @@ Rate limit: 5 requests per IP per hour.
 | Variable | Purpose |
 |----------|---------|
 | `OWNER_EMAIL` | Where reservations/messages are sent |
-| `OWNER_WHATSAPP` | Owner's WhatsApp number, E.164 (e.g. `+41…`) |
 | `RESEND_API_KEY` *or* `SMTP_*` | Email transport (Resend preferred) |
 | `EMAIL_FROM` | From address/display name |
-| `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_WHATSAPP_FROM` | WhatsApp via Twilio |
 | `ALLOWED_ORIGINS` | Comma-separated CORS allow-list |
-
----
-
-## Twilio WhatsApp setup (one-time)
-1. Create a Twilio account.
-2. Register the restaurant's business number for the **WhatsApp Business API**.
-3. Complete Meta's business verification (allow **2–5 business days**).
-4. While verifying / in dev, use the **Twilio WhatsApp Sandbox** for testing.
-5. Set `TWILIO_WHATSAPP_FROM` (e.g. `whatsapp:+14155238886`) and `OWNER_WHATSAPP`.
-
-**Cost:** ~CHF 0.05–0.10 per outbound message to Swiss numbers, plus Twilio's base fee.
 
 ---
 
@@ -141,9 +128,12 @@ Rate limit: 5 requests per IP per hour.
   that placeholder at runtime. Swap in real dish photos (square crops work best).
 - Menu prices are placeholders (CHF 4–32). Confirm the real menu.
 - Social links in the footer are `#`.
-- `OWNER_EMAIL` / `OWNER_WHATSAPP` are set via env vars — TBD.
+- `OWNER_EMAIL` is set via env var — TBD.
 
 ## Future upgrade path
 SQLite + SQLAlchemy for stored reservations · password-protected `/admin` bookings view ·
-two-way WhatsApp (confirm/decline) · per-slot capacity limits. The FastAPI service stays
-the same — add DB writes alongside the existing notifications.
+per-slot capacity limits. The FastAPI service stays the same — add DB writes alongside the
+existing email notifications.
+
+WhatsApp / two-way messaging (confirm/decline via Twilio) is a possible v2 addition **if
+the owner asks for it later** — it is no longer part of the default setup.
